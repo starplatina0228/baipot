@@ -1,0 +1,7 @@
+
+Gurobi 12.0.2 (linux64, gurobi_cl) logging started Fri Jun 27 12:47:35 2025
+
+Set parameter Username
+Set parameter LicenseID to value 2676226
+Set parameter LogFile to value "gurobi.log"
+Using license file /home/choi/gurobi.lic
