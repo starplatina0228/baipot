@@ -137,6 +137,8 @@ def run_milp_model(processed_df):
         plt.savefig(chart_filename, dpi=300)
         print(f"✅ Gantt Chart를 '{chart_filename}' 파일로 저장했습니다.")
         # plt.show() # 로컬 실행 시 활성화
+        
+        return df_solution
 
     elif model.status == GRB.INFEASIBLE:
         print("❌ 모델이 비현실적입니다. 제약 조건을 확인하세요.")
@@ -144,8 +146,10 @@ def run_milp_model(processed_df):
         for c in model.getConstrs():
             if c.IISConstr:
                 print(f"  Infeasible constraint: {c.constrName}")
+        return None
     else:
         print(f"Gurobi 최적화가 다른 상태로 종료되었습니다: {model.status}")
+        return None
 
 if __name__ == '__main__':
     # 테스트용 데이터프레임 생성
