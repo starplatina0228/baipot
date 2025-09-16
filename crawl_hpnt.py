@@ -5,6 +5,7 @@ import json
 import time
 import re
 from urllib.parse import urljoin
+import pandas as pd
 
 class PortScheduleCrawler:
     def __init__(self):
@@ -94,12 +95,7 @@ class PortScheduleCrawler:
                 return None
             
             # CSRF 토큰 추출
-            csrf_token = self._extract_csrf_token(submit_form)
-            
-            # 토큰이 없으면 전체 페이지에서 다시 찾기
-            if not csrf_token:
-                print("   🔄 submitForm에서 토큰을 찾지 못함 - 전체 페이지에서 재검색")
-                csrf_token = self._extract_csrf_token_from_page(soup)
+            csrf_token = self._extract_csrf_token_from_page(soup)
             
             print(f"   🔐 최종 CSRF 토큰: {csrf_token if csrf_token else '❌ 토큰 없음'}")
             
@@ -128,76 +124,33 @@ class PortScheduleCrawler:
             print(f"   ❌ 검색 중 오류: {str(e)}")
             return None
     
-    def _extract_csrf_token(self, form):
-        """CSRF 토큰 추출 (여러 방법 시도)"""
-        # 방법 1: submitForm 내에서 CSRF_TOKEN input 찾기
-        csrf_input = form.find('input', {'name': 'CSRF_TOKEN'})
-        if csrf_input and csrf_input.get('value'):
-            token = csrf_input.get('value')
-            print(f"   🔑 방법1 성공: submitForm에서 토큰 추출 = {token}")
-            return token
-        
-        # 방법 2: 전체 페이지에서 CSRF_TOKEN 찾기 (submitForm 밖에 있을 수 있음)
-        soup = form.find_parent('html') or form.find_parent() 
-        if soup:
-            all_csrf_inputs = soup.find_all('input', {'name': 'CSRF_TOKEN'})
-            for csrf_input in all_csrf_inputs:
-                token = csrf_input.get('value', '')
-                if token.strip():
-                    print(f"   🔑 방법2 성공: 전체 페이지에서 토큰 추출 = {token}")
-                    return token
-        
-        # 방법 3: JavaScript에서 동적으로 설정된 토큰 찾기
-        if hasattr(form, 'parent') and form.parent:
-            page_text = str(form.parent)
-            import re
-            js_token_match = re.search(r"CSRF_TOKEN['"]?\s*[,:]\s*['"]([^'"]+)['"]", page_text)
-            if js_token_match:
-                token = js_token_match.group(1)
-                print(f"   🔑 방법3 성공: JavaScript에서 토큰 추출 = {token}")
-                return token
-        
-        print("   ❌ 모든 방법으로 CSRF 토큰 추출 실패")
-        return ''
-    
     def _extract_csrf_token_from_page(self, soup):
-        """전체 페이지에서 CSRF 토큰 찾기"""
-        # 모든 CSRF_TOKEN input 태그 찾기
-        csrf_inputs = soup.find_all('input', {'name': 'CSRF_TOKEN'})
-        
-        print(f"   🔍 페이지에서 발견된 CSRF_TOKEN input 개수: {len(csrf_inputs)}")
-        
-        for i, csrf_input in enumerate(csrf_inputs):
-            token = csrf_input.get('value', '').strip()
-            form_name = 'Unknown'
-            parent_form = csrf_input.find_parent('form')
-            if parent_form:
-                form_name = parent_form.get('name', 'Unnamed')
+            """전체 페이지에서 CSRF 토큰 찾기 (JS 코드 내에서)"""
+            page_text = str(soup)
             
-            print(f"   🔍 토큰 {i+1}: '{token}' (폼: {form_name})")
+            # 1. 가장 정확한 패턴: name: 'CSRF_TOKEN', value:'...' 구조
+            #    re.DOTALL 플래그는 줄바꿈(...)이 있어도 찾을 수 있게 합니다.
+            pattern = r"name\s*:\s*['\"]CSRF_TOKEN['\"].*?value\s*:\s*['\"]([^'\"]+)['\"]"
             
-            if token:  # 첫 번째 유효한 토큰 반환
-                return token
-        
-        # JavaScript에서 동적 설정 확인
-        page_text = str(soup)
-        import re
-        
-        # 패턴 1: CSRF_TOKEN: 'value' 또는 CSRF_TOKEN': 'value'
-        js_patterns = [
-            r"CSRF_TOKEN['"]?\s*:\s*['"]([^'"]{30,})['"]",
-            r"CSRF_TOKEN['"]?\s*,\s*value\s*:\s*['"]([^'"]{30,})['"]",
-            r"name:\s*['"]CSRF_TOKEN['"].*?value:\s*['"]([^'"]{30,})['"]"
-        ]
-        
-        for pattern in js_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
+            match = re.search(pattern, page_text, re.DOTALL)
+            
             if match:
                 token = match.group(1)
-                print(f"   🔍 JavaScript 패턴에서 토큰 발견: {token}")
+                print(f"   🔍 JS 패턴 1 성공: {token}")
                 return token
-        
-        return ''
+
+            # 2. (혹시 모를 예비 패턴) 'CSRF_TOKEN', value:'...' 구조
+            pattern_fallback = r"['\"]CSRF_TOKEN['\"].*?value\s*:\s*['\"]([^'\"]+)['\"]"
+            match_fallback = re.search(pattern_fallback, page_text, re.DOTALL)
+
+            if match_fallback:
+                token = match_fallback.group(1)
+                print(f"   🔍 JS 패턴 2 성공: {token}")
+                return token
+
+            print("   ❌ 모든 JS 패턴으로 CSRF 토큰 추출 실패")
+            # <input> 태그 검색은 의미 없으므로 제거
+            return ''
     
     def _build_form_data(self, form, start_date, end_date, csrf_token):
         """검색 폼 데이터 구성"""
@@ -501,8 +454,6 @@ class PortScheduleCrawler:
             '선사별_현황': shipping_count
         }
 
-import pandas as pd
-
 def get_work_plan_data(start_date, end_date):
     """
     지정된 기간의 선석 계획 데이터를 크롤링하여 DataFrame으로 반환합니다.
@@ -527,3 +478,33 @@ def get_work_plan_data(start_date, end_date):
     else:
         print("❌ 크롤링에 실패했거나 데이터가 없습니다.")
         return None
+    
+    
+if __name__ == "__main__":
+    # 오늘 날짜
+    today = datetime.now().strftime('%Y-%m-%d')
+    # 7일 뒤 날짜
+    end_day = (datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')
+    
+    # 1. DataFrame으로 받기
+    print("--- DataFrame으로 크롤링 테스트 ---")
+    df = get_work_plan_data(start_date=today, end_date=end_day)
+    
+    if df is not None:
+        print(df.head()) # 상위 5개 데이터 출력
+    
+    print("\n" + "="*50 + "\n")
+    
+    # 2. JSON으로 받아서 파일로 저장하기
+    print("--- JSON으로 크롤링 테스트 ---")
+    crawler_json = PortScheduleCrawler()
+    json_data = crawler_json.get_schedule_data(start_date=today, end_date=end_day, output_format='json')
+    
+    if json_data:
+        # 요약 정보 출력
+        summary = crawler_json.get_summary(json_data)
+        print("\n--- 요약 정보 ---")
+        print(json.dumps(summary, indent=2, ensure_ascii=False))
+        
+        # 파일로 저장
+        crawler_json.save_to_file(json_data, "hpnt_schedule")
