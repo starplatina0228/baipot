@@ -26,12 +26,9 @@ def run_milp_model(processed_df):
     start_time_ref = processed_df['접안예정일시'].min()
     a_i = ((processed_df['접안예정일시'] - start_time_ref).dt.total_seconds() / 3600).tolist()
 
-    # 선박길이 (데이터에 없으므로, 임의의 값을 생성)
-    # TODO: 실제 선박 길이 데이터를 데이터프레임에 포함시켜야 합니다.
+    # 선박길이 (LOA)
+    l_i = processed_df['LOA'].tolist()
     N = len(processed_df)
-    l_i = [random.randint(150, 370) for _ in range(N)]
-    print(f"경고: '선박길이' 데이터가 없어 임의의 값을 생성하여 사용합니다. (150m ~ 370m)")
-
 
     L = 1150  # 부두길이 (m) - 고정값
     print(f"총 {N}척의 선박, 부두 길이 {L}m에 대한 최적화를 시작합니다.")

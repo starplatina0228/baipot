@@ -474,7 +474,12 @@ def get_work_plan_data(start_date, end_date):
         # 리스트를 DataFrame으로 변환
         df = pd.DataFrame(result_data)
         print(f"✅ 크롤링 데이터 {len(df)}건을 DataFrame으로 변환했습니다.")
-        return df
+
+        # "ARRIVED"와 "PLANNED" 상태의 데이터만 필터링
+        df_filtered = df[df['상태'].isin(['ARRIVED', 'PLANNED'])].copy()
+        print(f"✅ 'ARRIVED', 'PLANNED' 상태의 데이터 {len(df_filtered)}건을 필터링했습니다.")
+        
+        return df_filtered
     else:
         print("❌ 크롤링에 실패했거나 데이터가 없습니다.")
         return None
