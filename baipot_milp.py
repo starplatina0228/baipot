@@ -12,6 +12,31 @@ def run_milp_model(processed_df):
     """
     Gurobi MILP 모델을 실행하여 최적의 선석 배정 계획을 도출합니다.
 
+    데이터 흐름:
+    1. `processed_df`에서 MILP 모델에 필요한 입력 데이터를 추출합니다.
+       - 작업 소요 시간 (s_i): `predicted_work_time` 컬럼 (분으로 변환)
+       - 선박 도착 시간 (a_i): `접안예정일시` 컬럼 (가장 이른 시간을 기준으로 시간 단위로 변환)
+       - 선박 길이 (l_i): `LOA` 컬럼
+    2. Gurobi 모델을 생성하고, 결정 변수(t, p, w, x, y)를 정의합니다.
+       - t: 작업 시작 시간, p: 선석 위치, w: 대기 시간 등
+    3. 목적 함수(총 대기 시간 최소화)와 제약 조건을 설정합니다.
+       - 제약 조건: 도착 시간, 선석 길이, 선박 간 겹침 방지 등
+    4. Gurobi 옵티마이저를 실행하여 최적해를 찾습니다.
+    5. 최적해가 발견되면, 결과를 pandas DataFrame으로 정리합니다.
+       - DataFrame에는 각 선박의 최적 시작 시간, 종료 시간, 대기 시간, 선석 위치 등의 정보가 포함됩니다.
+    6. 최종적으로 최적화된 스케줄을 Gantt 차트로 시각화하여 `berth_gantt_chart.png` 파일로 저장합니다.
+
+    Args:
+        processed_df (pd.DataFrame): `lgbm.predict_work_time()`을 거친 데이터프레임.
+                                     'predicted_work_time', '접안예정일시', 'LOA', '선명' 컬럼을 포함해야 합니다.
+
+    Returns:
+        pd.DataFrame: 최적화된 선석 배정 결과. 각 선박의 ID, 시작/종료 시간, 위치 등 상세 정보 포함.
+                      최적해를 찾지 못하면 None을 반환합니다.
+    """
+    """
+    Gurobi MILP 모델을 실행하여 최적의 선석 배정 계획을 도출합니다.
+
     Args:
         processed_df (pd.DataFrame): 전처리된 데이터프레임.
                                      'predicted_work_time', '접안예정일시' 컬럼을 포함해야 합니다.

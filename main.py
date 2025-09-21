@@ -1,149 +1,67 @@
 import pandas as pd
-import pickle
 from crawl_hpnt import get_work_plan_data
+from lgbm import predict_work_time
 from baipot_milp import run_milp_model
-import lightgbm as lgb
 from datetime import datetime, timedelta
-import numpy as np
-
-def preprocess_data(df):
-    """
-    크롤링된 데이터를 LGBM 모델 예측 및 MILP 입력을 위해 전처리합니다.
-    - 총톤수 및 LOA 데이터 병합
-    - 피처 엔지니어링 (양적하물량, 시간 관련 피처)
-    - 데이터 타입 변환 (숫자, 범주, 날짜)
-    """
-    # --- 1. 총톤수 및 LOA 데이터 읽기 및 병합 ---
-    try:
-        # '선명'을 기준으로 총톤수와 LOA 데이터를 가져옴
-        ship_info_df = pd.read_csv('hpnt_tonnage_loa.csv')
-        # 중복된 '선명'이 있을 경우, 최신 정보(마지막 값)만 사용
-        ship_info_df = ship_info_df.drop_duplicates(subset='선명', keep='last')
-
-        df = pd.merge(df, ship_info_df[['선명', '총톤수', 'LOA']], on='선명', how='left')
-
-        # 결측치 처리
-        df['총톤수'].fillna(df['총톤수'].mean(), inplace=True)
-        df['LOA'].fillna(df['LOA'].mean(), inplace=True)
-        print("✅ hpnt_tonnage_loa.csv에서 총톤수 및 LOA 정보를 병합했습니다.")
-
-    except FileNotFoundError:
-        print("hpnt_tonnage_loa.csv 파일을 찾을 수 없습니다.")
-
-    # --- 2. 컬럼명 및 데이터 클리닝 ---
-    df = df.rename(columns={'Shift': 'shift'})
-
-    # --- 3. 데이터 타입 변환 (날짜 우선) ---
-    for col in ['반입마감시한', '접안예정일시', '출항예정일시']:
-        df[col] = pd.to_datetime(df[col], errors='coerce')
-
-    # --- 4. 피처 엔지니어링 ---
-    # 양하, 적하 -> 양적하물량
-    df['양하'] = pd.to_numeric(df['양하'], errors='coerce').fillna(0)
-    df['적하'] = pd.to_numeric(df['적하'], errors='coerce').fillna(0)
-    df['양적하물량'] = df['양하'] + df['적하']
-
-    # 시간 관련 피처 (접안예정일시 기준)
-    dt_series = df['접안예정일시']
-    df['입항시간'] = dt_series.dt.hour
-    df['입항요일'] = dt_series.dt.dayofweek # 0:월요일, 6:일요일
-    df['입항분기'] = dt_series.dt.quarter
-    df['입항계절'] = dt_series.dt.month.map({1:'겨울', 2:'겨울', 3:'봄', 4:'봄', 5:'봄', 6:'여름',
-                                           7:'여름', 8:'여름', 9:'가을', 10:'가을', 11:'가을', 12:'겨울'})
-    df['입항계절'].fillna('Unknown', inplace=True)
-
-    # --- 5. 데이터 타입 변환 (나머지) ---
-    numeric_cols = ['shift', 'AMP', '양적하물량', '총톤수', 'LOA', '입항시간']
-    for col in numeric_cols:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
-
-    categorical_cols = ['선석', '선사', '모선항차', '선사항차', '선명', '항로', '상태',
-                        '입항요일', '입항분기', '입항계절']
-    for col in categorical_cols:
-        if col in df.columns:
-            df[col] = df[col].astype(str).astype('category')
-
-    return df
 
 def main():
     """
-    데이터 크롤링, 작업소요시간 예측, MILP 최적화를 수행하는 메인 함수
+    데이터 크롤링, 작업소요시간 예측, MILP 최적화를 수행하는 메인 파이프라인입니다.
+
+    전체 데이터 흐름:
+    1. [Crawling] `crawl_hpnt.get_work_plan_data()`
+       - HPNT 웹사이트에서 선박 스케줄 데이터를 크롤링하여 pandas DataFrame 형태로 가져옵니다. (`work_plan_df`)
+
+    2. [Prediction] `lgbm.predict_work_time(work_plan_df)`
+       - 크롤링된 `work_plan_df`를 받아 전처리 후, 작업소요시간을 예측합니다.
+       - `lgbm_model.pkl` 모델을 사용하며, 예측 결과가 포함된 DataFrame을 반환합니다. (`predicted_df`)
+
+    3. [Optimization] `baipot_milp.run_milp_model(predicted_df)`
+       - 작업 시간이 예측된 `predicted_df`를 Gurobi MILP 모델에 전달합니다.
+       - 최적의 선석 배정 스케줄을 계산하고, Gantt 차트(`berth_gantt_chart.png`)를 생성합니다.
+
+    4. [Output] 최종 결과 출력
+       - 최적화된 스케줄(`solution_df`)을 바탕으로 최종 출항 예정 시간(ETD)을 계산하여 출력합니다.
     """
     print("1. HPNT에서 작업 계획 데이터 크롤링을 시작합니다...")
-    start_date = datetime.now().strftime('%Y-%m-%d')
-    end_date = (datetime.now() + timedelta(days=5)).strftime('%Y-%m-%d')
+    # start_date = datetime.now().strftime('%Y-%m-%d')
+    # end_date = (datetime.now() + timedelta(days=3)).strftime('%Y-%m-%d')
+    start_date = '2025-09-18'
+    end_date = '2025-09-24'
 
-    work_plan_df = get_work_plan_data(start_date, end_date)
-
-    if work_plan_df is None:
-        print("크롤링 실패. 프로그램을 종료합니다.")
+    try:
+        work_plan_df = get_work_plan_data(start_date, end_date)
+        if work_plan_df is None:
+            print("크롤링된 데이터가 없습니다. 프로그램을 종료합니다.")
+            return
+        print(f"✅ {len(work_plan_df)}개의 선박 데이터를 크롤링했습니다.")
+    except Exception as e:
+        print(f"❌ 크롤링 중 오류 발생: {e}")
         return
 
-    print("\n2. LGBM 모델 예측을 위한 데이터 전처리를 시작합니다...")
-    processed_df = preprocess_data(work_plan_df.copy())
+    # 2. lgbm.py의 함수를 사용하여 작업소요시간 예측
+    predicted_df = predict_work_time(work_plan_df.copy())
 
-    print("\n3. LGBM 모델로 작업소요시간 예측을 시작합니다...")
-    try:
-        with open('lgbm_best_model v0.6.pkl', 'rb') as f:
-            lgbm_model = pickle.load(f)
-        print("✅ lgbm_best_model v0.6.pkl 모델 로드 완료.")
+    if 'predicted_work_time' not in predicted_df.columns:
+        print("❌ 예측된 작업소요시간 컬럼이 없습니다. 프로그램을 종료합니다.")
+        return
 
-        features = ['입항시간', '입항요일', '입항분기', '입항계절', '선사', '총톤수', '양적하물량', 'shift']
-        print(f"사용할 피처: {features}")
-
-        # 예측에 필요한 피처가 모두 있는지 확인
-        missing_features = [f for f in features if f not in processed_df.columns]
-        if missing_features:
-            raise ValueError(f"예측에 필요한 피처가 데이터프레임에 없습니다: {missing_features}")
-
-        # --- 범주형 피처 정렬 ---
-        print("모델과 예측 데이터의 범주형 피처를 정렬합니다...")
-        model_feature_names = lgbm_model.booster_.feature_name()
-        model_cat_features_info = lgbm_model.booster_.pandas_categorical
-
-        # 모델의 (피처 이름 -> 카테고리 리스트) 맵 생성
-        model_categories_map = {
-            name: cats for name, cats in zip(model_feature_names, model_cat_features_info) if cats is not None
-        }
-
-        for col, model_cats in model_categories_map.items():
-            if col in processed_df.columns:
-                print(f"  - '{col}' 피처 정렬 중...")
-                # 현재 데이터의 카테고리 타입을 모델이 학습한 카테고리 타입으로 강제 설정
-                processed_df[col] = processed_df[col].astype('category').cat.set_categories(model_cats)
-                # 모델에 없던 새로운 카테고리는 이 과정에서 NaN으로 변환됨
-
-        X_predict = processed_df[features]
-        predicted_time = lgbm_model.predict(X_predict)
-        processed_df['predicted_work_time'] = predicted_time
-        print("✅ 작업소요시간 예측 완료.")
-
-    except FileNotFoundError:
-        print("⚠️ 경고: 'lgbm_best_model v0.6.pkl' 파일을 찾을 수 없습니다.")
-        print("임시로 작업소요시간을 8~48시간 사이의 임의의 값으로 생성합니다.")
-        processed_df['predicted_work_time'] = np.random.uniform(8, 48, size=len(processed_df))
-    except Exception as e:
-        print(f"❌ 예측 중 오류 발생: {e}")
-        print("임시로 작업소요시간을 8~48시간 사이의 임의의 값으로 생성합니다.")
-        processed_df['predicted_work_time'] = np.random.uniform(8, 48, size=len(processed_df))
-
-    print(processed_df[['선명', '접안예정일시', 'predicted_work_time', 'LOA']].head())
+    print(predicted_df[['선명', '접안예정일시', 'predicted_work_time', 'LOA']].head())
 
     print("\n4. Gurobi MILP 모델을 이용한 최적화를 시작합니다...")
     try:
         required_cols_for_milp = ['predicted_work_time', '접안예정일시', '선명', 'LOA']
-        if not all(col in processed_df.columns for col in required_cols_for_milp):
+        if not all(col in predicted_df.columns for col in required_cols_for_milp):
             print(f"❌ MILP 모델 실행에 필요한 컬럼이 부족합니다. ({required_cols_for_milp}) 프로그램 종료.")
             return
 
-        solution_df = run_milp_model(processed_df)
+        solution_df = run_milp_model(predicted_df)
 
         print("✅ 최적화 완료.")
 
         if solution_df is not None:
             print("\n--- 최종 ETD 예측 결과 ---")
-            start_time_ref = processed_df['접안예정일시'].min()
+            start_time_ref = predicted_df['접안예정일시'].min()
             
             # 'Completion_h'를 시간(h)에서 timedelta로 변환
             solution_df['etd_timedelta'] = pd.to_timedelta(solution_df['Completion_h'], unit='h')
