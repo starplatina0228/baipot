@@ -1,3 +1,4 @@
+import time
 import pandas as pd
 from crawl_hpnt import get_work_plan_data
 from lgbm import predict_work_time
@@ -24,10 +25,10 @@ def main():
        - 최적화된 스케줄(`solution_df`)을 바탕으로 최종 출항 예정 시간(ETD)을 계산하여 출력합니다.
     """
     print("1. HPNT에서 작업 계획 데이터 크롤링을 시작합니다...")
-    # start_date = datetime.now().strftime('%Y-%m-%d')
-    # end_date = (datetime.now() + timedelta(days=3)).strftime('%Y-%m-%d')
-    start_date = '2025-09-18'
-    end_date = '2025-09-24'
+    start_date = datetime.now().strftime('%Y-%m-%d')
+    end_date = (datetime.now() + timedelta(days=5)).strftime('%Y-%m-%d')
+    # start_date = '2025-09-21'
+    # end_date = '2025-09-22'
 
     try:
         work_plan_df = get_work_plan_data(start_date, end_date)
@@ -54,10 +55,12 @@ def main():
         if not all(col in predicted_df.columns for col in required_cols_for_milp):
             print(f"❌ MILP 모델 실행에 필요한 컬럼이 부족합니다. ({required_cols_for_milp}) 프로그램 종료.")
             return
-
+        
+        start_time = time.time()
         solution_df = run_milp_model(predicted_df)
+        end_time = time.time()
 
-        print("✅ 최적화 완료.")
+        print(f"✅ 최적화 완료. 소요시간: {end_time - start_time:.2f}초")
 
         if solution_df is not None:
             print("\n--- 최종 ETD 예측 결과 ---")

@@ -47,9 +47,12 @@ def run_milp_model(processed_df):
     # 작업소요시간 (predicted_work_time은 시간 단위로 가정, 분으로 변환)
     s_i = (processed_df['predicted_work_time'] * 60).tolist()
 
-    # 입항시간 (가장 이른 시간을 기준으로 시간(hour) 단위로 변환)
+    # 입항시간 (가장 이른 시간을 기준으로 분 단위로 변환)
     start_time_ref = processed_df['접안예정일시'].min()
-    a_i = ((processed_df['접안예정일시'] - start_time_ref).dt.total_seconds() / 3600).tolist()
+    a_i_minutes = ((processed_df['접안예정일시'] - start_time_ref).dt.total_seconds() / 60).tolist()
+    
+    # 결과 저장용 시간 단위 입항 시간
+    a_i = [m / 60 for m in a_i_minutes]
 
     # 선박길이 (LOA)
     l_i = processed_df['LOA'].tolist()
@@ -58,8 +61,8 @@ def run_milp_model(processed_df):
     L = 1150  # 부두길이 (m) - 고정값
     print(f"총 {N}척의 선박, 부두 길이 {L}m에 대한 최적화를 시작합니다.")
 
-    # 입항시간을 분 단위로 변환
-    a_i_minutes = [a * 60 for a in a_i]
+    # 선석 간격 시간 (분)
+    buffer_minutes = 60
 
     # --- 2. Gurobi 모델 생성 ---
     model = gp.Model("BAIPOT")
@@ -87,8 +90,8 @@ def run_milp_model(processed_df):
             if i != j:
                 model.addConstr(p[i] + l_i[i] <= p[j] + M_space * (1 - x[i,j]), name=f"spatial_left_{i}_{j}")
                 model.addConstr(p[j] + l_i[j] <= p[i] + M_space * (1 - x[j,i]), name=f"spatial_right_{i}_{j}")
-                model.addConstr(t[i] + s_i[i] <= t[j] + M_time * (1 - y[i,j]), name=f"temporal_before_{i}_{j}")
-                model.addConstr(t[j] + s_i[j] <= t[i] + M_time * (1 - y[j,i]), name=f"temporal_after_{i}_{j}")
+                model.addConstr(t[i] + s_i[i] + buffer_minutes <= t[j] + M_time * (1 - y[i,j]), name=f"temporal_before_{i}_{j}")
+                model.addConstr(t[j] + s_i[j] + buffer_minutes <= t[i] + M_time * (1 - y[j,i]), name=f"temporal_after_{i}_{j}")
 
     model.addConstrs((x[i,j] + x[j,i] + y[i,j] + y[j,i] >= 1 for i in range(N) for j in range(i + 1, N)), name="separation_required")
 
@@ -135,11 +138,20 @@ def run_milp_model(processed_df):
         colors = plt.cm.get_cmap('tab20', N)
 
         for i, sol in df_solution.iterrows():
+            buffer_h = buffer_minutes / 60
+            # Service time rectangle
             rect = Rectangle((sol['Start_h'], sol['Position_m']),
                              sol['Service_h'], sol['Length_m'],
                              facecolor=colors(i),
                              alpha=0.8, edgecolor='black', linewidth=1)
             ax.add_patch(rect)
+            
+            # Buffer time rectangle (visual only)
+            rect_buffer = Rectangle((sol['Start_h'] + sol['Service_h'], sol['Position_m']),
+                                    buffer_h, sol['Length_m'],
+                                    facecolor=colors(i), alpha=0.4, edgecolor='black', hatch='//', linewidth=0.5)
+            ax.add_patch(rect_buffer)
+
             ax.text(sol['Start_h'] + sol['Service_h'] / 2,
                     sol['Position_m'] + sol['Length_m'] / 2,
                     f"{sol['Ship']}", ha='center', va='center',

@@ -1,6 +1,20 @@
 import pandas as pd
 import pickle
 import numpy as np
+import logging
+
+# lgbm.py 전용 로거 생성
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+# 핸들러 생성 및 포맷 설정
+fh = logging.FileHandler('missing_info.log')
+formatter = logging.Formatter('%(asctime)s - %(message)s')
+fh.setFormatter(formatter)
+
+# 로거에 핸들러 추가
+if not logger.handlers:
+    logger.addHandler(fh)
 
 def preprocess_for_prediction(df):
     """
@@ -16,9 +30,9 @@ def preprocess_for_prediction(df):
     # 총톤수 또는 LOA 정보가 없는 경우, 해당 선박 정보 출력 및 평균값으로 대체
     missing_info_rows = df[df['총톤수'].isnull() | df['LOA'].isnull()]
     if not missing_info_rows.empty:
-        print("\n[lgbm.py] 일부 선박의 '총톤수' 또는 'LOA' 정보가 없어 평균값으로 대체합니다:")
+        logger.info("[lgbm.py] 일부 선박의 '총톤수' 또는 'LOA' 정보가 없어 평균값으로 대체합니다:")
         for index, row in missing_info_rows.iterrows():
-            print(f"- 선사: {row['선사']}, 선명: {row['선명']}")
+            logger.info(f"- 선사: {row['선사']}, 선명: {row['선명']}")
         
         # 평균값으로 결측치 대체
         df['총톤수'].fillna(df['총톤수'].mean(), inplace=True)
