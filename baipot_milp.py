@@ -41,7 +41,6 @@ def run_milp_model(processed_df):
         processed_df (pd.DataFrame): 전처리된 데이터프레임.
                                      'predicted_work_time', '접안예정일시' 컬럼을 포함해야 합니다.
     """
-    print("MILP 모델 입력을 준비합니다...")
 
     # --- 1. 입력 데이터 추출 및 변환 ---
     # 작업소요시간 (predicted_work_time은 시간 단위로 가정, 분으로 변환)
@@ -58,8 +57,8 @@ def run_milp_model(processed_df):
     l_i = processed_df['LOA'].tolist()
     N = len(processed_df)
 
-    L = 1150  # 부두길이 (m) - 고정값
-    print(f"총 {N}척의 선박, 부두 길이 {L}m에 대한 최적화를 시작합니다.")
+    L = 1150  # 부두길이 (m)
+    print(f"{N},{L}m")
 
     # 선석 간격 시간 (분)
     buffer_minutes = 60
@@ -96,12 +95,10 @@ def run_milp_model(processed_df):
     model.addConstrs((x[i,j] + x[j,i] + y[i,j] + y[j,i] >= 1 for i in range(N) for j in range(i + 1, N)), name="separation_required")
 
     # --- 6. 모델 최적화 ---
-    print("Gurobi 최적화를 시작합니다...")
     model.optimize()
 
     # --- 7. 결과 처리 및 시각화 ---
     if model.status == GRB.OPTIMAL:
-        print("✅ 최적해를 찾았습니다!")
         solution = []
         for i in range(N):
             start_minutes = t[i].x
@@ -129,11 +126,9 @@ def run_milp_model(processed_df):
         df_solution = pd.DataFrame(solution)
         df_solution = df_solution.sort_values('Ship_ID').reset_index(drop=True)
 
-        print("\n--- 최적화 결과 ---")
         print(df_solution[['Ship', 'Start_h', 'Completion_h', 'Waiting_h', 'Position_m']].round(2))
 
         # Gantt Chart 시각화
-        print("\nGantt Chart를 생성합니다...")
         fig, ax = plt.subplots(figsize=(16, 9))
         colors = plt.cm.get_cmap('tab20', N)
 
@@ -169,27 +164,21 @@ def run_milp_model(processed_df):
         plt.tight_layout()
         chart_filename = 'berth_gantt_chart.png'
         plt.savefig(chart_filename, dpi=300)
-        print(f"✅ Gantt Chart를 '{chart_filename}' 파일로 저장했습니다.")
         # plt.show() # 로컬 실행 시 활성화
         
         return df_solution
 
     elif model.status == GRB.INFEASIBLE:
-        print("❌ 모델이 비현실적입니다. 제약 조건을 확인하세요.")
         model.computeIIS()
         for c in model.getConstrs():
             if c.IISConstr:
                 print(f"  Infeasible constraint: {c.constrName}")
         return None
     else:
-        print(f"Gurobi 최적화가 다른 상태로 종료되었습니다: {model.status}")
         return None
 
 if __name__ == '__main__':
     # 테스트용 데이터프레임 생성
-    print("테스트 모드로 baipot_milp.py를 실행합니다.")
-    
-    # main.py의 전처리 로직과 유사하게 테스트 데이터 생성
     data = {
         '선명': [f'Ship-{i}' for i in range(5)],
         '접안예정일시': pd.to_datetime(['2025-07-22 10:00', '2025-07-22 12:00', '2025-07-22 14:00', '2025-07-22 16:00', '2025-07-22 18:00']),

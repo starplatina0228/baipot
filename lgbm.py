@@ -30,7 +30,7 @@ def preprocess_for_prediction(df):
     # 총톤수 또는 LOA 정보가 없는 경우, 해당 선박 정보 출력 및 평균값으로 대체
     missing_info_rows = df[df['총톤수'].isnull() | df['LOA'].isnull()]
     if not missing_info_rows.empty:
-        logger.info("[lgbm.py] 일부 선박의 '총톤수' 또는 'LOA' 정보가 없어 평균값으로 대체합니다:")
+        logger.info("일부 선박의 '총톤수' 또는 'LOA' 정보가 없어 평균값으로 대체:")
         for index, row in missing_info_rows.iterrows():
             logger.info(f"- 선사: {row['선사']}, 선명: {row['선명']}")
         
@@ -88,21 +88,18 @@ def predict_work_time(crawled_df):
         pd.DataFrame: 원본 데이터에 'predicted_work_time' 컬럼이 추가된 데이터프레임.
                       예측 실패 시, 해당 컬럼은 임의의 값으로 채워집니다.
     """
-    print("\n2. [lgbm.py] 작업소요시간 예측을 시작합니다...")
-    
     processed_df = preprocess_for_prediction(crawled_df)
 
     try:
         with open('best_lgbm_model.pkl', 'rb') as f:
             lgbm_model = pickle.load(f)
-        print("[lgbm.py] best_lgbm_model.pkl 모델 로드 완료.")
 
         # Features for the new model (without '선사')
         features = ['입항시간', '입항요일', '입항분기', '입항계절', '총톤수', '양적하물량', 'shift']
         
         if not all(f in processed_df.columns for f in features):
             missing_features = [f for f in features if f not in processed_df.columns]
-            raise ValueError(f"예측에 필요한 피처가 전처리된 데이터에 없습니다: {missing_features}")
+            raise ValueError(f"missing values :  {missing_features}")
 
         X_predict = processed_df[features]
         
@@ -111,13 +108,12 @@ def predict_work_time(crawled_df):
         
         predicted_time = lgbm_model.predict(X_predict)
         processed_df['predicted_work_time'] = predicted_time
-        print("[lgbm.py] 작업소요시간 예측 완료.")
 
     except FileNotFoundError:
-        print("[lgbm.py] 경고: 'lgbm_model.pkl' 파일을 찾을 수 없습니다. 임의의 값으로 대체합니다.")
+        print("no pkl")
         processed_df['predicted_work_time'] = np.random.uniform(8, 48, size=len(processed_df))
     except Exception as e:
-        print(f"[lgbm.py] 예측 중 오류 발생: {e}")
+        print(f"error : {e}")
         processed_df['predicted_work_time'] = np.random.uniform(8, 48, size=len(processed_df))
 
     return processed_df

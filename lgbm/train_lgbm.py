@@ -8,7 +8,6 @@ import joblib
 import os
 
 # --- 1. 데이터 준비 ---
-print("데이터를 로드하고 전처리를 시작합니다...")
 # 파일 경로 설정
 file_path = os.path.join(os.path.dirname(__file__), 'hpnt.csv')
 data = pd.read_csv(file_path)
@@ -29,7 +28,6 @@ for col in categorical_cols:
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
-print("데이터 준비가 완료되었습니다.")
 
 # --- 2. 하이퍼파라미터 튜닝 (Optuna) ---
 
@@ -77,12 +75,10 @@ def objective(trial):
     # 최적화 대상 지표로 R2 반환
     return r2
 
-print("\nOptuna를 사용한 베이지안 최적화를 시작합니다 (n_trials=50)...")
 # Optuna 스터디 생성 및 최적화 실행 (R2를 최대화하는 방향으로)
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=50, show_progress_bar=True)
 
-print("하이퍼파라미터 튜닝이 완료되었습니다.")
 
 # --- 3. 결과 저장 및 분석 ---
 print(f"\n최적 시도: Trial {study.best_trial.number}")
@@ -96,11 +92,9 @@ results_df = study.trials_dataframe()
 results_df = results_df.sort_values(by='value', ascending=False)
 results_output_path = os.path.join(os.path.dirname(__file__), 'optuna_tuning_results.csv')
 results_df.to_csv(results_output_path, index=False)
-print(f"\n튜닝 결과가 '{results_output_path}'에 저장되었습니다.")
 
 # --- 4. 최적 모델 저장 및 평가 ---
 # 최적 파라미터로 최종 모델 학습
-print("최적 파라미터로 최종 모델을 학습합니다...")
 final_params = study.best_trial.params
 final_model = lgb.LGBMRegressor(**final_params, random_state=42, objective='regression_l1', metric='rmse')
 final_model.fit(X_train, y_train, categorical_feature=categorical_cols)
@@ -108,7 +102,6 @@ final_model.fit(X_train, y_train, categorical_feature=categorical_cols)
 # 최적 모델 저장
 model_output_path = os.path.join(os.path.dirname(__file__), 'best_lgbm_model.pkl')
 joblib.dump(final_model, model_output_path)
-print(f"최적 모델이 '{model_output_path}'에 저장되었습니다.")
 
 # 테스트 데이터로 최종 모델 평가
 y_pred = final_model.predict(X_test)
