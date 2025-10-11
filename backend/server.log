@@ -8,3 +8,676 @@ INFO:     127.0.0.1:41010 - "GET /docs HTTP/1.1" 200 OK
 INFO:     127.0.0.1:41010 - "GET /openapi.json HTTP/1.1" 200 OK
 INFO:     127.0.0.1:41016 - "GET /docs HTTP/1.1" 200 OK
 INFO:     127.0.0.1:41016 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'backend/prediction.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26536]
+INFO:     Started server process [370040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'frontend/node_modules/flatted/python/flatted.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [370040]
+INFO:     Started server process [981061]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57068 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:57074 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51676 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+WARNING:  WatchFiles detected changes in 'backend/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [981061]
+INFO:     Started server process [986575]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [986575]
+INFO:     Started server process [987981]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49462 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:49462 - "OPTIONS /schedule/optimize HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:49462 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:49462 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39076 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39084 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39084 - "OPTIONS /schedule/prepare HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39084 - "OPTIONS /schedule/optimize HTTP/1.1" 405 Method Not Allowed
+WARNING:  WatchFiles detected changes in 'backend/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [987981]
+INFO:     Started server process [989613]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58300 - "OPTIONS /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '980c7584-8a9e-4aa4-ae8c-80c2395a48ac'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:58300 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'a5bcd067-340a-4ff0-b939-f9e6f0d3b31e'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:44210 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '43f2e6c8-b3ce-420e-9bd9-2e45751930a0'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:56730 - "POST /schedule/prepare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47498 - "OPTIONS /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'e9201ed3-71fa-452e-927d-844cd06f1ad9'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:47498 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'f096ecc7-bce6-49da-bef5-944424510726'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:46664 - "POST /schedule/prepare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39048 - "OPTIONS /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'dab1e7c6-32ca-4c7f-85df-6ab85def60ae'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:39048 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'b43a80ba-1f58-4d4f-a73d-8bea5790c913'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:36764 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '6eec817d-ae70-4f0d-8198-bc6c71d4365b'}
+post: 200
+total 24 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:36774 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '0c54a3e3-b222-4915-81c8-3db5c062152e'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:46494 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '73cddd51-9d0a-4efd-9b59-d85c4a85b992'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:41558 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'e183ece3-79cb-4255-96f6-d7cd95c5747f'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:41568 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '1b5cc823-165b-44cc-a39d-3b29a7e7ecdb'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:35374 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'd9b6ce51-cdb2-40eb-99f7-d25d8f6e3ddf'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:35382 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '87c1dfc3-06b5-42fb-993c-daab517c88df'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:35382 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '30ff2ff2-54d0-4488-88b3-6d2c58f89911'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:47856 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '1331e17e-f428-4daf-b0e6-4a527bfef95f'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:47864 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'f2772288-b80e-4fb4-ae5a-e0ff246c4912'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:60912 - "POST /schedule/prepare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59024 - "OPTIONS /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '34e24330-970b-424a-885d-82e213bcbd99'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:59024 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'f07e5374-d430-43cd-9148-b1ffee6cca54'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:59034 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '3aee60b3-578a-41b9-885d-38ae5c7457de'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:40150 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '05f672b6-342d-44e4-b063-bd689a4a1e69'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:40162 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '24b93d02-d6f3-4ef6-8721-8be9ecdab973'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:48186 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '3c476276-e4f0-49b5-b588-f00710ce13cc'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:41698 - "POST /schedule/prepare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57482 - "OPTIONS /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'f2a1acf7-cd1e-446e-b3b8-15f2890ad92f'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2441117
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 36 rows, 27 columns and 96 nonzeros
+Model fingerprint: 0x6debc098
+Variable types: 9 continuous, 18 integer (18 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 6e+03]
+Found heuristic solution: objective 92.9815092
+Presolve removed 22 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 14 rows, 13 columns, 38 nonzeros
+Variable types: 6 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 2: 0 92.9815 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:57482 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'cda1c0d9-4816-45de-bee4-0321f7b8a8e5'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:57484 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-13
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-13', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '92230094-8fd1-41b6-86e9-b34f31a55dc7'}
+post: 200
+total 5 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:57484 - "POST /schedule/prepare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57484 - "OPTIONS /schedule/optimize HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-13
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-13', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'e3040c59-5093-4a48-84f5-6bedbe263ab6'}
+post: 200
+total 5 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 105 rows, 65 columns and 300 nonzeros
+Model fingerprint: 0x593e102a
+Variable types: 15 continuous, 50 integer (50 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+04]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:57484 - "POST /schedule/optimize HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '5b329d5f-7ec7-448b-9d05-e7ca4319762c'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:39290 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '4ee002eb-89f0-43fc-9362-191ef93388ab'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:39306 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '72694456-bd63-4f61-bb44-c4f135e37cf4'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 153 rows, 90 columns and 444 nonzeros
+Model fingerprint: 0x34e92159
+Variable types: 18 continuous, 72 integer (72 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+04]
+Found heuristic solution: objective 120.4152847
+Presolve removed 84 rows and 45 columns
+Presolve time: 0.00s
+Presolved: 69 rows, 45 columns, 186 nonzeros
+Variable types: 12 continuous, 33 integer (33 binary)
+
+Root relaxation: objective 0.000000e+00, 8 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    8  120.41528    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    8    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (8 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 2: 0 120.415 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:55674 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46738 - "OPTIONS /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '5050253e-f811-45ca-8717-2664cfb381fa'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:46738 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'ec3be0fb-dbfe-4c60-8694-2876a18b3b41'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+INFO:     127.0.0.1:46738 - "POST /schedule/prepare HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '0e852de2-75ca-4cf2-9e36-c2534db0480f'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 153 rows, 90 columns and 444 nonzeros
+Model fingerprint: 0xaeb93e1a
+Variable types: 18 continuous, 72 integer (72 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 2e+04]
+Found heuristic solution: objective 80.7664249
+Presolve removed 86 rows and 49 columns
+Presolve time: 0.00s
+Presolved: 67 rows, 41 columns, 178 nonzeros
+Variable types: 12 continuous, 29 integer (29 binary)
+
+Root relaxation: objective 0.000000e+00, 10 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   10    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (10 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 2: 0 80.7664 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:37730 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'd8bba387-f9ff-43c1-a554-09bc403f5cff'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 153 rows, 90 columns and 444 nonzeros
+Model fingerprint: 0xacd1a79a
+Variable types: 18 continuous, 72 integer (72 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 2e+04]
+Presolve removed 78 rows and 18 columns
+Presolve time: 0.00s
+Presolved: 75 rows, 72 columns, 240 nonzeros
+Variable types: 12 continuous, 60 integer (60 binary)
+Found heuristic solution: objective 48307.598225
+Found heuristic solution: objective 47251.693820
+
+Root relaxation: objective 0.000000e+00, 30 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   18    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (30 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 3: 0 47251.7 48307.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:37730 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '8c0929b3-3cbf-4ef4-a0fe-7950fe65dbb4'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 153 rows, 90 columns and 444 nonzeros
+Model fingerprint: 0xe467eb96
+Variable types: 18 continuous, 72 integer (72 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+04]
+Found heuristic solution: objective 1310.2944811
+Presolve removed 79 rows and 34 columns
+Presolve time: 0.00s
+Presolved: 74 rows, 56 columns, 208 nonzeros
+Variable types: 12 continuous, 44 integer (44 binary)
+
+Root relaxation: objective 0.000000e+00, 17 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   17    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (17 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 2: 0 1310.29 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:37730 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': '1df01e89-8411-4f6c-a275-a1ecfe260ea3'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 153 rows, 90 columns and 444 nonzeros
+Model fingerprint: 0x950e01c6
+Variable types: 18 continuous, 72 integer (72 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+04]
+Presolve removed 78 rows and 18 columns
+Presolve time: 0.00s
+Presolved: 75 rows, 72 columns, 240 nonzeros
+Variable types: 12 continuous, 60 integer (60 binary)
+Found heuristic solution: objective 39159.729688
+Found heuristic solution: objective 37112.709302
+
+Root relaxation: objective 0.000000e+00, 30 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   21    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (30 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 20 (of 20 available processors)
+
+Solution count 3: 0 37112.7 39159.7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+INFO:     127.0.0.1:37730 - "POST /schedule/optimize-selected HTTP/1.1" 200 OK
+2025-10-11 ~ 2025-10-18
+session: 200
+Submitting Form Data: {'strdStDate': '2025-10-11', 'strdEdDate': '2025-10-18', 'route': '', 'isSearch': 'Y', 'page': '1', 'URI': '', 'userID': '', 'groupID': 'U999', 'tmnCod': 'H', 'CSRF_TOKEN': 'e846c53e-af4f-4857-b533-c5b817f0b1f4'}
+post: 200
+total 23 vessel data extracted
+Model file not found at backend/best_lgbm_model.pkl
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+
+CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+
+Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+Optimize a model with 2346 rows, 1127 columns and 7176 nonzeros
+Model fingerprint: 0x897e007f
+Variable types: 69 continuous, 1058 integer (1058 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 5e+04]
+Presolve removed 1081 rows and 69 columns
+Presolve time: 0.00s
+Presolved: 1265 rows, 1058 columns, 4048 nonzeros
+Variable types: 46 continuous, 1012 integer (1012 binary)
+Found heuristic solution: objective 510885.90613
+
+Root relaxation: objective 0.000000e+00, 458 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   14 510885.906    0.00000   100%     -    0s
+H    0     0                    14040.655994    0.00000   100%     -    0s
+H    0     0                    13100.333686    0.00000   100%     -    0s
+H    0     0                    13086.733595    0.00000   100%     -    0s
+H    0     0                    12362.802885    0.00000   100%     -    0s
+H    0     0                    12349.202795    0.00000   100%     -    0s
+H    0     0                    12208.109644    0.00000   100%     -    0s
+H    0     0                    10826.082828    0.00000   100%     -    0s
+     0     0    0.00000    0   28 10826.0828    0.00000   100%     -    0s
+     0     0    0.00000    0   22 10826.0828    0.00000   100%     -    0s
+     0     0    0.00000    0   18 10826.0828    0.00000   100%     -    0s
+     0     0    0.00000    0   18 10826.0828    0.00000   100%     -    0s
+     0     0    0.00000    0   26 10826.0828    0.00000   100%     -    0s
+     0     0    0.00000    0   26 10826.0828    0.00000   100%     -    0s
+H    0     0                    10688.446508    0.00000   100%     -    0s
+H    0     0                    10599.917369    0.00000   100%     -    0s
+     0     0    0.00000    0   18 10599.9174    0.00000   100%     -    0s
+     0     0    0.00000    0   18 10599.9174    0.00000   100%     -    0s
+     0     2    0.00000    0   18 10599.9174    0.00000   100%     -    0s
+H   38    52                    10153.914719    0.00000   100%  14.6    0s
+H   49    48                    9540.8441209    0.00000   100%  14.1    0s
+H  157   182                    8673.9185747    0.00000   100%  12.4    0s
+H  168   182                    8574.4600493    0.00000   100%  12.1    0s
+H 1344  1117                    8292.2737481    0.00000   100%  15.8    0s
+H 1356  1117                    8188.5952246    0.00000   100%  15.8    0s
+H 1793  1294                    8047.5020740    0.00000   100%  16.7    0s
+H 1805  1287                    7906.4089234    0.00000   100%  16.9    0s
+H 2852  1871                    7883.1573348    0.00000   100%  21.3    0s
+H 2898  1987                    7589.6582914    0.00000   100%  21.4    0s
+H 2996  1964                    7296.1592479    0.00000   100%  21.3    0s
+H 3150  1868                    7085.6211782    0.00000   100%  21.3    0s
+H 3306  1909                    6937.5454823    0.00000   100%  23.0    0s
+H 3315  1817                    6773.5041469    0.00000   100%  23.0    0s
+H18073  8196                    6757.7874377    0.00000   100%  13.9    1s
+*76020 32478              58    6573.4024683  519.89895  92.1%  12.5    3s
+ 145821 61318 infeasible   42      6573.40247  671.82326  89.8%  13.2    5s
+ 337417 127862 3221.66949   42   28 6573.40247 1129.86804  82.8%  13.5   10s
+ 524919 186093 4740.33029   52   20 6573.40247 1326.60027  79.8%  13.6   15s
+ 719785 245896     cutoff   47      6573.40247 1474.67597  77.6%  13.6   20s
+ 899642 300755     cutoff   50      6573.40247 1550.70588  76.4%  13.6   26s
+ 1027847 338054 3196.71065   39   37 6573.40247 1622.19016  75.3%  13.6   30s
+ 1213014 385469 3935.19483   44   25 6573.40247 1718.98897  73.8%  13.7   35s
+ 1389115 430222 2441.79419   48   28 6573.40247 1806.91429  72.5%  13.7   40s
+ 1568653 476165 infeasible   53      6573.40247 1878.80580  71.4%  13.7   45s
+ 1753027 523783     cutoff   44      6573.40247 1927.54446  70.7%  13.7   50s
+ 1932608 576321 infeasible   37      6573.40247 1960.29444  70.2%  13.7   55s
+ 2047618 601708 3495.52473   41   20 6573.40247 1987.07688  69.8%  13.7   60s
+ 2221988 645372 infeasible   35      6573.40247 2025.84110  69.2%  13.7   65s
+ 2405777 693502 2643.45621   51   32 6573.40247 2042.14964  68.9%  13.6   70s
+ 2591232 737268 infeasible   42      6573.40247 2084.69042  68.3%  13.6   75s
+ 2760967 773836 4141.09937   47   30 6573.40247 2129.45298  67.6%  13.6   80s
+ 2940517 816066 infeasible   42      6573.40247 2157.22378  67.2%  13.6   85s
+ 3119757 849531 3392.80482   33   30 6573.40247 2179.16423  66.8%  13.6   90s
+ 3242500 875371 3265.51825   43   40 6573.40247 2201.41191  66.5%  13.6   95s
+ 3410522 908642 2875.69102   35   30 6573.40247 2238.07941  66.0%  13.6  100s
+ 3587817 943570     cutoff   39      6573.40247 2276.70423  65.4%  13.6  105s
+ 3748213 976949 2643.74397   35   46 6573.40247 2296.28656  65.1%  13.6  110s
+ 3928431 1011313 3772.82361   36   28 6573.40247 2336.70664  64.5%  13.6  115s
+ 4106308 1046966 infeasible   40      6573.40247 2362.88415  64.1%  13.6  120s
+ 4275559 1081069 4501.10824   51   34 6573.40247 2386.49923  63.7%  13.6  125s
+H4281145 1080441                    6540.9530659 2386.49923  63.5%  13.6  125s
+ 4393874 1099095 infeasible   50      6540.95307 2406.60027  63.2%  13.6  130s
+ 4563977 1130621 3300.01378   45   30 6540.95307 2441.09701  62.7%  13.6  135s
+ 4741475 1159694 3160.39631   51   32 6540.95307 2467.62425  62.3%  13.6  140s
+ 4915477 1190205 2582.48829   44   35 6540.95307 2485.63093  62.0%  13.6  145s
+ 5083602 1225528     cutoff   37      6540.95307 2494.67597  61.9%  13.6  150s
+ 5249310 1253551 4833.76039   32   39 6540.95307 2510.16115  61.6%  13.6  155s
+ 5391642 1275652 infeasible   42      6540.95307 2535.51003  61.2%  13.6  160s
+ 5525283 1298603 infeasible   42      6540.95307 2550.89177  61.0%  13.6  165s
+ 5700727 1331324 3069.39694   45   22 6540.95307 2571.85656  60.7%  13.6  170s
+ 5880270 1364800 5057.21653   43   22 6540.95307 2582.59530  60.5%  13.6  175s
+ 6065105 1407050 infeasible   47      6540.95307 2588.67385  60.4%  13.6  180s
+ 6244664 1437465 infeasible   49      6540.95307 2601.92943  60.2%  13.6  185s
+ 6416779 1464751 2826.98149   36   36 6540.95307 2620.78300  59.9%  13.6  190s
+ 6545045 1486057 5341.01630   47   18 6540.95307 2636.35225  59.7%  13.7  195s
+ 6727504 1513356 infeasible   41      6540.95307 2658.70958  59.4%  13.7  200s
+ 6907599 1543981 2862.53468   46   38 6540.95307 2675.57129  59.1%  13.7  205s
+ 7081187 1575920 4457.75895   52   26 6540.95307 2689.55403  58.9%  13.7  210s
+ 7247755 1600965 infeasible   46      6540.95307 2707.80436  58.6%  13.7  215s
+ 7403206 1615255 5264.71877   66   14 6540.95307 2721.27649  58.4%  13.7  220s
+ 7573943 1641663 4187.54864   34   26 6540.95307 2738.96101  58.1%  13.7  225s
+ 7699348 1658731 3345.13531   44   45 6540.95307 2751.00278  57.9%  13.7  230s
+ 7866549 1682403     cutoff   40      6540.95307 2768.35983  57.7%  13.7  235s
+ 8007573 1703219 infeasible   45      6540.95307 2778.70958  57.5%  13.7  240s
+ 8184963 1727377 infeasible   49      6540.95307 2798.21832  57.2%  13.7  245s
+ 8364453 1751284 3164.78596   39   32 6540.95307 2813.70662  57.0%  13.7  250s

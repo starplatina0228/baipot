@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from datetime import date
+from typing import List
 import pandas as pd
 import numpy as np
 import json
@@ -15,10 +17,26 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Pydantic model for the request body
+# CORS Middleware
+origins = [
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Pydantic models for request bodies
 class CrawlRequest(BaseModel):
     start_date: date = Field(..., description="Crawling start date in YYYY-MM-DD format.", example="2025-10-01")
     end_date: date = Field(..., description="Crawling end date in YYYY-MM-DD format.", example="2025-10-10")
+
+class OptimizeSelectedRequest(CrawlRequest):
+    selected_ships: List[str] = Field(..., description="List of merge_keys for the ships to be optimized.")
 
 
 async def _get_prepared_data(request: CrawlRequest) -> pd.DataFrame:
@@ -95,3 +113,39 @@ async def optimize_schedule(request: CrawlRequest):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred during optimization: {str(e)}")
+
+@app.post("/schedule/optimize-selected")
+async def optimize_selected_schedule(request: OptimizeSelectedRequest):
+    """
+    Runs the optimization for a selection of ships.
+    """
+    try:
+        # Step 1 & 2: Get the prepared and predicted data
+        prepared_df = await _get_prepared_data(request)
+        
+        if prepared_df.empty:
+            raise HTTPException(status_code=404, detail="No data available to optimize.")
+
+        # Create the merge_key in the prepared_df to filter against
+        prepared_df['merge_key'] = prepared_df['선사'].astype(str) + '_' + prepared_df['선명'].str.replace(r'\s+', '', regex=True)
+
+        # Filter the DataFrame to include only the selected ships
+        selected_df = prepared_df[prepared_df['merge_key'].isin(request.selected_ships)]
+
+        if selected_df.empty:
+            raise HTTPException(status_code=404, detail="None of the selected ships were found in the data for the given period.")
+
+        # Step 3: Run the optimization on the filtered data
+        optimized_df = run_milp_model(selected_df)
+
+        if optimized_df is None:
+            raise HTTPException(status_code=500, detail="Optimization failed to find a solution for the selected ships.")
+
+        # Step 4: Convert and return the optimization result
+        optimized_df = optimized_df.replace({pd.NaT: None, np.nan: None})
+        result_json = optimized_df.to_json(orient='records', date_format='iso')
+        
+        return json.loads(result_json)
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"An error occurred during selective optimization: {str(e)}")
