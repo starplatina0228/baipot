@@ -3,13 +3,28 @@ import axios from 'axios';
 
 export function useSchedule() {
   const startDate = ref(new Date().toISOString().slice(0, 10));
-  const endDate = ref(new Date(new Date().setDate(new Date().getDate() + 7)).toISOString().slice(0, 10));
+  const endDate = ref(new Date(new Date().setDate(new Date().getDate() + 5)).toISOString().slice(0, 10));
   const results = ref([]);
   const optimizationResults = ref(null);
   const loading = ref(false);
   const error = ref(null);
   const viewMode = ref('list'); // 'list' or 'chart'
   const abortController = ref(null);
+
+  // New state for ETD calculation
+  const etdRequestData = ref({
+    ship_name: 'GLORY COIS',
+    eta: new Date(new Date().setDate(new Date().getDate() + 5)),
+    cargo_load: 300,
+    cargo_unload: 300,
+    ship_length: 150,
+    shipping_company: 'COIS COMPANY',
+    gross_tonnage: 3000,
+    shift: 150
+  });
+  const etdResult = ref(null);
+  const etdLoading = ref(false);
+  const etdError = ref(null);
 
   const api = axios.create({
     baseURL: 'http://localhost:8000',
@@ -51,7 +66,21 @@ export function useSchedule() {
         optimizationResults.value = null; // Clear old optimization results
         viewMode.value = 'list';
       } else {
-        optimizationResults.value = response.data;
+        const originalDataMap = new Map(results.value.map(ship => [ship.merge_key, ship]));
+
+        const enrichedResults = response.data.map(optimizedShip => {
+          const originalShip = originalDataMap.get(optimizedShip.merge_key);
+          if (originalShip) {
+            return {
+              ...optimizedShip,
+              original_Completion_h: originalShip.Completion_h,
+              predicted_work_time: originalShip.predicted_work_time,
+            };
+          }
+          return optimizedShip;
+        });
+
+        optimizationResults.value = enrichedResults;
         viewMode.value = 'chart';
       }
 
@@ -64,6 +93,31 @@ export function useSchedule() {
     } finally {
       loading.value = false;
       abortController.value = null;
+    }
+  };
+
+  const calculateEtd = async () => {
+    if (etdLoading.value) return;
+
+    etdLoading.value = true;
+    etdError.value = null;
+    etdResult.value = null;
+    
+    const etdAbortController = new AbortController();
+
+    try {
+      const response = await api.post('/schedule/calculate-etd', etdRequestData.value, { 
+        signal: etdAbortController.signal 
+      });
+      etdResult.value = response.data;
+    } catch (err) {
+      if (axios.isCancel(err)) {
+        etdError.value = 'ETD calculation was canceled.';
+      } else {
+        etdError.value = `Error: ${err.response?.data?.detail || err.message}`;
+      }
+    } finally {
+      etdLoading.value = false;
     }
   };
 
@@ -111,5 +165,11 @@ export function useSchedule() {
     toggleSelection,
     showListView,
     cancelRequest, // Export the cancel function
+    // New exports
+    etdRequestData,
+    etdResult,
+    etdLoading,
+    etdError,
+    calculateEtd,
   };
 }

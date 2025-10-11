@@ -1,16 +1,19 @@
 import gurobipy as gp
 from gurobipy import GRB
 import pandas as pd
+import re
 
-def run_milp_model(processed_df):
+def run_milp_model(processed_df, cancel_event, fixed_ship_merge_keys=None):
     """
     Gurobi MILP 모델을 실행하여 최적의 선석 배정 계획 데이터를 반환합니다.
     
     Args:
         processed_df (pd.DataFrame): 전처리 및 예측이 완료된 데이터프레임.
+        cancel_event (threading.Event): 최적화 중단을 위한 이벤트 객체.
+        fixed_ship_merge_keys (list, optional): 스케줄을 고정할 선박의 merge_key 리스트.
 
     Returns:
-        pd.DataFrame: 최적화된 선석 배정 결과. 최적해를 찾지 못하면 None을 반환합니다.
+        pd.DataFrame: 최적화된 선석 배정 결과. 최적해를 찾지 못하거나 중단되면 None을 반환합니다.
     """
     # --- 1. 입력 데이터 추출 및 변환 ---
     s_i = (processed_df['predicted_work_time'] * 60).tolist()
@@ -53,8 +56,22 @@ def run_milp_model(processed_df):
 
     model.addConstrs((x[i,j] + x[j,i] + y[i,j] + y[j,i] >= 1 for i in range(N) for j in range(i + 1, N)), name="separation_required")
 
-    # --- 6. 모델 최적화 ---
-    model.optimize()
+    if fixed_ship_merge_keys:
+        # Create merge keys to identify ships to be fixed
+        df_merge_keys = (processed_df['선사'].astype(str) + '_' + processed_df['선명'].str.replace(r'\s+', '', regex=True)).tolist()
+        fixed_indices = [i for i, key in enumerate(df_merge_keys) if key in fixed_ship_merge_keys]
+        
+        if fixed_indices:
+            # Forcing start time to be arrival time for fixed ships
+            model.addConstrs((t[i] == a_i_minutes[i] for i in fixed_indices), name="fix_start_time")
+
+    # --- 6. 모델 최적화 (콜백 포함) ---
+    def optimization_callback(model, where):
+        if where == GRB.Callback.POLLING:
+            if cancel_event.is_set():
+                model.terminate()
+
+    model.optimize(optimization_callback)
 
     # --- 7. 결과 처리 ---
     if model.status == GRB.OPTIMAL:
@@ -67,9 +84,13 @@ def run_milp_model(processed_df):
             completion_minutes = start_minutes + s_i[i]
             completion_hours = completion_minutes / 60
             position_m = p[i].x
+            
+            cleaned_ship_name = re.sub(r'\s+', '', processed_df.iloc[i]['선명'])
+            merge_key = f"{processed_df.iloc[i]['선사']}_{cleaned_ship_name}"
 
             solution.append({
                 'Ship': processed_df.iloc[i]['선명'],
+                'merge_key': merge_key,
                 'Ship_ID': i + 1,
                 'Arrival_h': a_i[i],
                 'Start_h': start_hours,
@@ -92,6 +113,9 @@ def run_milp_model(processed_df):
         for c in model.getConstrs():
             if c.IISConstr:
                 print(f"  Infeasible constraint: {c.constrName}")
+        return None
+    elif model.status == GRB.INTERRUPTED:
+        print("Optimization was interrupted.")
         return None
     else:
         return None

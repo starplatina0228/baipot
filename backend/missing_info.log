@@ -182,3 +182,544 @@
 2025-10-11 16:19:53,942 - - 선사: RCL, 선명: VIRA BHUM
 2025-10-11 16:19:53,942 - - 선사: EMC, 선명: EVER STRONG
 2025-10-11 16:19:53,942 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:03:26,160 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:03:26,160 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:03:26,160 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:03:26,160 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:03:26,160 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:04:05,304 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:04:05,304 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:04:05,304 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:04:05,304 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:04:05,304 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:12:03,408 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:12:03,408 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:12:03,408 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:12:03,408 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:12:03,408 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:12:06,165 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:12:06,166 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:12:06,166 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:12:06,166 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:12:06,166 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:14:49,074 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:14:49,075 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:14:49,076 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:14:49,076 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:14:49,076 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:16:07,149 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:16:07,150 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:16:07,150 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:16:07,150 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:16:07,150 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:16:17,289 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:16:17,289 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:16:17,289 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:16:17,289 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:16:17,289 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:46:45,831 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:46:45,832 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:46:45,832 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:46:45,832 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:46:45,832 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:53:19,836 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:53:19,837 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:53:19,837 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:53:19,837 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:53:19,837 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:54:29,180 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:54:29,180 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:54:29,180 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:54:29,180 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:54:29,180 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:56:26,313 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:56:26,313 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:56:26,313 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:56:26,313 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:56:26,313 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:57:20,911 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:57:20,912 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:57:20,912 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:57:20,912 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:57:20,912 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 19:59:24,473 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 19:59:24,473 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 19:59:24,473 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 19:59:24,473 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 19:59:24,473 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:01:01,296 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:01:01,296 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:01:01,296 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:01:01,297 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:01:01,297 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:08:00,237 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:08:00,237 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:08:00,237 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:08:00,237 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:08:00,237 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:12:52,100 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:12:52,100 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:12:52,100 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:12:52,101 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:12:52,101 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:29:23,754 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:29:23,754 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:29:23,754 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:29:23,754 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:29:23,754 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:30:37,963 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:30:37,963 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:30:37,963 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:30:37,963 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:30:37,963 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:30:47,661 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:30:47,661 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:30:47,661 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:30:47,661 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:30:47,662 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:41:33,693 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:41:33,693 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:41:33,693 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:41:33,693 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:41:33,693 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:41:50,861 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:41:50,861 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:41:50,861 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:41:50,861 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:41:50,861 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:44:44,294 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:44:44,294 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:44:44,294 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:44:44,294 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:44:44,294 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:44:44,294 - - 선사: YML, 선명: YM MILESTONE
+2025-10-11 20:44:44,294 - - 선사: YML, 선명: YM ORCHID
+2025-10-11 20:45:08,315 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:45:08,316 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:45:08,316 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:45:08,316 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:45:08,316 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:45:08,316 - - 선사: YML, 선명: YM MILESTONE
+2025-10-11 20:45:12,644 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:45:12,644 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:45:12,644 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:45:12,644 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:45:12,644 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:45:12,644 - - 선사: YML, 선명: YM MILESTONE
+2025-10-11 20:46:24,490 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:46:24,490 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:46:24,490 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:46:24,490 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:46:24,490 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:46:28,895 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:46:28,895 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:46:28,895 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:46:28,895 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:46:28,895 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:46:30,783 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:46:30,783 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:46:30,783 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:46:30,783 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:46:30,783 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:48:56,220 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:48:56,220 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:48:56,220 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:48:56,220 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:48:56,220 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:05,438 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:05,438 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:05,439 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:05,439 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:05,439 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:08,413 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:08,413 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:08,413 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:08,413 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:08,413 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:15,418 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:15,418 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:15,418 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:15,418 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:15,418 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:16,801 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:16,801 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:16,801 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:16,801 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:16,801 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:33,788 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:33,788 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:33,788 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:33,788 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:33,788 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:35,440 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:35,440 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:35,440 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:35,441 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:35,441 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:38,400 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:38,400 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:38,400 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:38,400 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:38,400 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:44,833 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:44,834 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:44,834 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:44,834 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:44,834 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:49:49,442 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:49:49,442 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:49:49,442 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:49:49,442 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:49:49,442 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:50:41,601 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:50:41,601 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:50:41,601 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:50:46,219 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:50:46,219 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:50:46,219 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:50:46,219 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:50:46,219 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:50:47,602 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:50:47,602 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:50:47,602 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:50:47,602 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:50:47,602 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 20:58:04,918 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 20:58:04,918 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 20:58:04,918 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 20:58:04,919 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 20:58:04,919 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:00:05,494 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:00:05,494 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:00:05,494 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:00:05,494 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:00:05,494 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:05:59,817 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:05:59,817 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:05:59,817 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:05:59,818 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:05:59,818 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:06:14,609 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:06:14,609 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:06:14,609 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:06:14,609 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:06:14,609 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:06:44,725 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:06:44,725 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:06:44,725 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:06:44,725 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:06:44,725 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:07:00,782 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:07:00,782 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:07:00,782 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:07:00,782 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:07:00,782 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:07:41,977 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:07:41,977 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:07:41,977 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:07:41,977 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:07:41,977 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:09:30,002 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:09:30,002 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:09:30,002 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:09:30,002 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:09:30,002 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:10:21,779 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:10:21,779 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:10:21,779 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:10:21,779 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:10:21,779 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:20:38,717 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:20:38,717 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:20:38,717 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:20:38,717 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:20:38,717 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:21:57,834 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:21:57,834 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:21:57,834 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:21:57,834 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:21:57,834 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:17,009 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:17,009 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:17,009 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:17,009 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:17,009 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:19,425 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:19,425 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:19,425 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:19,425 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:19,426 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:20,560 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:20,560 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:20,560 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:20,560 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:20,560 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:23,835 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:23,835 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:23,835 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:23,835 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:23,835 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:25,022 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:25,022 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:25,022 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:25,022 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:25,022 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:26,195 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:26,195 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:26,195 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:26,195 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:26,195 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:25:44,544 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:25:44,544 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:25:44,544 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:25:44,544 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:25:44,544 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:26:19,079 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:26:19,079 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:26:19,080 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:26:19,080 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:26:19,080 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:26:19,863 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:26:19,863 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:26:19,863 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:26:19,863 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:26:19,863 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:26:22,802 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:26:22,802 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:26:22,802 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:26:22,802 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:26:22,802 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:26:24,198 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:26:24,198 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:26:24,198 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:26:24,198 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:26:24,198 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:26:25,053 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:26:25,053 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:26:25,054 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:26:25,054 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:26:25,054 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:28:45,078 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:28:45,078 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:28:45,078 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:29:13,806 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:29:13,806 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:29:13,806 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:29:13,806 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:29:13,806 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:29:14,627 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:29:14,627 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:29:14,627 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:29:14,627 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:29:14,627 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:29:17,357 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:29:17,357 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:29:17,358 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:30:33,401 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:30:33,401 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:30:33,401 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:30:33,401 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:30:33,401 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:30:46,116 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:30:46,116 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:30:46,116 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:30:57,730 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:30:57,731 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:30:57,731 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:31:03,737 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:31:03,738 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:31:03,738 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:31:03,738 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:31:03,738 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:36:34,259 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:36:34,260 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:36:34,260 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:36:34,260 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:36:34,260 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:38:20,704 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:38:20,704 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:38:20,704 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:38:20,704 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:38:20,704 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:38:25,316 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:38:25,316 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:38:25,316 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:38:25,316 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:38:25,316 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:04,304 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:04,304 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:04,305 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:04,305 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:04,305 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:05,877 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:05,877 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:05,877 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:05,877 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:05,877 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:12,262 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:12,262 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:12,262 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:12,262 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:12,262 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:16,490 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:16,490 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:16,490 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:16,490 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:16,490 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:17,373 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:17,373 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:17,373 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:17,373 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:17,373 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:18,204 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:18,204 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:18,204 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:18,204 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:18,204 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:19,131 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:19,131 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:19,131 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:19,132 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:19,132 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:19,843 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:19,843 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:19,843 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:19,843 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:19,843 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:20,754 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:20,755 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:20,755 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:20,755 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:20,755 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:40:25,074 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:40:25,074 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:40:25,074 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:40:25,074 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:40:25,074 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:47:38,737 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:47:38,737 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:47:38,737 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:47:38,737 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:47:38,737 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:27,501 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:27,501 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:27,501 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:27,501 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:27,501 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:29,545 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:29,546 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:29,546 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:29,546 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:29,546 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:31,432 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:31,432 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:31,432 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:31,432 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:31,432 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:32,352 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:32,352 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:32,352 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:32,352 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:32,352 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:33,227 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:33,227 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:33,227 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:33,227 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:33,227 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:42,484 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:42,484 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:42,485 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:42,485 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:42,485 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:43,226 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:43,226 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:43,226 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:43,226 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:43,226 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:52,840 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:52,840 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:52,840 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:52,840 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:52,840 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:50:53,587 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:50:53,587 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:50:53,587 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:50:53,587 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:50:53,587 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:52:41,724 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:52:41,724 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:52:41,724 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:52:41,724 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:52:41,724 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:52:50,161 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:52:50,161 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:52:50,161 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:52:50,161 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:52:50,161 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:56:57,302 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:56:57,302 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:56:57,302 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:56:57,302 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:56:57,302 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:56:58,833 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:56:58,833 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:56:58,833 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:56:58,833 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:56:58,833 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:57:03,275 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:57:03,276 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:57:03,276 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 21:57:03,276 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 21:57:03,276 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 21:57:04,075 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 21:57:04,075 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 21:57:04,075 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:01:46,642 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:01:46,642 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:01:46,642 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:01:46,642 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:01:46,642 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:07,200 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:07,200 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:07,200 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:07,200 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:07,200 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:13,094 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:13,094 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:13,094 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:13,094 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:13,094 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:15,323 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:15,323 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:15,323 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:15,323 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:15,323 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:19,642 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:19,642 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:19,642 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:19,642 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:19,642 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:20,968 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:20,968 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:20,968 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:20,968 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:20,968 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:39,737 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:39,737 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:39,737 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:39,737 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:39,737 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:41,447 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:41,447 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:41,447 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:41,447 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:41,447 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:02:56,097 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:02:56,097 - - 선사: YML, 선명: YM MOBILITY
+2025-10-11 22:02:56,097 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:02:56,097 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:02:56,097 - - 선사: ONE, 선명: TS NINGBO
+2025-10-11 22:03:02,335 - Missing '총톤수' or 'LOA' for some ships, replacing with mean value:
+2025-10-11 22:03:02,335 - - 선사: RCL, 선명: VIRA BHUM
+2025-10-11 22:03:02,335 - - 선사: EMC, 선명: EVER STRONG
+2025-10-11 22:03:02,335 - - 선사: ONE, 선명: TS NINGBO

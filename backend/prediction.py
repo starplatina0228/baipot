@@ -31,8 +31,17 @@ def preprocess_for_prediction(df):
     df['merge_key'] = df['선사'].astype(str) + '_' + df['선명'].str.replace(r'\s+', '', regex=True)
     ship_info_df['merge_key'] = ship_info_df['선사'].astype(str) + '_' + ship_info_df['선명'].str.replace(r'\s+', '', regex=True)
     ship_info_df = ship_info_df.drop_duplicates(subset='merge_key', keep='last')
-    df = pd.merge(df, ship_info_df[['merge_key', '총톤수', 'LOA']], on='merge_key', how='left')
+    df = pd.merge(df, ship_info_df[['merge_key', '총톤수', 'LOA']], on='merge_key', how='left', suffixes=('_x', '_y'))
     df.drop(columns=['merge_key'], inplace=True)
+
+    # Combine columns if they were duplicated during the merge
+    if 'LOA_x' in df.columns:
+        df['LOA'] = df['LOA_x'].combine_first(df['LOA_y'])
+        df.drop(columns=['LOA_x', 'LOA_y'], inplace=True)
+    
+    if '총톤수_x' in df.columns:
+        df['총톤수'] = df['총톤수_x'].combine_first(df['총톤수_y'])
+        df.drop(columns=['총톤수_x', '총톤수_y'], inplace=True)
 
     # Add a flag for rows that will use averaged values
     df['uses_average_values'] = False
