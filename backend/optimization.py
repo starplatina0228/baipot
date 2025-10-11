@@ -66,12 +66,23 @@ def run_milp_model(processed_df, cancel_event, fixed_ship_merge_keys=None):
             model.addConstrs((t[i] == a_i_minutes[i] for i in fixed_indices), name="fix_start_time")
 
     # --- 6. 모델 최적화 (콜백 포함) ---
+    import logging
+    import time
+    
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    
     def optimization_callback(model, where):
         if where == GRB.Callback.POLLING:
             if cancel_event.is_set():
                 model.terminate()
 
+    logging.info("Starting optimization.")
+    start_time = time.time()
+    
     model.optimize(optimization_callback)
+    
+    end_time = time.time()
+    logging.info(f"Optimization finished in {end_time - start_time:.2f} seconds.")
 
     # --- 7. 결과 처리 ---
     if model.status == GRB.OPTIMAL:
