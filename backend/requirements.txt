@@ -6,3 +6,5 @@ scikit-learn
 gurobipy
 lightgbm
 gunicorn
+requests
+beautifulsoup4
