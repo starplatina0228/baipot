@@ -9,9 +9,9 @@ import json
 import asyncio
 import threading
 
-from .crawling import get_work_plan_data
-from .prediction import predict_work_time
-from .optimization import run_milp_model
+from crawling import get_work_plan_data
+from prediction import predict_work_time
+from optimization import run_milp_model
 
 app = FastAPI(
     title="Berth Allocation and Prediction Optimization (BAIPOT) API",
