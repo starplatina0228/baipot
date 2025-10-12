@@ -10,24 +10,26 @@ export function useSchedule() {
   const error = ref(null);
   const viewMode = ref('list'); // 'list' or 'chart'
   const abortController = ref(null);
+  const etdAbortController = ref(null);
 
   // New state for ETD calculation
-  const etdRequestData = ref({
+  const initialEtdRequestData = {
     ship_name: 'GLORY COIS',
-    eta: new Date(new Date().setDate(new Date().getDate() + 5)),
+    eta: new Date(new Date().setDate(new Date().getDate() + 3)),
     cargo_load: 300,
     cargo_unload: 300,
     ship_length: 150,
     shipping_company: 'COIS COMPANY',
     gross_tonnage: 3000,
     shift: 150
-  });
+  };
+  const etdRequestData = ref({ ...initialEtdRequestData });
   const etdResult = ref(null);
   const etdLoading = ref(false);
   const etdError = ref(null);
 
   const api = axios.create({
-    baseURL: 'http://localhost:8000',
+    baseURL: 'https://baipot-backend.onrender.com',
   });
 
   const selectedShips = computed(() => 
@@ -37,6 +39,12 @@ export function useSchedule() {
   const cancelRequest = () => {
     if (abortController.value) {
       abortController.value.abort();
+    }
+  };
+
+  const cancelEtdRequest = () => {
+    if (etdAbortController.value) {
+      etdAbortController.value.abort();
     }
   };
 
@@ -103,11 +111,11 @@ export function useSchedule() {
     etdError.value = null;
     etdResult.value = null;
     
-    const etdAbortController = new AbortController();
+    etdAbortController.value = new AbortController();
 
     try {
       const response = await api.post('/schedule/calculate-etd', etdRequestData.value, { 
-        signal: etdAbortController.signal 
+        signal: etdAbortController.value.signal 
       });
       etdResult.value = response.data;
     } catch (err) {
@@ -118,6 +126,16 @@ export function useSchedule() {
       }
     } finally {
       etdLoading.value = false;
+      etdAbortController.value = null;
+    }
+  };
+
+  const resetEtdCalculator = () => {
+    etdRequestData.value = { ...initialEtdRequestData };
+    etdResult.value = null;
+    etdError.value = null;
+    if (etdLoading.value) {
+      cancelEtdRequest();
     }
   };
 
@@ -164,12 +182,14 @@ export function useSchedule() {
     optimizeSelected,
     toggleSelection,
     showListView,
-    cancelRequest, // Export the cancel function
+    cancelRequest,
     // New exports
     etdRequestData,
     etdResult,
     etdLoading,
     etdError,
     calculateEtd,
+    cancelEtdRequest,
+    resetEtdCalculator,
   };
 }
