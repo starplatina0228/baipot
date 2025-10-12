@@ -5,7 +5,7 @@ import logging
 import os
 
 # Define the base directory for data files relative to the project root
-BACKEND_DIR = 'backend'
+BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Create a logger for this module
 logger = logging.getLogger(__name__)

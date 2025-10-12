@@ -54,10 +54,24 @@
         </div>
       </div>
       
-      <button @click="calculateEtd" :disabled="etdLoading" class="calculate-btn">
-        <span v-if="etdLoading" class="spinner"></span>
-        ETD 계산
-      </button>
+      <div class="etd-actions">
+        <button 
+          v-if="!etdLoading" 
+          @click="calculateEtd" 
+          class="calculate-btn"
+        >
+          <span v-if="etdLoading" class="spinner"></span>
+          ETD 계산
+        </button>
+        <button 
+          v-else 
+          @click="cancelEtdRequest" 
+          class="cancel-btn"
+        >
+          <span class="spinner"></span>
+          요청 취소
+        </button>
+      </div>
     </div>
 
     <!-- ETD Result Display -->
@@ -115,6 +129,8 @@ const {
   etdLoading,
   etdError,
   calculateEtd,
+  resetEtdCalculator,
+  cancelEtdRequest,
 } = useSchedule();
 
 const highlightKey = computed(() => {
@@ -156,13 +172,14 @@ const formatDatetime = (isoString) => {
 <style scoped>
 /* ETD Calculator Styles */
 .etd-calculator-wrapper {
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
+  margin: 2rem;
 }
 
 .etd-calculator {
   background: #ffffff;
   border-radius: 12px;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #e9ecef;
 }
@@ -225,14 +242,27 @@ const formatDatetime = (isoString) => {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.calculate-btn {
-  width: 100%;
+.etd-actions {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.reset-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.reset-btn:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.cancel-btn, .reset-btn, .calculate-btn {
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 2rem;
   border-radius: 8px;
-  background-color: #007bff;
-  color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -242,12 +272,26 @@ const formatDatetime = (isoString) => {
   gap: 0.5rem;
 }
 
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.calculate-btn {
+  background-color: #007bff;
+  color: white;
+}
+
 .calculate-btn:hover:not(:disabled) {
   background-color: #0056b3;
 }
 
-.calculate-btn:disabled {
-  background-color: #a0c7e4;
+.calculate-btn:disabled, .reset-btn:disabled, .cancel-btn:disabled {
+  background-color: #b0b6bb;
   cursor: not-allowed;
 }
 

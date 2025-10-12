@@ -1,3 +1,3 @@
 uvicorn backend.main:app --reload
 cd frontend
-npm run devd
+npm run dev
