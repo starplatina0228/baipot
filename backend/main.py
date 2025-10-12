@@ -22,6 +22,8 @@ app = FastAPI(
 # CORS Middleware
 origins = [
     "http://localhost:5173",
+    "https://choi.github.io/baipot",
+    "https://f4a7e53528a6.ngrok-free.app",
 ]
 
 app.add_middleware(
@@ -104,6 +106,21 @@ def read_root():
     """
     return {"message": "Welcome to the BAIPOT API"}
 
+@app.get("/ships")
+def get_ships():
+    """
+    Returns a list of all ships from the ship_info.csv file.
+    """
+    try:
+        ship_info_df = pd.read_csv('ship_info.csv')
+        ship_info_df = ship_info_df.replace({np.nan: None})
+        result_json = ship_info_df.to_json(orient='records')
+        return json.loads(result_json)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="ship_info.csv not found.")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"An error occurred while reading ship_info.csv: {str(e)}")
+
 @app.post("/schedule/prepare")
 async def prepare_schedule_data(request: CrawlRequest):
     """
@@ -157,8 +174,8 @@ async def calculate_etd(etd_request: EtdRequest, request: Request):
 
         # 3. Get existing schedule around the new ship's ETA
         eta = etd_request.eta
-        start_date = (eta - timedelta(days=2)).date()
-        end_date = (eta + timedelta(days=2)).date()
+        start_date = (eta - timedelta(days=1)).date()
+        end_date = (eta + timedelta(days=1)).date()
         
         crawl_req = CrawlRequest(start_date=start_date, end_date=end_date)
         existing_df = await _get_prepared_data(crawl_req)

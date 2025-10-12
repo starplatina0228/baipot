@@ -12,16 +12,19 @@ export function useSchedule() {
   const abortController = ref(null);
   const etdAbortController = ref(null);
 
+  // Ship data for ETD calculator
+  const ships = ref([]);
+
   // New state for ETD calculation
   const initialEtdRequestData = {
-    ship_name: 'GLORY COIS',
-    eta: new Date(new Date().setDate(new Date().getDate() + 3)),
-    cargo_load: 300,
-    cargo_unload: 300,
-    ship_length: 150,
-    shipping_company: 'COIS COMPANY',
-    gross_tonnage: 3000,
-    shift: 150
+    ship_name: '',
+    eta: new Date(),
+    cargo_load: 0,
+    cargo_unload: 0,
+    ship_length: 0,
+    shipping_company: '',
+    gross_tonnage: 0,
+    shift: 0
   };
   const etdRequestData = ref({ ...initialEtdRequestData });
   const etdResult = ref(null);
@@ -29,7 +32,7 @@ export function useSchedule() {
   const etdError = ref(null);
 
   const api = axios.create({
-    baseURL: 'https://baipot-backend.onrender.com',
+    baseURL: 'https://f4a7e53528a6.ngrok-free.app',
   });
 
   const selectedShips = computed(() => 
@@ -45,6 +48,16 @@ export function useSchedule() {
   const cancelEtdRequest = () => {
     if (etdAbortController.value) {
       etdAbortController.value.abort();
+    }
+  };
+
+  const fetchShips = async () => {
+    try {
+      const response = await api.get('/ships');
+      ships.value = response.data;
+    } catch (err) {
+      console.error('Failed to fetch ships:', err);
+      // Optionally set an error state
     }
   };
 
@@ -167,6 +180,7 @@ export function useSchedule() {
 
   onMounted(() => {
     prepareSchedule();
+    fetchShips();
   });
 
   return {
@@ -184,6 +198,7 @@ export function useSchedule() {
     showListView,
     cancelRequest,
     // New exports
+    ships,
     etdRequestData,
     etdResult,
     etdLoading,

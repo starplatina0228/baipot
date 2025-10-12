@@ -32,8 +32,8 @@
             height: item.height + '%',
             left: item.left + '%',
             width: item.width + '%',
-            backgroundColor: getShipColor(item.ship.Ship).main,
-            borderColor: getShipColor(item.ship.Ship).border,
+            backgroundColor: highlightedShipKey && item.ship.merge_key !== highlightedShipKey ? '#d3d3d3' : getShipColor(item.ship.Ship).main,
+            borderColor: highlightedShipKey && item.ship.merge_key !== highlightedShipKey ? '#a9a9a9' : getShipColor(item.ship.Ship).border,
           }"
           @mouseenter="handleShipMouseEnter(item)"
           @mouseleave="handleShipMouseLeave"
