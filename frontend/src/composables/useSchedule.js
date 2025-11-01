@@ -1,5 +1,6 @@
 import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
+import shipData from '../data/ship_data.json'; // Import local ship data
 
 export function useSchedule() {
   const startDate = ref(new Date().toISOString().slice(0, 10));
@@ -13,12 +14,12 @@ export function useSchedule() {
   const etdAbortController = ref(null);
 
   // Ship data for ETD calculator
-  const ships = ref([]);
+  const ships = ref({}); // Initialize as an object
 
   // New state for ETD calculation
   const initialEtdRequestData = {
     ship_name: '',
-    eta: new Date(),
+    eta: null,
     cargo_load: 0,
     cargo_unload: 0,
     ship_length: 0,
@@ -48,16 +49,6 @@ export function useSchedule() {
   const cancelEtdRequest = () => {
     if (etdAbortController.value) {
       etdAbortController.value.abort();
-    }
-  };
-
-  const fetchShips = async () => {
-    try {
-      const response = await api.get('/ships');
-      ships.value = response.data;
-    } catch (err) {
-      console.error('Failed to fetch ships:', err);
-      // Optionally set an error state
     }
   };
 
@@ -180,7 +171,7 @@ export function useSchedule() {
 
   onMounted(() => {
     prepareSchedule();
-    fetchShips();
+    ships.value = shipData; // Load local data
   });
 
   return {

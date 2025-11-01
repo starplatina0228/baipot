@@ -3,10 +3,7 @@ from gurobipy import GRB
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 from matplotlib.patches import Rectangle
-import seaborn as sns
-import random
 
 def run_milp_model(processed_df):
     """
@@ -164,7 +161,7 @@ def run_milp_model(processed_df):
         plt.tight_layout()
         chart_filename = 'berth_gantt_chart.png'
         plt.savefig(chart_filename, dpi=300)
-        # plt.show() # 로컬 실행 시 활성화
+        plt.show() # 로컬 실행 시 활성화
         
         return df_solution
 

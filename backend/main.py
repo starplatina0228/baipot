@@ -232,6 +232,10 @@ async def optimize_schedule(crawl_request: CrawlRequest, request: Request):
             # This can mean optimization failed, was infeasible, or was cancelled.
             raise HTTPException(status_code=500, detail="Optimization failed, was infeasible, or was cancelled by the user.")
 
+        start_time_ref = prepared_df['접안예정일시'].min()
+        optimized_df['Start_dt'] = optimized_df['Start_h'].apply(lambda h: start_time_ref + timedelta(hours=h))
+        optimized_df['Completion_dt'] = optimized_df['Completion_h'].apply(lambda h: start_time_ref + timedelta(hours=h))
+
         optimized_df = optimized_df.replace({pd.NaT: None, np.nan: None})
         result_json = optimized_df.to_json(orient='records', date_format='iso')
         
@@ -262,6 +266,10 @@ async def optimize_selected_schedule(optimize_request: OptimizeSelectedRequest, 
 
         if optimized_df is None:
             raise HTTPException(status_code=500, detail="Optimization failed, was infeasible, or was cancelled by the user.")
+
+        start_time_ref = prepared_df['접안예정일시'].min()
+        optimized_df['Start_dt'] = optimized_df['Start_h'].apply(lambda h: start_time_ref + timedelta(hours=h))
+        optimized_df['Completion_dt'] = optimized_df['Completion_h'].apply(lambda h: start_time_ref + timedelta(hours=h))
 
         optimized_df = optimized_df.replace({pd.NaT: None, np.nan: None})
         result_json = optimized_df.to_json(orient='records', date_format='iso')

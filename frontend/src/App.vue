@@ -5,7 +5,7 @@
         선석 스케줄링
       </button>
       <button @click="currentView = 'etd'" :class="{ active: currentView === 'etd' }">
-        단일 선박 ETD 계산
+        선박 ETD 예측 서비스
       </button>
     </nav>
     <main>

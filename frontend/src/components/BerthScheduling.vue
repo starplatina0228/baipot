@@ -4,7 +4,7 @@
       <div class="controls">
         <div v-if="viewMode === 'list'" class="search-group">
           <div class="date-picker">
-            <label for="start-date">Start Date:</label>
+            <label for="start-date">시작 일자:</label>
             <date-picker 
               v-model:value="startDate" 
               format="YYYY-MM-DD" 
@@ -12,7 +12,7 @@
               placeholder="Select Start Date"
               :disabled="loading"
             ></date-picker>
-            <label for="end-date">End Date:</label>
+            <label for="end-date">마감 일자:</label>
             <date-picker 
               v-model:value="endDate" 
               format="YYYY-MM-DD" 
@@ -29,9 +29,9 @@
 
         <div v-if="viewMode === 'chart'" class="back-button-group">
             <button @click="showListView">
-                &larr; Back to List
+                &larr; 돌아가기
             </button>
-            <h2>Optimization Result</h2>
+            <h2>선석 스케줄링 최적화 결과</h2>
         </div>
 
         <!-- Action Buttons -->
@@ -121,8 +121,7 @@ const {
 } = useSchedule();
 
 const columnNames = {
-  predicted_work_time: '예상 작업소요시간(H)',
-  // Add mappings for optimization results if needed
+  predicted_work_time: '예상 작업소요시간(분)',
   'Ship': '선명',
   'Start_h': '계획 접안시간(H)',
   'Completion_h': '계획 완료시간(H)',

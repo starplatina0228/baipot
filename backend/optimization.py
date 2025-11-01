@@ -16,7 +16,7 @@ def run_milp_model(processed_df, cancel_event, fixed_ship_merge_keys=None):
         pd.DataFrame: 최적화된 선석 배정 결과. 최적해를 찾지 못하거나 중단되면 None을 반환합니다.
     """
     # --- 1. 입력 데이터 추출 및 변환 ---
-    s_i = (processed_df['predicted_work_time'] * 60).tolist()
+    s_i = processed_df['predicted_work_time'].tolist()  # 작업 소요 시간 (분)
     start_time_ref = processed_df['접안예정일시'].min()
     a_i_minutes = ((processed_df['접안예정일시'] - start_time_ref).dt.total_seconds() / 60).tolist()
     a_i = [m / 60 for m in a_i_minutes]

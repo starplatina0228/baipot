@@ -40,19 +40,6 @@
         >
           <div class="ship-label">{{ item.ship.Ship }}</div>
         </div>
-
-        <!-- Original Departure Marker (Dynamic) -->
-        <div 
-          v-if="hoveredItem && hoveredItem.ship.original_Completion_h"
-          class="original-marker"
-          :style="{
-            top: hoveredItem.top + '%',
-            height: hoveredItem.height + '%',
-            left: getOriginalMarkerPosition(hoveredItem) + '%'
-          }"
-          :title="`원본 출항: ${getOriginalTime(hoveredItem.ship.original_Completion_h)}`"
-        ></div>
-
       </div>
     </div>
 
@@ -69,10 +56,6 @@
         <div class="tooltip-row">
           <span class="tooltip-label">최적화된 기간</span>
           <span class="tooltip-value">{{ new Date(tooltip.content.startTime).toLocaleString() }} - {{ new Date(tooltip.content.endTime).toLocaleString() }}</span>
-        </div>
-        <div v-if="tooltip.content.ship.original_Start_h !== undefined && tooltip.content.ship.original_Completion_h !== undefined" class="tooltip-row">
-          <span class="tooltip-label">크롤링된 기간</span>
-          <span class="tooltip-value">{{ getOriginalTime(tooltip.content.ship.original_Start_h) }} - {{ getOriginalTime(tooltip.content.ship.original_Completion_h) }}</span>
         </div>
         <div class="tooltip-row">
           <span class="tooltip-label">선석 위치</span>
@@ -95,10 +78,6 @@ const props = defineProps({
     type: Array,
     required: true,
   },
-  startDate: {
-    type: String,
-    required: true,
-  },
   highlightedShipKey: {
     type: String,
     default: null,
@@ -108,7 +87,6 @@ const props = defineProps({
 const Y_AXIS_TICK_INTERVAL = 100; // meters
 
 // --- State for Hover Effects ---
-const hoveredItem = ref(null);
 const tooltip = ref({
   visible: false,
   content: { ship: {} }, // Initialize to prevent errors
@@ -124,13 +102,11 @@ const handleChartMouseMove = (event) => {
 };
 
 const handleShipMouseEnter = (item) => {
-  hoveredItem.value = item;
   tooltip.value.content = item;
   tooltip.value.visible = true;
 };
 
 const handleShipMouseLeave = () => {
-  hoveredItem.value = null;
   tooltip.value.visible = false;
 };
 
@@ -140,17 +116,15 @@ const chartData = computed(() => {
     return { items: [], days: [], maxBerthPosition: 0, minDate: null, maxDate: null };
   }
 
-  const ships = props.scheduleData.filter(s => s.Length_m > 0);
+  const ships = props.scheduleData.filter(s => s.Length_m > 0 && s.Start_dt && s.Completion_dt);
   if (ships.length === 0) {
       return { items: [], days: [], maxBerthPosition: 0, minDate: null, maxDate: null };
   }
 
-  const baseTime = new Date(props.startDate).getTime();
-
   const itemsWithTimestamps = ships.map(ship => ({
     ship,
-    startTime: baseTime + ship.Start_h * 3600 * 1000,
-    endTime: baseTime + ship.Completion_h * 3600 * 1000,
+    startTime: new Date(ship.Start_dt).getTime(),
+    endTime: new Date(ship.Completion_dt).getTime(),
   }));
 
   // X-Axis (Time) Calculation
@@ -191,28 +165,6 @@ const chartData = computed(() => {
 
   return { items, days, maxBerthPosition, minDate, maxDate };
 });
-
-const getOriginalMarkerPosition = (item) => {
-    if (!item || !item.ship.original_Completion_h || !chartData.value.minDate) return 0;
-
-    const chartStartTime = chartData.value.minDate.getTime();
-    const chartTotalDuration = chartData.value.maxDate.getTime() - chartStartTime;
-
-    if (chartTotalDuration <= 0) return 0;
-
-    const baseTime = new Date(props.startDate).getTime();
-    const originalEndTime = baseTime + item.ship.original_Completion_h * 3600 * 1000;
-
-    const leftPercentage = ((originalEndTime - chartStartTime) / chartTotalDuration) * 100;
-    return leftPercentage;
-};
-
-const getOriginalTime = (timeInHours) => {
-    if (timeInHours === undefined || timeInHours === null) return '';
-    const baseTime = new Date(props.startDate).getTime();
-    const time = baseTime + timeInHours * 3600 * 1000;
-    return new Date(time).toLocaleString();
-};
 
 const yAxisTicks = computed(() => {
   if (chartData.value.maxBerthPosition === 0) return [0];
@@ -376,17 +328,6 @@ const getShipColor = (shipName) => {
   text-overflow: ellipsis;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   pointer-events: none; /* Make sure label doesn't block mouse events */
-}
-
-/* Original Marker */
-.original-marker {
-  position: absolute;
-  width: 0;
-  border-left: 3px dashed rgba(220, 53, 69, 0.9);
-  transform: translateX(-1.5px);
-  z-index: 11; /* Higher than hovered ship-block */
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
 }
 
 /* Custom Tooltip */

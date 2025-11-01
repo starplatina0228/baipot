@@ -2,53 +2,34 @@
   <div class="etd-calculator-wrapper">
     <div class="etd-calculator">
       <div class="etd-header">
-        <h2>단일 선박 ETD 계산</h2>
-        <p class="etd-subtitle">선박의 정보를 입력하여 예상 출항 시간을 계산합니다.</p>
+        <h2>선박 ETD 예측 서비스</h2>
+        <p class="etd-subtitle">선박의 정보를 입력하면 예상 출항 시간을 제공합니다.</p>
       </div>
 
-      <!-- Step Indicator -->
-      <div class="step-indicator">
-        <div :class="['step', { active: step >= 1, completed: step > 1 }]">선사 선택</div>
-        <div :class="['step', { active: step >= 2, completed: step > 2 }]">선명 선택</div>
-        <div :class="['step', { active: step >= 3, completed: step > 3 }]">ETA 선택</div>
-        <div :class="['step', { active: step >= 4, completed: step > 4 }]">정보 확인 및 계산</div>
-      </div>
-
-      <!-- Step 1: Select Shipping Line -->
-      <div v-if="step === 1" class="etd-form-step">
+      <div class="etd-form">
+        <!-- Step 1: Select Shipping Line -->
         <div class="form-group">
-          <label>선사</label>
-          <input v-model="selectedShippingLine" @focus="showShippingLineDropdown = true" placeholder="선사를 선택하세요">
-          <div v-if="showShippingLineDropdown" class="dropdown">
-            <div v-for="line in shippingLines" :key="line" @click="selectShippingLine(line)" class="dropdown-item">
+          <label for="shipping-line-select">선사</label>
+          <select id="shipping-line-select" v-model="etdRequestData.shipping_company">
+            <option disabled value="">선사를 선택하세요</option>
+            <option v-for="line in shippingLines" :key="line" :value="line">
               {{ line }}
-            </div>
-          </div>
+            </option>
+          </select>
         </div>
-        <div class="step-actions">
-          <button @click="nextStep" :disabled="!selectedShippingLine">다음</button>
-        </div>
-      </div>
 
-      <!-- Step 2: Select Ship Name -->
-      <div v-if="step === 2" class="etd-form-step">
+        <!-- Step 2: Select Ship Name -->
         <div class="form-group">
-          <label>선명</label>
-          <input v-model="etdRequestData.ship_name" @focus="showShipNameDropdown = true" placeholder="선명을 선택하세요">
-          <div v-if="showShipNameDropdown" class="dropdown">
-            <div v-for="ship in shipNames" :key="ship.ship_name" @click="selectShipName(ship)" class="dropdown-item">
+          <label for="ship-name-select">선명</label>
+          <select id="ship-name-select" v-model="etdRequestData.ship_name" :disabled="!etdRequestData.shipping_company">
+            <option disabled value="">선명을 선택하세요</option>
+            <option v-for="ship in shipNames" :key="ship.ship_name" :value="ship.ship_name">
               {{ ship.ship_name }}
-            </div>
-          </div>
+            </option>
+          </select>
         </div>
-        <div class="step-actions">
-          <button @click="prevStep">이전</button>
-          <button @click="nextStep" :disabled="!etdRequestData.ship_name">다음</button>
-        </div>
-      </div>
 
-      <!-- Step 3: Select ETA -->
-      <div v-if="step === 3" class="etd-form-step">
+        <!-- Step 3: Select ETA -->
         <div class="form-group">
           <label>도착예정시간 (ETA)</label>
           <date-picker 
@@ -56,64 +37,55 @@
             type="datetime" 
             format="YYYY-MM-DD HH:mm"
             value-type="date" 
-            placeholder="Select ETA"
+            placeholder="ETA를 선택하세요"
+            :disabled="!etdRequestData.ship_name"
             :disabled-date="disablePastDates"
             confirm
             confirm-text="OK"
           ></date-picker>
         </div>
-        <div class="step-actions">
-          <button @click="prevStep">이전</button>
-          <button @click="nextStep" :disabled="!etdRequestData.eta">다음</button>
-        </div>
-      </div>
-
-      <!-- Step 4: Review and Calculate -->
-      <div v-if="step === 4" class="etd-form-step">
-        <div class="review-table">
-          <div class="review-row">
-            <div class="review-label">선사</div>
-            <div class="review-value">{{ etdRequestData.shipping_company }}</div>
-          </div>
-          <div class="review-row">
-            <div class="review-label">선명</div>
-            <div class="review-value">{{ etdRequestData.ship_name }}</div>
-          </div>
-          <div class="review-row">
-            <div class="review-label">ETA</div>
-            <div class="review-value">{{ etdRequestData.eta ? etdRequestData.eta.toLocaleString() : '' }}</div>
-          </div>
-        </div>
-        <div class="etd-form">
-          <div class="form-column">
-            <div class="form-group">
-              <label>선박 길이 (m)</label>
-              <input type="number" v-model.number="etdRequestData.ship_length" @input="validateShipLength">
-               <p v-if="shipLengthError" class="error-message">{{ shipLengthError }}</p>
+        
+        <!-- Step 4: Review and Calculate -->
+        <div v-if="canCalculate" class="calculation-section">
+          <div class="review-table">
+            <div class="review-row">
+              <div class="review-label">선박 길이 (m)</div>
+              <div class="review-value">
+                <input type="number" v-model.number="etdRequestData.ship_length" @input="validateShipLength">
+              </div>
             </div>
-            <div class="form-group">
-              <label>총톤수</label>
-              <input type="number" v-model.number="etdRequestData.gross_tonnage">
+             <div class="review-row" v-if="shipLengthError">
+                <p class="error-message full-width">{{ shipLengthError }}</p>
             </div>
-          </div>
-          <div class="form-column">
-            <div class="form-group">
-              <label>Shift</label>
-              <input type="number" v-model.number="etdRequestData.shift">
+            <div class="review-row">
+              <div class="review-label">총톤수</div>
+              <div class="review-value">
+                <input type="number" v-model.number="etdRequestData.gross_tonnage">
+              </div>
             </div>
-            <div class="form-group">
-              <label>양하물량</label>
-              <input type="number" v-model.number="etdRequestData.cargo_unload">
+            <div class="review-row">
+              <div class="review-label">Shift</div>
+              <div class="review-value">
+                <input type="number" v-model.number="etdRequestData.shift">
+              </div>
             </div>
-            <div class="form-group">
-              <label>적하물량</label>
-              <input type="number" v-model.number="etdRequestData.cargo_load">
+            <div class="review-row">
+              <div class="review-label">양하물량</div>
+              <div class="review-value">
+                <input type="number" v-model.number="etdRequestData.cargo_unload">
+              </div>
+            </div>
+            <div class="review-row">
+              <div class="review-label">적하물량</div>
+              <div class="review-value">
+                <input type="number" v-model.number="etdRequestData.cargo_load">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="step-actions">
-          <button @click="prevStep">이전</button>
-          <button @click="calculateEtdWrapper" :disabled="etdLoading || shipLengthError">ETD 계산</button>
+          <div class="step-actions">
+            <button v-if="!etdLoading" @click="calculateEtd" :disabled="isCalculationDisabled">ETD 계산</button>
+            <button v-else @click="cancelEtdRequest" class="cancel-btn">실행 취소</button>
+          </div>
         </div>
       </div>
     </div>
@@ -137,11 +109,11 @@
           <span class="result-value">{{ formatDatetime(highlightedShipData.Start_dt) }} ~ {{ formatDatetime(highlightedShipData.Completion_dt) }}</span>
         </div>
         <div class="result-item">
-          <span class="result-label">예상 대기 시간</span>
+          <span class="result-label">예상 대기 시간 </span>
           <span class="result-value">{{ highlightedShipData.Waiting_h.toFixed(2) }} 시간</span>
         </div>
         <div class="result-item">
-          <span class="result-label">배정 선석 위치</span>
+          <span class="result-label">배정 선석 위치 </span>
           <span class="result-value">{{ highlightedShipData.Position_m.toFixed(2) }}m</span>
         </div>
       </div>
@@ -158,20 +130,16 @@
         <table class="schedule-table">
           <thead>
             <tr>
-              <th>선사</th>
               <th>선명</th>
               <th>접안 시간</th>
               <th>완료 시간</th>
-              <th>선석</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="ship in etdResult" :key="ship.merge_key" :class="{ 'highlighted-ship-row': ship.merge_key === highlightKey }">
-              <td>{{ ship.shipping_company }}</td>
               <td>{{ ship.Ship }}</td>
               <td>{{ formatDatetime(ship.Start_dt) }}</td>
               <td>{{ formatDatetime(ship.Completion_dt) }}</td>
-              <td>{{ ship.berth }}</td>
             </tr>
           </tbody>
         </table>
@@ -188,61 +156,85 @@ import 'vue-datepicker-next/index.css';
 import GanttChart from './GanttChart.vue';
 
 const {
-  ships,
+  ships, // This is now an object: { company: [ships...] }
   etdRequestData,
   etdResult,
   etdLoading,
   etdError,
   calculateEtd,
+  cancelEtdRequest,
 } = useSchedule();
 
-const step = ref(1);
-const selectedShippingLine = ref('');
-const showShippingLineDropdown = ref(false);
-const showShipNameDropdown = ref(false);
 const shipLengthError = ref('');
 
+// Initialize request data structure
+etdRequestData.value = {
+  shipping_company: '',
+  ship_name: '',
+  eta: null,
+  ship_length: 0,
+  gross_tonnage: 0,
+  shift: 0,
+  cargo_unload: 0,
+  cargo_load: 0,
+};
+
 const shippingLines = computed(() => {
-  if (!ships.value) return [];
-  const lines = ships.value.map(ship => ship.shipping_company);
-  return [...new Set(lines)];
+  return Object.keys(ships.value || {});
 });
 
 const shipNames = computed(() => {
-  if (!ships.value || !selectedShippingLine.value) return [];
-  return ships.value.filter(ship => ship.shipping_company === selectedShippingLine.value);
+  const company = etdRequestData.value.shipping_company;
+  if (!company || !ships.value[company]) return [];
+  return ships.value[company];
 });
 
-watch(selectedShippingLine, (newLine, oldLine) => {
-  if (newLine !== oldLine) {
-    etdRequestData.value.ship_name = '';
-    etdRequestData.value.shipping_company = newLine;
+// Watch for shipping company changes to reset ship name
+watch(() => etdRequestData.value.shipping_company, (newCompany) => {
+  etdRequestData.value.ship_name = '';
+  etdRequestData.value.eta = null; // Also reset ETA
+  shipLengthError.value = ''; // Clear potential errors
+});
+
+// Watch for ship name changes to auto-fill ship data
+watch(() => etdRequestData.value.ship_name, (newShipName) => {
+  if (newShipName) {
+    const company = etdRequestData.value.shipping_company;
+    const selectedShip = ships.value[company]?.find(ship => ship.ship_name === newShipName);
+    if (selectedShip) {
+      etdRequestData.value.ship_length = selectedShip.LOA;
+      etdRequestData.value.gross_tonnage = selectedShip.gross_tonnage;
+      validateShipLength(); // Validate length immediately after auto-filling
+    }
+  } else {
+    // Clear fields if ship name is reset
+    etdRequestData.value.ship_length = 0;
+    etdRequestData.value.gross_tonnage = 0;
+    shipLengthError.value = '';
   }
 });
 
-function selectShippingLine(line) {
-  selectedShippingLine.value = line;
-  showShippingLineDropdown.value = false;
-}
+const canCalculate = computed(() => {
+  return etdRequestData.value.shipping_company && etdRequestData.value.ship_name && etdRequestData.value.eta;
+});
 
-function selectShipName(ship) {
-  etdRequestData.value.ship_name = ship.ship_name;
-  etdRequestData.value.ship_length = ship.LOA;
-  etdRequestData.value.gross_tonnage = ship.gross_tonnage;
-  showShipNameDropdown.value = false;
-}
-
-function nextStep() {
-  if (step.value < 4) {
-    step.value++;
+const isCalculationDisabled = computed(() => {
+  if (etdLoading.value || shipLengthError.value) {
+    return true;
   }
-}
-
-function prevStep() {
-  if (step.value > 1) {
-    step.value--;
+  const data = etdRequestData.value;
+  // Disable if any required field for calculation is missing or invalid
+  if (data.ship_length <= 0 || data.gross_tonnage <= 0) {
+    return true;
   }
-}
+  // For cargo and shift, 0 is a valid value, so we just check for null/undefined.
+  if (data.shift === null || data.shift === undefined ||
+      data.cargo_unload === null || data.cargo_unload === undefined ||
+      data.cargo_load === null || data.cargo_load === undefined) {
+    return true;
+  }
+  return false;
+});
 
 function disablePastDates(date) {
   const today = new Date();
@@ -258,13 +250,9 @@ function validateShipLength() {
   }
 }
 
-async function calculateEtdWrapper() {
-  await calculateEtd();
-  step.value = 5; // Move to result view
-}
-
 const highlightKey = computed(() => {
-  if (!etdRequestData.value) return null;
+  if (!etdRequestData.value || !etdRequestData.value.ship_name) return null;
+  // The ship name is unique enough for the key within the result
   return `${etdRequestData.value.shipping_company}_${etdRequestData.value.ship_name.replace(/\s+/g, '')}`;
 });
 
@@ -303,6 +291,9 @@ const formatDatetime = (isoString) => {
 .etd-calculator-wrapper {
   padding: 2rem 1.5rem;
   margin: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .etd-calculator {
@@ -327,38 +318,13 @@ const formatDatetime = (isoString) => {
   font-size: 0.95rem;
 }
 
-.step-indicator {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-
-.step {
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  color: #999;
-  font-weight: 500;
-}
-
-.step.active {
-  background-color: #e7f3ff;
-  color: #007bff;
-}
-
-.step.completed {
-  background-color: #d4edda;
-  color: #155724;
-}
-
-.etd-form-step {
+.etd-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .form-group {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -370,38 +336,43 @@ const formatDatetime = (isoString) => {
   color: #34495e;
 }
 
-.form-group input {
+.form-group input,
+.form-group select,
+.mx-datepicker {
+  width: 100%;
   padding: 0.65rem 0.85rem;
   border: 1px solid #ced4da;
   border-radius: 6px;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: white;
-  border: 1px solid #ced4da;
-  border-radius: 6px;
-  max-height: 200px;
-  overflow-y: auto;
-  z-index: 10;
+.form-group select {
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3csvg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
 }
 
-.dropdown-item {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.form-group select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
 }
 
-.dropdown-item:hover {
-  background-color: #f0f0f0;
+.calculation-section {
+  margin-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 2rem;
 }
 
 .step-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -412,6 +383,11 @@ const formatDatetime = (isoString) => {
   background-color: #007bff;
   color: white;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.step-actions button.cancel-btn {
+  background-color: #dc3545;
 }
 
 .step-actions button:disabled {
@@ -427,7 +403,8 @@ const formatDatetime = (isoString) => {
 
 .review-row {
   display: flex;
-  padding: 0.75rem 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid #e9ecef;
 }
 .review-row:last-child {
@@ -436,25 +413,35 @@ const formatDatetime = (isoString) => {
 
 .review-label {
   font-weight: 600;
-  width: 120px;
+  width: 150px;
   color: #495057;
+  flex-shrink: 0;
 }
 
 .review-value {
   color: #212529;
+  flex-grow: 1;
 }
 
-.etd-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+.review-value input {
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.review-value input:focus {
+  outline: 1px solid #007bff;
 }
 
 .error-message {
   color: #dc3545;
   font-size: 0.8rem;
   margin-top: 0.25rem;
+}
+.error-message.full-width {
+    width: 100%;
+    text-align: right;
+    padding-right: 0.5rem;
 }
 
 .etd-result-wrapper {
