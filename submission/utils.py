@@ -243,8 +243,8 @@ class PortScheduleCrawler:
                 
                 # ARRIVE, PLANNED 상태이면서 선명 있는 데이터만 포함
                 if vessel_data and vessel_data.get('선명', '').strip():
-                    # if vessel_data.get('상태') in ['ARRIVED', 'PLANNED']:
-                    if vessel_data.get('상태') in ["DEPARTED"]: #시나리오 테스트용, DEPATED만 고려하여 ETD 서비스 호출 시점에 따른 결과값 비교 위함
+                    if vessel_data.get('상태') in ['ARRIVED', 'PLANNED']:
+                    # if vessel_data.get('상태') in ["DEPARTED"]: #시나리오 테스트용, DEPATED만 고려하여 ETD 서비스 호출 시점에 따른 결과값 비교 위함
                         schedule_data.append(vessel_data)
                     
             except Exception as e:
@@ -336,7 +336,7 @@ def get_work_plan_data(start_date, end_date, output_format='list'):
     result_data = crawler.get_schedule_data(start_date, end_date, output_format='list')
     if result_data:
         df = pd.DataFrame(result_data)
-        df.drop_duplicates(subset=['선명', '모선항차'], inplace=True)
+        df.drop_duplicates(subset=['선사', '선명', '모선항차', '선사항차'], inplace=True)
         return df
     else:
         raise ValueError("No data crawled or data is empty")

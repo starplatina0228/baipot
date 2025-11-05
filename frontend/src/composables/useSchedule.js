@@ -33,7 +33,7 @@ export function useSchedule() {
   const etdError = ref(null);
 
   const api = axios.create({
-    baseURL: 'https://f4a7e53528a6.ngrok-free.app',
+    baseURL: ' https://7d537719c0f4.ngrok-free.app',
   });
 
   const selectedShips = computed(() => 

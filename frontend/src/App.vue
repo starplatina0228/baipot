@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="main-nav">
       <button @click="currentView = 'scheduling'" :class="{ active: currentView === 'scheduling' }">
-        선석 스케줄링
+        TOS (HPNT)
       </button>
       <button @click="currentView = 'etd'" :class="{ active: currentView === 'etd' }">
         선박 ETD 예측 서비스

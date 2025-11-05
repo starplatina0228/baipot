@@ -1,0 +1,37 @@
+2025-11-04 17:40:40,966 - INFO - Starting daily berth planning workflow for 20251104
+2025-11-04 17:40:40,966 - INFO - Step 1: Starting data crawling...
+2025-11-04 17:40:41,614 - INFO - Crawled data saved to results_20251104/hpnt_crawled_data_20251104.csv
+2025-11-04 17:40:41,614 - INFO - Step 2: Predicting work time...
+2025-11-04 17:40:42,405 - INFO - Work time predictions saved to results_20251104/work_time_predictions_20251104.csv
+2025-11-04 17:40:42,405 - INFO - Step 3: Running MILP optimization...
+2025-11-04 17:40:42,413 - INFO - Set parameter WLSAccessID
+2025-11-04 17:40:42,413 - INFO - Set parameter WLSSecret
+2025-11-04 17:40:42,413 - INFO - Set parameter LicenseID to value 2441117
+2025-11-04 17:40:42,747 - INFO - Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+2025-11-04 17:40:42,756 - INFO - Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+2025-11-04 17:40:42,756 - INFO - 
+2025-11-04 17:40:42,756 - INFO - CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+2025-11-04 17:40:42,756 - INFO - Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+2025-11-04 17:40:42,756 - INFO - 
+2025-11-04 17:40:42,756 - INFO - Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+2025-11-04 17:40:42,756 - INFO - Optimize a model with 153 rows, 90 columns and 444 nonzeros
+2025-11-04 17:40:42,757 - INFO - Model fingerprint: 0x5759a9c4
+2025-11-04 17:40:42,757 - INFO - Variable types: 18 continuous, 72 integer (72 binary)
+2025-11-04 17:40:42,757 - INFO - Coefficient statistics:
+2025-11-04 17:40:42,757 - INFO -   Matrix range     [1e+00, 1e+04]
+2025-11-04 17:40:42,757 - INFO -   Objective range  [1e+00, 1e+00]
+2025-11-04 17:40:42,757 - INFO -   Bounds range     [1e+00, 1e+03]
+2025-11-04 17:40:42,757 - INFO -   RHS range        [1e+00, 1e+04]
+2025-11-04 17:40:42,758 - INFO - Found heuristic solution: objective 0.0000000
+2025-11-04 17:40:42,758 - INFO - 
+2025-11-04 17:40:42,758 - INFO - Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+2025-11-04 17:40:42,758 - INFO - Thread count was 1 (of 20 available processors)
+2025-11-04 17:40:42,758 - INFO - 
+2025-11-04 17:40:42,758 - INFO - Solution count 1: 0 
+2025-11-04 17:40:42,758 - INFO - 
+2025-11-04 17:40:42,758 - INFO - Optimal solution found (tolerance 1.00e-04)
+2025-11-04 17:40:42,758 - INFO - Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+2025-11-04 17:40:42,766 - INFO - MILP optimization completed successfully.
+2025-11-04 17:40:42,767 - INFO - Step 5: Generating Gantt chart comparison...
+2025-11-04 17:40:43,040 - INFO - Gantt chart comparison saved to 'results_20251104/gantt_comparison_20251104.png'.
+2025-11-04 17:40:43,040 - INFO - Step 6: Calculating and comparing ETD for CSV...

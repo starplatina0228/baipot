@@ -23,7 +23,7 @@ app = FastAPI(
 origins = [
     "http://localhost:5173",
     "https://choi.github.io/baipot",
-    "https://f4a7e53528a6.ngrok-free.app",
+    " https://7d537719c0f4.ngrok-free.app",
 ]
 
 app.add_middleware(
@@ -70,6 +70,7 @@ async def _get_prepared_data(request: CrawlRequest) -> pd.DataFrame:
             return pd.DataFrame()
 
         crawled_df = pd.DataFrame(crawled_data['schedule_data'])
+        crawled_df.drop_duplicates(subset=['선사', '선명', '모선항차', '선사항차'], inplace=True)
         final_df = predict_work_time(crawled_df)
         return final_df
     except Exception as e:

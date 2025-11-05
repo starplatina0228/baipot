@@ -110,12 +110,19 @@ class PortScheduleCrawler:
             """전체 페이지에서 CSRF 토큰 찾기 (JS 코드 내에서)"""
             page_text = str(soup)
             
-            pattern = r'name\s*:\s*["\']CSRF_TOKEN["\'].*?value\s*:\s*["\']([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})'
+            # name: 'CSRF_TOKEN', value:'...' 구조
+            # re.DOTALL 플래그는 줄바꿈(...)이 있어도 찾을 수 있음
+            # name\s*:\s*['\"]CSRF_TOKEN['\"] name 이라는 글자뒤 : 이 나오고 "CSRF_TOKEN" 찾음
+            # \s*은 공백이 0개 이상, 공백 처리 e.g. name: , name :
+            # .*? 는 value 까지의 모든 문자 (최소 매칭) .* : 어떤 문자든, ? : 짧게
+            # ['\"]([^'\"]+)['\"] value 뒤에 ' 또는 " 로 감싸진 값 추출, ([^'\"]+) 토큰값 (따옴표가 아닌 문자)
+            pattern = r"name\s*:\s*['\"]CSRF_TOKEN['\"].*?value\s*:\s*['\"]([^'\"]+)['\"]"
             
             match = re.search(pattern, page_text, re.DOTALL)
             
             if match:
                 token = match.group(1)
+                # print(f"name: 'CSRF_TOKEN', value:'...' 구조 : {token}")
                 return token
 
             print("No CSRF")

@@ -25,10 +25,10 @@ def main():
        - 최적화된 스케줄(`solution_df`)을 바탕으로 최종 출항 예정 시간(ETD)을 계산하여 출력
     """
     print("HPNT data crawlling...")
-    # start_date = datetime.now().strftime('%Y-%m-%d')
-    # end_date = (datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')
-    start_date = '2025-10-29'
-    end_date = '2025-11-05'
+    start_date = datetime.now().strftime('%Y-%m-%d')
+    end_date = (datetime.now() + timedelta(days=5)).strftime('%Y-%m-%d')
+    # start_date = '2025-11-02'
+    # end_date = '2025-11-04'
 
     try:
         work_plan_df = get_work_plan_data(start_date, end_date)

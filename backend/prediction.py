@@ -1,5 +1,5 @@
 import pandas as pd
-import joblib
+import pickle
 import numpy as np
 import logging
 import os
@@ -23,38 +23,40 @@ if not logger.handlers:
 
 def preprocess_for_prediction(df):
     """
-    Preprocesses the data for LGBM model prediction.
+    LGBM 모델 예측을 위해 데이터를 전처리합니다.
     """
     ship_info_path = os.path.join(BACKEND_DIR, 'ship_info.csv')
     ship_info_df = pd.read_csv(ship_info_path)
-    
-    df['merge_key'] = df['선사'].astype(str) + '_' + df['선명'].str.replace(r'\s+', '', regex=True)
     ship_info_df['merge_key'] = ship_info_df['선사'].astype(str) + '_' + ship_info_df['선명'].str.replace(r'\s+', '', regex=True)
-    ship_info_df = ship_info_df.drop_duplicates(subset='merge_key', keep='last')
-    df = pd.merge(df, ship_info_df[['merge_key', '총톤수', 'LOA']], on='merge_key', how='left', suffixes=('_x', '_y'))
-    df.drop(columns=['merge_key'], inplace=True)
-
-    # Combine columns if they were duplicated during the merge
-    if 'LOA_x' in df.columns:
-        df['LOA'] = df['LOA_x'].combine_first(df['LOA_y'])
-        df.drop(columns=['LOA_x', 'LOA_y'], inplace=True)
+    ship_info_df.drop_duplicates(subset=['merge_key'], inplace=True)
+    df['merge_key'] = df['선사'].astype(str) + '_' + df['선명'].str.replace(r'\s+', '', regex=True)
     
-    if '총톤수_x' in df.columns:
-        df['총톤수'] = df['총톤수_x'].combine_first(df['총톤수_y'])
-        df.drop(columns=['총톤수_x', '총톤수_y'], inplace=True)
+    # merge_key를 기반으로 병합. 접미사를 지정하여 중복 열 처리
+    df = pd.merge(df, ship_info_df[['merge_key', '총톤수', 'LOA']], on='merge_key', how='left', suffixes=['_original', '_from_csv'])
+
+    # '총톤수'와 'LOA'가 중복된 경우, original 값을 우선 사용하고, 없으면 csv 값으로 채움
+    if '총톤수_original' in df.columns:
+        df['총톤수'] = df['총톤수_original'].combine_first(df['총톤수_from_csv'])
+        df.drop(columns=['총톤수_original', '총톤수_from_csv'], inplace=True)
+
+    if 'LOA_original' in df.columns:
+        df['LOA'] = df['LOA_original'].combine_first(df['LOA_from_csv'])
+        df.drop(columns=['LOA_original', 'LOA_from_csv'], inplace=True)
+
+    df.drop(columns=['merge_key'], inplace=True)
 
     # Add a flag for rows that will use averaged values
     df['uses_average_values'] = False
 
+    # 총톤수 또는 LOA 정보가 없는 경우, 해당 선박 정보 출력 및 평균값으로 대체
     missing_info_rows = df[df['총톤수'].isnull() | df['LOA'].isnull()]
     if not missing_info_rows.empty:
-        # Set the flag to True for rows where data is missing
         df.loc[missing_info_rows.index, 'uses_average_values'] = True
-        
-        logger.info("Missing '총톤수' or 'LOA' for some ships, replacing with mean value:")
+        logger.info("일부 선박의 '총톤수' 또는 'LOA' 정보가 없어 평균값으로 대체:")
         for index, row in missing_info_rows.iterrows():
             logger.info(f"- 선사: {row['선사']}, 선명: {row['선명']}")
         
+        # 평균값으로 결측치 대체
         df['총톤수'].fillna(df['총톤수'].mean(), inplace=True)
         df['LOA'].fillna(df['LOA'].mean(), inplace=True)
 
@@ -73,6 +75,7 @@ def preprocess_for_prediction(df):
         7:'여름', 8:'여름', 9:'가을', 10:'가을', 11:'가을', 12:'겨울'
     })
 
+    # Feature-specific type conversion for the new model
     numeric_cols = ['shift', '양적하물량', '총톤수', 'LOA', '입항시간', '입항분기']
     for col in numeric_cols:
         if col in df.columns:
@@ -87,16 +90,17 @@ def preprocess_for_prediction(df):
 
 def predict_work_time(crawled_df):
     """
-    Takes a crawled dataframe, preprocesses it, and returns it with predicted work time.
+    크롤링된 데이터프레임을 받아 전처리 후, 작업소요시간을 예측하여 반환
     """
     processed_df = preprocess_for_prediction(crawled_df)
-    
-    model_path = os.path.join(BACKEND_DIR, 'best_lgbm_model.pkl')
+
+    model_path = os.path.join(BACKEND_DIR, 'lgbm_weight.pkl')
 
     try:
         with open(model_path, 'rb') as f:
-            lgbm_model = joblib.load(f)
+            lgbm_model = pickle.load(f)
 
+        # Features for the new model (without '선사')
         features = ['입항시간', '입항요일', '입항분기', '입항계절', '총톤수', '양적하물량', 'shift']
         
         if not all(f in processed_df.columns for f in features):
@@ -104,7 +108,7 @@ def predict_work_time(crawled_df):
             raise ValueError(f"missing values :  {missing_features}")
 
         X_predict = processed_df[features]
-        
+            
         predicted_time = lgbm_model.predict(X_predict)
         processed_df['predicted_work_time'] = predicted_time
 

@@ -1,0 +1,41 @@
+2025-11-05 21:49:01,583 - INFO - Starting daily berth planning workflow for 20251105
+2025-11-05 21:49:01,583 - INFO - Step 1: Starting data crawling...
+2025-11-05 21:49:02,348 - INFO - Crawled data saved to results_20251105/hpnt_crawled_data_20251105.csv
+2025-11-05 21:49:02,348 - INFO - Step 2: Predicting work time...
+2025-11-05 21:49:03,186 - INFO - Work time predictions saved to results_20251105/work_time_predictions_20251105.csv
+2025-11-05 21:49:03,187 - INFO - Step 3: Running MILP optimization...
+2025-11-05 21:49:03,195 - INFO - Set parameter WLSAccessID
+2025-11-05 21:49:03,195 - INFO - Set parameter WLSSecret
+2025-11-05 21:49:03,195 - INFO - Set parameter LicenseID to value 2441117
+2025-11-05 21:49:03,490 - INFO - Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+2025-11-05 21:49:03,499 - INFO - Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Ubuntu 24.04.2 LTS")
+2025-11-05 21:49:03,499 - INFO - 
+2025-11-05 21:49:03,499 - INFO - CPU model: Intel(R) Core(TM) Ultra 9 285K, instruction set [SSE2|AVX|AVX2]
+2025-11-05 21:49:03,499 - INFO - Thread count: 20 physical cores, 20 logical processors, using up to 20 threads
+2025-11-05 21:49:03,499 - INFO - 
+2025-11-05 21:49:03,500 - INFO - Academic license 2441117 - for non-commercial use only - registered to st___@gmail.com
+2025-11-05 21:49:03,500 - INFO - Optimize a model with 36 rows, 27 columns and 96 nonzeros
+2025-11-05 21:49:03,500 - INFO - Model fingerprint: 0x7062d2bc
+2025-11-05 21:49:03,500 - INFO - Variable types: 9 continuous, 18 integer (18 binary)
+2025-11-05 21:49:03,500 - INFO - Coefficient statistics:
+2025-11-05 21:49:03,500 - INFO -   Matrix range     [1e+00, 5e+03]
+2025-11-05 21:49:03,500 - INFO -   Objective range  [1e+00, 1e+00]
+2025-11-05 21:49:03,500 - INFO -   Bounds range     [1e+00, 1e+03]
+2025-11-05 21:49:03,500 - INFO -   RHS range        [1e+00, 4e+03]
+2025-11-05 21:49:03,505 - INFO - Presolve removed 21 rows and 9 columns
+2025-11-05 21:49:03,505 - INFO - Presolve time: 0.00s
+2025-11-05 21:49:03,505 - INFO - Presolved: 15 rows, 18 columns, 48 nonzeros
+2025-11-05 21:49:03,508 - INFO - Variable types: 6 continuous, 12 integer (12 binary)
+2025-11-05 21:49:03,511 - INFO - Found heuristic solution: objective 0.0000000
+2025-11-05 21:49:03,511 - INFO - 
+2025-11-05 21:49:03,511 - INFO - Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+2025-11-05 21:49:03,511 - INFO - Thread count was 20 (of 20 available processors)
+2025-11-05 21:49:03,511 - INFO - 
+2025-11-05 21:49:03,512 - INFO - Solution count 1: 0 
+2025-11-05 21:49:03,512 - INFO - 
+2025-11-05 21:49:03,512 - INFO - Optimal solution found (tolerance 1.00e-04)
+2025-11-05 21:49:03,512 - INFO - Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+2025-11-05 21:49:03,518 - INFO - MILP optimization completed successfully.
+2025-11-05 21:49:03,520 - INFO - Step 5: Generating Gantt chart comparison...
+2025-11-05 21:49:03,787 - INFO - Gantt chart comparison saved to 'results_20251105/gantt_comparison_20251105.png'.
+2025-11-05 21:49:03,787 - INFO - Step 6: Calculating and comparing ETD for CSV...

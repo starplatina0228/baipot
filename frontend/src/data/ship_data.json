@@ -20,13 +20,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEAMAZON",
+      "ship_name": "AMAZON",
       "gross_tonnage": 114643,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "ONECOLUMBA",
+      "ship_name": "COLUMBA",
       "gross_tonnage": 146694,
       "LOA": 364
     },
@@ -50,7 +50,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEORINOCO",
+      "ship_name": "ORINOCO",
       "gross_tonnage": 114643,
       "LOA": 330
     },
@@ -80,7 +80,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEIBIS",
+      "ship_name": "IBIS",
       "gross_tonnage": 144285,
       "LOA": 364
     },
@@ -98,7 +98,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONESPARKLE",
+      "ship_name": "SPARKLE",
       "gross_tonnage": 139588,
       "LOA": 335
     },
@@ -122,13 +122,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONETRUST",
+      "ship_name": "TRUST",
       "gross_tonnage": 212221,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFREEDOM",
+      "ship_name": "FREEDOM",
       "gross_tonnage": 154724,
       "LOA": 366
     },
@@ -158,7 +158,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECOSMOS",
+      "ship_name": "COSMOS",
       "gross_tonnage": 88089,
       "LOA": 320
     },
@@ -170,7 +170,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFOCUS",
+      "ship_name": "FOCUS",
       "gross_tonnage": 154724,
       "LOA": 366
     },
@@ -182,13 +182,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONETRADITION",
+      "ship_name": "TRADITION",
       "gross_tonnage": 213633,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMAJESTY",
+      "ship_name": "MAJESTY",
       "gross_tonnage": 78316,
       "LOA": 302
     },
@@ -212,25 +212,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMAGNIFICENCE",
+      "ship_name": "MAGNIFICENCE",
       "gross_tonnage": 78316,
       "LOA": 302
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMACKINAC",
+      "ship_name": "MACKINAC",
       "gross_tonnage": 153453,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONETREASURE",
+      "ship_name": "TREASURE",
       "gross_tonnage": 210691,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMOTIVATOR",
+      "ship_name": "MOTIVATOR",
       "gross_tonnage": 78316,
       "LOA": 302
     },
@@ -242,13 +242,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMONACO",
+      "ship_name": "MONACO",
       "gross_tonnage": 150706,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMARVEL",
+      "ship_name": "MARVEL",
       "gross_tonnage": 78316,
       "LOA": 302
     },
@@ -266,13 +266,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMILANO",
+      "ship_name": "MILANO",
       "gross_tonnage": 150706,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFRIENDSHIP",
+      "ship_name": "FRIENDSHIP",
       "gross_tonnage": 154724,
       "LOA": 366
     },
@@ -296,31 +296,31 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMAXIM",
+      "ship_name": "MAXIM",
       "gross_tonnage": 78316,
       "LOA": 302
     },
     {
       "call_sign": null,
-      "ship_name": "ONEHELSINKI",
+      "ship_name": "HELSINKI",
       "gross_tonnage": 96801,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMUNCHEN",
+      "ship_name": "MUNCHEN",
       "gross_tonnage": 151672,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFOREVER",
+      "ship_name": "FOREVER",
       "gross_tonnage": 154724,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONETRIBUTE",
+      "ship_name": "TRIBUTE",
       "gross_tonnage": 213633,
       "LOA": 400
     },
@@ -332,73 +332,73 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONETRIUMPH",
+      "ship_name": "TRIUMPH",
       "gross_tonnage": 212221,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMINATO",
+      "ship_name": "MINATO",
       "gross_tonnage": 152180,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFRONTIER",
+      "ship_name": "FRONTIER",
       "gross_tonnage": 154724,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONECONTINUITY",
+      "ship_name": "CONTINUITY",
       "gross_tonnage": 88089,
       "LOA": 320
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFORTUNE",
+      "ship_name": "FORTUNE",
       "gross_tonnage": 154724,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMISSION",
+      "ship_name": "MISSION",
       "gross_tonnage": 78316,
       "LOA": 302
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMANCHESTER",
+      "ship_name": "MANCHESTER",
       "gross_tonnage": 151672,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONETRUTH",
+      "ship_name": "TRUTH",
       "gross_tonnage": 210691,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFRUITION",
+      "ship_name": "FRUITION",
       "gross_tonnage": 154724,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEFANTASTIC",
+      "ship_name": "FANTASTIC",
       "gross_tonnage": 155545,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMEISHAN",
+      "ship_name": "MEISHAN",
       "gross_tonnage": 152068,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMADRID",
+      "ship_name": "MADRID",
       "gross_tonnage": 152068,
       "LOA": 366
     },
@@ -410,19 +410,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMANEUVER",
+      "ship_name": "MANEUVER",
       "gross_tonnage": 78449,
       "LOA": 302
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMUNCHEN",
+      "ship_name": "MUNCHEN",
       "gross_tonnage": 151672,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONEEAGLE",
+      "ship_name": "EAGLE",
       "gross_tonnage": 145251,
       "LOA": 364
     },
@@ -434,13 +434,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECRANE",
+      "ship_name": "CRANE",
       "gross_tonnage": 144285,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "ONEHARBOUR",
+      "ship_name": "HARBOUR",
       "gross_tonnage": 98747,
       "LOA": 336
     },
@@ -464,7 +464,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMODERN",
+      "ship_name": "MODERN",
       "gross_tonnage": 78316,
       "LOA": 302
     },
@@ -536,7 +536,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEHANGZHOUBAY",
+      "ship_name": "HANGZHOUBAY",
       "gross_tonnage": 96790,
       "LOA": 335
     },
@@ -548,7 +548,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECOMMITMENT",
+      "ship_name": "COMMITMENT",
       "gross_tonnage": 87022,
       "LOA": 316
     },
@@ -560,25 +560,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEALTAIR",
+      "ship_name": "ALTAIR",
       "gross_tonnage": 105644,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "ONEARCADIA",
+      "ship_name": "ARCADIA",
       "gross_tonnage": 105644,
       "LOA": 332
     },
     {
       "call_sign": null,
-      "ship_name": "ONEMANHATTAN",
+      "ship_name": "MANHATTAN",
       "gross_tonnage": 153453,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ONETHESEUS",
+      "ship_name": "THESEUS",
       "gross_tonnage": 76862,
       "LOA": 304
     },
@@ -590,19 +590,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEHAMBURG",
+      "ship_name": "HAMBURG",
       "gross_tonnage": 98747,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "ONEBLUEJAY",
+      "ship_name": "BLUEJAY",
       "gross_tonnage": 145251,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "ONECOMPETENCE",
+      "ship_name": "COMPETENCE",
       "gross_tonnage": 87035,
       "LOA": 316
     },
@@ -614,7 +614,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECONTRIBUTION",
+      "ship_name": "CONTRIBUTION",
       "gross_tonnage": 87023,
       "LOA": 316
     },
@@ -650,7 +650,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONEHONOLULU",
+      "ship_name": "HONOLULU",
       "gross_tonnage": 96917,
       "LOA": 335
     },
@@ -668,7 +668,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONESTORK",
+      "ship_name": "STORK",
       "gross_tonnage": 145251,
       "LOA": 364
     },
@@ -680,13 +680,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECYGNUS",
+      "ship_name": "CYGNUS",
       "gross_tonnage": 146694,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "ONEOWL",
+      "ship_name": "OWL",
       "gross_tonnage": 146412,
       "LOA": 364
     },
@@ -752,7 +752,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ONECOLUMBA",
+      "ship_name": "COLUMBA",
       "gross_tonnage": 146694,
       "LOA": 364
     },
@@ -761,84 +761,90 @@
       "ship_name": "X-PRESSKAILASH",
       "gross_tonnage": 28100,
       "LOA": 222
+    },
+    {
+      "call_sign": null,
+      "ship_name": "HYUNDAIPLUTO",
+      "gross_tonnage": 110632,
+      "LOA": 324
     }
   ],
   "MSC": [
     {
       "call_sign": null,
-      "ship_name": "MSCCARMELITA",
+      "ship_name": "CARMELITA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGIANNINAII",
+      "ship_name": "GIANNINAII",
       "gross_tonnage": 18334,
       "LOA": 175
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMONTEREY",
+      "ship_name": "MONTEREY",
       "gross_tonnage": 50963,
       "LOA": 275
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBARI",
+      "ship_name": "BARI",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBASELV",
+      "ship_name": "BASELV",
       "gross_tonnage": 40807,
       "LOA": 261
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLELLA",
+      "ship_name": "LELLA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKYMEAII",
+      "ship_name": "KYMEAII",
       "gross_tonnage": 18480,
       "LOA": 177
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCHIYO",
+      "ship_name": "CHIYO",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKALAMATAVII",
+      "ship_name": "KALAMATAVII",
       "gross_tonnage": 74656,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCYANGR",
+      "ship_name": "YANGR",
       "gross_tonnage": 40085,
       "LOA": 257
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAAYA",
+      "ship_name": "AAYA",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTOPAZ",
+      "ship_name": "TOPAZ",
       "gross_tonnage": 141754,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSOFIA",
+      "ship_name": "SOFIA",
       "gross_tonnage": 150783,
       "LOA": 300
     },
@@ -850,13 +856,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBEATRICE",
+      "ship_name": "BEATRICE",
       "gross_tonnage": 151559,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJOANNA",
+      "ship_name": "JOANNA",
       "gross_tonnage": 108930,
       "LOA": 337
     },
@@ -868,49 +874,49 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSAVONA",
+      "ship_name": "SAVONA",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGISELLE",
+      "ship_name": "GISELLE",
       "gross_tonnage": 94469,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCORDELIAIII",
+      "ship_name": "CORDELIAIII",
       "gross_tonnage": 28596,
       "LOA": 222
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDARDANELLES",
+      "ship_name": "DARDANELLES",
       "gross_tonnage": 75484,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIVA",
+      "ship_name": "IVA",
       "gross_tonnage": 155084,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "MSCEMMA",
+      "ship_name": "EMMA",
       "gross_tonnage": 141649,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCHERYL3",
+      "ship_name": "CHERYL3",
       "gross_tonnage": 25630,
       "LOA": 207
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTAYLOR",
+      "ship_name": "TAYLOR",
       "gross_tonnage": 150783,
       "LOA": 366
     },
@@ -922,85 +928,85 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMAPUTO",
+      "ship_name": "MAPUTO",
       "gross_tonnage": 75154,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLASPEZIA",
+      "ship_name": "LASPEZIA",
       "gross_tonnage": 153733,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDURBANIV",
+      "ship_name": "DURBANIV",
       "gross_tonnage": 42382,
       "LOA": 269
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCOLETTEIII",
+      "ship_name": "COLETTEIII",
       "gross_tonnage": 32284,
       "LOA": 211
     },
     {
       "call_sign": null,
-      "ship_name": "MSCODESSAV",
+      "ship_name": "ODESSAV",
       "gross_tonnage": 41331,
       "LOA": 262
     },
     {
       "call_sign": null,
-      "ship_name": "MSCANIELLO",
+      "ship_name": "ANIELLO",
       "gross_tonnage": 40631,
       "LOA": 259
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNAGOYAV",
+      "ship_name": "NAGOYAV",
       "gross_tonnage": 40165,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLETIZIA",
+      "ship_name": "LETIZIA",
       "gross_tonnage": 96331,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSYDNEYVI",
+      "ship_name": "SYDNEYVI",
       "gross_tonnage": 66278,
       "LOA": 278
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSOLA",
+      "ship_name": "SOLA",
       "gross_tonnage": 131771,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSOMYAIII",
+      "ship_name": "SOMYAIII",
       "gross_tonnage": 25361,
       "LOA": 207
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNAPOLI",
+      "ship_name": "NAPOLI",
       "gross_tonnage": 151702,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFATMA",
+      "ship_name": "FATMA",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNOAARIELA",
+      "ship_name": "NOAARIELA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
@@ -1012,43 +1018,43 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLYSEV",
+      "ship_name": "LYSEV",
       "gross_tonnage": 50963,
       "LOA": 275
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMAGNITUDEVII",
+      "ship_name": "MAGNITUDEVII",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLILOUIII",
+      "ship_name": "LILOUIII",
       "gross_tonnage": 35824,
       "LOA": 220
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALGHERO",
+      "ship_name": "ALGHERO",
       "gross_tonnage": 96375,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGENOVA",
+      "ship_name": "GENOVA",
       "gross_tonnage": 153733,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMAUREEN",
+      "ship_name": "MAUREEN",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAGAMEMNON",
+      "ship_name": "AGAMEMNON",
       "gross_tonnage": 90118,
       "LOA": 318
     },
@@ -1060,271 +1066,271 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVICTORIA",
+      "ship_name": "VICTORIA",
       "gross_tonnage": 152165,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "MSCEMANUELA",
+      "ship_name": "EMANUELA",
       "gross_tonnage": 151559,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARGARITA",
+      "ship_name": "MARGARITA",
       "gross_tonnage": 67466,
       "LOA": 276
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVAIGAIII",
+      "ship_name": "VAIGAIII",
       "gross_tonnage": 28927,
       "LOA": 222
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKAYLEY",
+      "ship_name": "KAYLEY",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVIVIANA",
+      "ship_name": "VIVIANA",
       "gross_tonnage": 187587,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBERANGERE",
+      "ship_name": "BERANGERE",
       "gross_tonnage": 149944,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNAIROBIX",
+      "ship_name": "NAIROBIX",
       "gross_tonnage": 94402,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARTINAMARIA",
+      "ship_name": "MARTINAMARIA",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCOLIA",
+      "ship_name": "OLIA",
       "gross_tonnage": 35991,
       "LOA": 231
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTOKYO",
+      "ship_name": "TOKYO",
       "gross_tonnage": 91649,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "MSCANITA",
+      "ship_name": "ANITA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCORION",
+      "ship_name": "ORION",
       "gross_tonnage": 149525,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMAGNUMVII",
+      "ship_name": "MAGNUMVII",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCZAINAIII",
+      "ship_name": "ZAINAIII",
       "gross_tonnage": 28270,
       "LOA": 213
     },
     {
       "call_sign": null,
-      "ship_name": "MSCASTRIDIII",
+      "ship_name": "ASTRIDIII",
       "gross_tonnage": 36082,
       "LOA": 231
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAQUARIUS",
+      "ship_name": "AQUARIUS",
       "gross_tonnage": 75484,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVALENTINA",
+      "ship_name": "VALENTINA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSHAULA",
+      "ship_name": "SHAULA",
       "gross_tonnage": 51836,
       "LOA": 275
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARINA",
+      "ship_name": "MARINA",
       "gross_tonnage": 73819,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBREMERHAVENV",
+      "ship_name": "BREMERHAVENV",
       "gross_tonnage": 49477,
       "LOA": 295
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJEWEL",
+      "ship_name": "JEWEL",
       "gross_tonnage": 140976,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCELISAXIII",
+      "ship_name": "ELISAXIII",
       "gross_tonnage": 141649,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVIVIENNE",
+      "ship_name": "VIVIENNE",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJOSSELINE",
+      "ship_name": "JOSSELINE",
       "gross_tonnage": 140976,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTRADERII",
+      "ship_name": "TRADERII",
       "gross_tonnage": 16803,
       "LOA": 184
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALESSIA",
+      "ship_name": "ALESSIA",
       "gross_tonnage": 75590,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBERYL",
+      "ship_name": "BERYL",
       "gross_tonnage": 140096,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCANDIDA",
+      "ship_name": "CANDIDA",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSIYAB",
+      "ship_name": "SIYAB",
       "gross_tonnage": 113828,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTARANTO",
+      "ship_name": "TARANTO",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGENERALIV",
+      "ship_name": "GENERALIV",
       "gross_tonnage": 41835,
       "LOA": 264
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKANUF",
+      "ship_name": "KANUF",
       "gross_tonnage": 14241,
       "LOA": 159
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAMALFI",
+      "ship_name": "AMALFI",
       "gross_tonnage": 95166,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSHANELLEV",
+      "ship_name": "SHANELLEV",
       "gross_tonnage": 54519,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCAROLINA",
+      "ship_name": "CAROLINA",
       "gross_tonnage": 65483,
       "LOA": 275
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVALERIA",
+      "ship_name": "VALERIA",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAURORA",
+      "ship_name": "AURORA",
       "gross_tonnage": 143521,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBIANCASILVIA",
+      "ship_name": "BIANCASILVIA",
       "gross_tonnage": 149944,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCANUSHAIII",
+      "ship_name": "ANUSHAIII",
       "gross_tonnage": 38332,
       "LOA": 244
     },
     {
       "call_sign": null,
-      "ship_name": "MSCADELAIDE",
+      "ship_name": "ADELAIDE",
       "gross_tonnage": 96375,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCC.MONTAINE",
+      "ship_name": "C.MONTAINE",
       "gross_tonnage": 149944,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCROME",
+      "ship_name": "ROME",
       "gross_tonnage": 151702,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFLORENTINA",
+      "ship_name": "FLORENTINA",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDANIELA",
+      "ship_name": "DANIELA",
       "gross_tonnage": 151559,
       "LOA": 366
     },
@@ -1336,169 +1342,169 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBRIDGEPORT",
+      "ship_name": "BRIDGEPORT",
       "gross_tonnage": 89097,
       "LOA": 323
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFAITH",
+      "ship_name": "FAITH",
       "gross_tonnage": 140976,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFLAVIA",
+      "ship_name": "FLAVIA",
       "gross_tonnage": 140096,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAURIGA",
+      "ship_name": "AURIGA",
       "gross_tonnage": 149525,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVIRGO",
+      "ship_name": "VIRGO",
       "gross_tonnage": 149525,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCYOKOHAMA",
+      "ship_name": "YOKOHAMA",
       "gross_tonnage": 83133,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRANIA",
+      "ship_name": "RANIA",
       "gross_tonnage": 94489,
       "LOA": 332
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPAOLA",
+      "ship_name": "PAOLA",
       "gross_tonnage": 37968,
       "LOA": 243
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRENV",
+      "ship_name": "RENV",
       "gross_tonnage": 41834,
       "LOA": 266
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARIAGRAZIA",
+      "ship_name": "MARIAGRAZIA",
       "gross_tonnage": 151702,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKATIE",
+      "ship_name": "KATIE",
       "gross_tonnage": 140096,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARIASAVERIA",
+      "ship_name": "MARIASAVERIA",
       "gross_tonnage": 140096,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGINA",
+      "ship_name": "GINA",
       "gross_tonnage": 40631,
       "LOA": 259
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGIUSY",
+      "ship_name": "GIUSY",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBAYIV",
+      "ship_name": "BAYIV",
       "gross_tonnage": 39941,
       "LOA": 259
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCANDICE",
+      "ship_name": "CANDICE",
       "gross_tonnage": 108930,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIDAII",
+      "ship_name": "IDAII",
       "gross_tonnage": 26050,
       "LOA": 195
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNITYAB",
+      "ship_name": "NITYAB",
       "gross_tonnage": 113112,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAJACCIO",
+      "ship_name": "AJACCIO",
       "gross_tonnage": 95166,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNADIAIV",
+      "ship_name": "NADIAIV",
       "gross_tonnage": 38332,
       "LOA": 247
     },
     {
       "call_sign": null,
-      "ship_name": "MSCILLINOISVII",
+      "ship_name": "ILLINOISVII",
       "gross_tonnage": 74583,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFREEPORT",
+      "ship_name": "FREEPORT",
       "gross_tonnage": 54193,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSHREYAB",
+      "ship_name": "SHREYAB",
       "gross_tonnage": 113112,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKILIMANJAROIV",
+      "ship_name": "KILIMANJAROIV",
       "gross_tonnage": 40110,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCAPELLA",
+      "ship_name": "CAPELLA",
       "gross_tonnage": 141635,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBERNV",
+      "ship_name": "BERNV",
       "gross_tonnage": 40807,
       "LOA": 261
     },
     {
       "call_sign": null,
-      "ship_name": "MSCROSE",
+      "ship_name": "ROSE",
       "gross_tonnage": 152188,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "MSCANCONAIII",
+      "ship_name": "ANCONAIII",
       "gross_tonnage": 27104,
       "LOA": 200
     },
@@ -1510,145 +1516,145 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCANDREAF",
+      "ship_name": "ANDREAF",
       "gross_tonnage": 9957,
       "LOA": 147
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARITINAV",
+      "ship_name": "MARITINAV",
       "gross_tonnage": 50736,
       "LOA": 266
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKANOKO",
+      "ship_name": "KANOKO",
       "gross_tonnage": 140976,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAUDREY",
+      "ship_name": "AUDREY",
       "gross_tonnage": 150783,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCQINGDAOF",
+      "ship_name": "QINGDAOF",
       "gross_tonnage": 15988,
       "LOA": 170
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKALINA",
+      "ship_name": "KALINA",
       "gross_tonnage": 151559,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLOMEV",
+      "ship_name": "LOMEV",
       "gross_tonnage": 47877,
       "LOA": 264
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIVANA",
+      "ship_name": "IVANA",
       "gross_tonnage": 131771,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMANU",
+      "ship_name": "MANU",
       "gross_tonnage": 39941,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCILENIA",
+      "ship_name": "ILENIA",
       "gross_tonnage": 155084,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDAMLA",
+      "ship_name": "DAMLA",
       "gross_tonnage": 74071,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIMMAIII",
+      "ship_name": "IMMAIII",
       "gross_tonnage": 30495,
       "LOA": 202
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSTARR",
+      "ship_name": "STARR",
       "gross_tonnage": 37113,
       "LOA": 243
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRACHELE",
+      "ship_name": "RACHELE",
       "gross_tonnage": 90745,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJASMINEX",
+      "ship_name": "JASMINEX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDEILA",
+      "ship_name": "DEILA",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNEWYORK",
+      "ship_name": "NEWYORK",
       "gross_tonnage": 176490,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAZRA",
+      "ship_name": "AZRA",
       "gross_tonnage": 152188,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "MSCINIYAV",
+      "ship_name": "INIYAV",
       "gross_tonnage": 48788,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCQINGDAO",
+      "ship_name": "QINGDAO",
       "gross_tonnage": 89097,
       "LOA": 323
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSINDY",
+      "ship_name": "SINDY",
       "gross_tonnage": 108930,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDOUALAVIII",
+      "ship_name": "DOUALAVIII",
       "gross_tonnage": 75448,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLORENZA",
+      "ship_name": "LORENZA",
       "gross_tonnage": 155084,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDENISSEX",
+      "ship_name": "DENISSEX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
@@ -1660,55 +1666,55 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCEVA",
+      "ship_name": "EVA",
       "gross_tonnage": 151559,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCARIANE",
+      "ship_name": "ARIANE",
       "gross_tonnage": 143521,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLUCY",
+      "ship_name": "LUCY",
       "gross_tonnage": 89954,
       "LOA": 325
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNATASHAXIII",
+      "ship_name": "NATASHAXIII",
       "gross_tonnage": 141649,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLAUSANNEVI",
+      "ship_name": "LAUSANNEVI",
       "gross_tonnage": 62702,
       "LOA": 283
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSIJING",
+      "ship_name": "SIJING",
       "gross_tonnage": 21979,
       "LOA": 172
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMELATILDE",
+      "ship_name": "MELATILDE",
       "gross_tonnage": 153092,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNEWJERSEYIII",
+      "ship_name": "NEWJERSEYIII",
       "gross_tonnage": 35708,
       "LOA": 213
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTIANJIN",
+      "ship_name": "TIANJIN",
       "gross_tonnage": 89097,
       "LOA": 323
     },
@@ -1720,97 +1726,97 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCWESTV",
+      "ship_name": "WESTV",
       "gross_tonnage": 40839,
       "LOA": 261
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPANTERA",
+      "ship_name": "PANTERA",
       "gross_tonnage": 74875,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCANBERRAIII",
+      "ship_name": "CANBERRAIII",
       "gross_tonnage": 29181,
       "LOA": 203
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJUSTICEVIII",
+      "ship_name": "JUSTICEVIII",
       "gross_tonnage": 94419,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARIACRISTINA",
+      "ship_name": "MARIACRISTINA",
       "gross_tonnage": 155955,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFOLEGANDROSVI",
+      "ship_name": "FOLEGANDROSVI",
       "gross_tonnage": 66332,
       "LOA": 279
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPALAK",
+      "ship_name": "PALAK",
       "gross_tonnage": 97805,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFLORIANAVI",
+      "ship_name": "FLORIANAVI",
       "gross_tonnage": 69947,
       "LOA": 285
     },
     {
       "call_sign": null,
-      "ship_name": "MSCULSANIII",
+      "ship_name": "ULSANIII",
       "gross_tonnage": 27915,
       "LOA": 215
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSIENA",
+      "ship_name": "SIENA",
       "gross_tonnage": 155104,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAMEERAIII",
+      "ship_name": "AMEERAIII",
       "gross_tonnage": 36007,
       "LOA": 231
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPRECISIONV",
+      "ship_name": "PRECISIONV",
       "gross_tonnage": 47855,
       "LOA": 264
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAPOLLO",
+      "ship_name": "APOLLO",
       "gross_tonnage": 75484,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVITTORIA",
+      "ship_name": "VITTORIA",
       "gross_tonnage": 89954,
       "LOA": 325
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPILARVI",
+      "ship_name": "PILARVI",
       "gross_tonnage": 65918,
       "LOA": 278
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALINA",
+      "ship_name": "ALINA",
       "gross_tonnage": 94930,
       "LOA": 300
     },
@@ -1822,43 +1828,43 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCARIAIII",
+      "ship_name": "ARIAIII",
       "gross_tonnage": 28097,
       "LOA": 215
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALDIIII",
+      "ship_name": "ALDIIII",
       "gross_tonnage": 29021,
       "LOA": 222
     },
     {
       "call_sign": null,
-      "ship_name": "MSCUNIFICVI",
+      "ship_name": "UNIFICVI",
       "gross_tonnage": 69246,
       "LOA": 285
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCHIARAX",
+      "ship_name": "CHIARAX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGAYANE",
+      "ship_name": "GAYANE",
       "gross_tonnage": 103515,
       "LOA": 314
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMARA",
+      "ship_name": "MARA",
       "gross_tonnage": 152165,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTEMAVIII",
+      "ship_name": "TEMAVIII",
       "gross_tonnage": 75448,
       "LOA": 272
     },
@@ -1870,25 +1876,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLONDON",
+      "ship_name": "LONDON",
       "gross_tonnage": 176490,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSOFIAPAZ",
+      "ship_name": "SOFIAPAZ",
       "gross_tonnage": 94930,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIVORYCOAST",
+      "ship_name": "IVORYCOAST",
       "gross_tonnage": 79103,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGIOVANNAVII",
+      "ship_name": "GIOVANNAVII",
       "gross_tonnage": 80942,
       "LOA": 299
     },
@@ -1900,7 +1906,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMANHATTANV",
+      "ship_name": "MANHATTANV",
       "gross_tonnage": 54592,
       "LOA": 294
     },
@@ -1924,49 +1930,49 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVERONA",
+      "ship_name": "VERONA",
       "gross_tonnage": 155104,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBARBARA",
+      "ship_name": "BARBARA",
       "gross_tonnage": 73819,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCASSANDRE",
+      "ship_name": "CASSANDRE",
       "gross_tonnage": 113697,
       "LOA": 328
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCATHERINEVI",
+      "ship_name": "CATHERINEVI",
       "gross_tonnage": 75201,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBRANKA",
+      "ship_name": "BRANKA",
       "gross_tonnage": 95514,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLAUREN",
+      "ship_name": "LAUREN",
       "gross_tonnage": 140096,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCELAINE",
+      "ship_name": "ELAINE",
       "gross_tonnage": 95681,
       "LOA": 340
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAVNI",
+      "ship_name": "AVNI",
       "gross_tonnage": 103515,
       "LOA": 314
     },
@@ -1978,91 +1984,91 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCARLOTTA",
+      "ship_name": "CARLOTTA",
       "gross_tonnage": 103515,
       "LOA": 314
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSURABAYAVIII",
+      "ship_name": "SURABAYAVIII",
       "gross_tonnage": 94322,
       "LOA": 332
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRIDAVIII",
+      "ship_name": "RIDAVIII",
       "gross_tonnage": 94511,
       "LOA": 340
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRINIIII",
+      "ship_name": "RINIIII",
       "gross_tonnage": 27051,
       "LOA": 210
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTOGO",
+      "ship_name": "TOGO",
       "gross_tonnage": 79103,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCARMELA",
+      "ship_name": "CARMELA",
       "gross_tonnage": 155955,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFORTUNEF",
+      "ship_name": "FORTUNEF",
       "gross_tonnage": 9928,
       "LOA": 147
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNIGERIA",
+      "ship_name": "NIGERIA",
       "gross_tonnage": 79103,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALABAMAIII",
+      "ship_name": "ALABAMAIII",
       "gross_tonnage": 37518,
       "LOA": 243
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLEOVI",
+      "ship_name": "LEOVI",
       "gross_tonnage": 75201,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCLEA",
+      "ship_name": "CLEA",
       "gross_tonnage": 95514,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCADUV",
+      "ship_name": "ADUV",
       "gross_tonnage": 54519,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPALERMO",
+      "ship_name": "PALERMO",
       "gross_tonnage": 151702,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDARWINVI",
+      "ship_name": "DARWINVI",
       "gross_tonnage": 66278,
       "LOA": 278
     },
     {
       "call_sign": null,
-      "ship_name": "MSCISTANBUL",
+      "ship_name": "ISTANBUL",
       "gross_tonnage": 176490,
       "LOA": 399
     },
@@ -2074,97 +2080,97 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCHANISHAIII",
+      "ship_name": "HANISHAIII",
       "gross_tonnage": 26833,
       "LOA": 210
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCAROLE",
+      "ship_name": "CAROLE",
       "gross_tonnage": 113697,
       "LOA": 328
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLIVORNO",
+      "ship_name": "LIVORNO",
       "gross_tonnage": 153733,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCELLEN",
+      "ship_name": "ELLEN",
       "gross_tonnage": 92198,
       "LOA": 346
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCHARLESTON",
+      "ship_name": "CHARLESTON",
       "gross_tonnage": 91023,
       "LOA": 325
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVICTORINE",
+      "ship_name": "VICTORINE",
       "gross_tonnage": 155492,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCERICA",
+      "ship_name": "ERICA",
       "gross_tonnage": 194308,
       "LOA": 398
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVILDAX",
+      "ship_name": "VILDAX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDIAMONDII",
+      "ship_name": "DIAMONDII",
       "gross_tonnage": 24918,
       "LOA": 188
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMICHELA",
+      "ship_name": "MICHELA",
       "gross_tonnage": 95514,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLAGOSX",
+      "ship_name": "LAGOSX",
       "gross_tonnage": 94402,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCREGINA",
+      "ship_name": "REGINA",
       "gross_tonnage": 40631,
       "LOA": 259
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFIEX",
+      "ship_name": "FIEX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTAVVISHIVI",
+      "ship_name": "TAVVISHIVI",
       "gross_tonnage": 66526,
       "LOA": 278
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTINA",
+      "ship_name": "TINA",
       "gross_tonnage": 194308,
       "LOA": 398
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMETTE",
+      "ship_name": "METTE",
       "gross_tonnage": 235651,
       "LOA": 399
     },
@@ -2176,127 +2182,127 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCPALOMA",
+      "ship_name": "PALOMA",
       "gross_tonnage": 153092,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCUBERTYVIII",
+      "ship_name": "UBERTYVIII",
       "gross_tonnage": 90507,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDITTE",
+      "ship_name": "DITTE",
       "gross_tonnage": 194308,
       "LOA": 398
     },
     {
       "call_sign": null,
-      "ship_name": "MSCARINA",
+      "ship_name": "ARINA",
       "gross_tonnage": 228741,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDOMNAX",
+      "ship_name": "DOMNAX",
       "gross_tonnage": 92198,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "MSCROSAM",
+      "ship_name": "ROSAM",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCVIGOURIII",
+      "ship_name": "VIGOURIII",
       "gross_tonnage": 27437,
       "LOA": 222
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAPOLLINE",
+      "ship_name": "APOLLINE",
       "gross_tonnage": 228786,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCOSCAR",
+      "ship_name": "OSCAR",
       "gross_tonnage": 192237,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCUTMOSTVIII",
+      "ship_name": "UTMOSTVIII",
       "gross_tonnage": 90389,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNELA",
+      "ship_name": "NELA",
       "gross_tonnage": 228741,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTRIESTE",
+      "ship_name": "TRIESTE",
       "gross_tonnage": 143521,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLUDOVICA",
+      "ship_name": "LUDOVICA",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFEBE",
+      "ship_name": "FEBE",
       "gross_tonnage": 232618,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDIANA",
+      "ship_name": "DIANA",
       "gross_tonnage": 194250,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCELESTINOMARESCA",
+      "ship_name": "CELESTINOMARESCA",
       "gross_tonnage": 236078,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBUSAN",
+      "ship_name": "BUSAN",
       "gross_tonnage": 91023,
       "LOA": 325
     },
     {
       "call_sign": null,
-      "ship_name": "MSCKUMSAL",
+      "ship_name": "KUMSAL",
       "gross_tonnage": 91649,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGAIA",
+      "ship_name": "GAIA",
       "gross_tonnage": 151559,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSONIA",
+      "ship_name": "SONIA",
       "gross_tonnage": 153092,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLENI",
+      "ship_name": "LENI",
       "gross_tonnage": 232618,
       "LOA": 400
     },
@@ -2308,73 +2314,73 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTEXAS",
+      "ship_name": "TEXAS",
       "gross_tonnage": 91649,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBOSPHORUS",
+      "ship_name": "BOSPHORUS",
       "gross_tonnage": 75484,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJASPERVIII",
+      "ship_name": "JASPERVIII",
       "gross_tonnage": 94407,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "MSCIRINA",
+      "ship_name": "IRINA",
       "gross_tonnage": 236184,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCLARA",
+      "ship_name": "CLARA",
       "gross_tonnage": 192237,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCOLIVER",
+      "ship_name": "OLIVER",
       "gross_tonnage": 192237,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGULSUN",
+      "ship_name": "GULSUN",
       "gross_tonnage": 232618,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCYORKVII",
+      "ship_name": "YORKVII",
       "gross_tonnage": 74661,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJADE",
+      "ship_name": "JADE",
       "gross_tonnage": 194308,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCTIANSHAN",
+      "ship_name": "TIANSHAN",
       "gross_tonnage": 91649,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLONGBEACHVI",
+      "ship_name": "LONGBEACHVI",
       "gross_tonnage": 66199,
       "LOA": 277
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMIA",
+      "ship_name": "MIA",
       "gross_tonnage": 232618,
       "LOA": 216
     },
@@ -2386,67 +2392,67 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMINA",
+      "ship_name": "MINA",
       "gross_tonnage": 228741,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCOTONOUVIII",
+      "ship_name": "COTONOUVIII",
       "gross_tonnage": 75448,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLUCIANA",
+      "ship_name": "LUCIANA",
       "gross_tonnage": 131771,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAMELIA",
+      "ship_name": "AMELIA",
       "gross_tonnage": 228786,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCINGY",
+      "ship_name": "INGY",
       "gross_tonnage": 193489,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCHAEWON",
+      "ship_name": "CHAEWON",
       "gross_tonnage": 21979,
       "LOA": 172
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDILETTA",
+      "ship_name": "DILETTA",
       "gross_tonnage": 228786,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALLEGRA",
+      "ship_name": "ALLEGRA",
       "gross_tonnage": 228786,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCZOE",
+      "ship_name": "ZOE",
       "gross_tonnage": 192784,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCFRANCESCA",
+      "ship_name": "FRANCESCA",
       "gross_tonnage": 131771,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "MSCELOANE",
+      "ship_name": "ELOANE",
       "gross_tonnage": 194250,
       "LOA": 400
     },
@@ -2458,91 +2464,91 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCREEF",
+      "ship_name": "REEF",
       "gross_tonnage": 194308,
       "LOA": 398
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJUDITH",
+      "ship_name": "JUDITH",
       "gross_tonnage": 91023,
       "LOA": 324
     },
     {
       "call_sign": null,
-      "ship_name": "MSCHOUSTONV",
+      "ship_name": "HOUSTONV",
       "gross_tonnage": 44768,
       "LOA": 267
     },
     {
       "call_sign": null,
-      "ship_name": "MSCBETTINA",
+      "ship_name": "BETTINA",
       "gross_tonnage": 151559,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRITAV",
+      "ship_name": "RITAV",
       "gross_tonnage": 48788,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMAYA",
+      "ship_name": "MAYA",
       "gross_tonnage": 192237,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLEANNE",
+      "ship_name": "LEANNE",
       "gross_tonnage": 194250,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRIFAYA",
+      "ship_name": "RIFAYA",
       "gross_tonnage": 193489,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCAMBRA",
+      "ship_name": "AMBRA",
       "gross_tonnage": 232618,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCHAMBURG",
+      "ship_name": "HAMBURG",
       "gross_tonnage": 176490,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "MSCNURYAG",
+      "ship_name": "NURYAG",
       "gross_tonnage": 45387,
       "LOA": 206
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDARESSALAAMIII",
+      "ship_name": "DARESSALAAMIII",
       "gross_tonnage": 25637,
       "LOA": 207
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMIRJA",
+      "ship_name": "MIRJA",
       "gross_tonnage": 194308,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCALEXANDRA",
+      "ship_name": "ALEXANDRA",
       "gross_tonnage": 153115,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMIRJAM",
+      "ship_name": "MIRJAM",
       "gross_tonnage": 193489,
       "LOA": 400
     },
@@ -2554,37 +2560,37 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMILAN",
+      "ship_name": "MILAN",
       "gross_tonnage": 151702,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCRUBY",
+      "ship_name": "RUBY",
       "gross_tonnage": 141754,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCILARIA",
+      "ship_name": "ILARIA",
       "gross_tonnage": 155084,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSIXIN",
+      "ship_name": "SIXIN",
       "gross_tonnage": 228741,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDARLENE",
+      "ship_name": "DARLENE",
       "gross_tonnage": 149944,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCRISTINA",
+      "ship_name": "CRISTINA",
       "gross_tonnage": 141635,
       "LOA": 366
     },
@@ -2596,68 +2602,74 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MSCCAMILLE",
+      "ship_name": "CAMILLE",
       "gross_tonnage": 153092,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MSCGABON",
+      "ship_name": "GABON",
       "gross_tonnage": 79103,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MSCDESIREE",
+      "ship_name": "DESIREE",
       "gross_tonnage": 97805,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MSCELENOIRE",
+      "ship_name": "ELENOIRE",
       "gross_tonnage": 155084,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSVEVA",
+      "ship_name": "SVEVA",
       "gross_tonnage": 192237,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "MSCLARAIII",
+      "ship_name": "LARAIII",
       "gross_tonnage": 28596,
       "LOA": 222
     },
     {
       "call_sign": null,
-      "ship_name": "MSCMICHELLE",
+      "ship_name": "MICHELLE",
       "gross_tonnage": 228786,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "MSCJAPANIII",
+      "ship_name": "JAPANIII",
       "gross_tonnage": 37518,
       "LOA": 242
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSTACEY",
+      "ship_name": "STACEY",
       "gross_tonnage": 149228,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MSCILLINOISVII",
+      "ship_name": "ILLINOISVII",
       "gross_tonnage": 74583,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "MSCSTACEY",
+      "ship_name": "STACEY",
       "gross_tonnage": 149228,
+      "LOA": 366
+    },
+    {
+      "call_sign": null,
+      "ship_name": "MARGRITXIII",
+      "gross_tonnage": 142740,
       "LOA": 366
     }
   ],
@@ -3212,25 +3224,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMCHARLESTON",
+      "ship_name": "CHARLESTON",
       "gross_tonnage": 91761,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTFUJI",
+      "ship_name": "MOUNTFUJI",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMXIAMEN",
+      "ship_name": "XIAMEN",
       "gross_tonnage": 94416,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMSHENZHEN",
+      "ship_name": "SHENZHEN",
       "gross_tonnage": 91761,
       "LOA": 335
     },
@@ -3242,7 +3254,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMPUSAN",
+      "ship_name": "PUSAN",
       "gross_tonnage": 66278,
       "LOA": 279
     },
@@ -3254,25 +3266,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTEVEREST",
+      "ship_name": "MOUNTEVEREST",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMCONDOR",
+      "ship_name": "CONDOR",
       "gross_tonnage": 49877,
       "LOA": 238
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTVINSON",
+      "ship_name": "MOUNTVINSON",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMBALTIMORE",
+      "ship_name": "BALTIMORE",
       "gross_tonnage": 40741,
       "LOA": 260
     },
@@ -3284,7 +3296,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMSHANGHAI",
+      "ship_name": "SHANGHAI",
       "gross_tonnage": 109149,
       "LOA": 350
     },
@@ -3296,31 +3308,31 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMCANADA",
+      "ship_name": "CANADA",
       "gross_tonnage": 114643,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMHONGKONG",
+      "ship_name": "HONGKONG",
       "gross_tonnage": 107849,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMTHAILAND",
+      "ship_name": "THAILAND",
       "gross_tonnage": 118523,
       "LOA": 333
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTKILIMANJARO",
+      "ship_name": "MOUNTKILIMANJARO",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMYANTIAN",
+      "ship_name": "YANTIAN",
       "gross_tonnage": 109149,
       "LOA": 350
     },
@@ -3332,13 +3344,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMSAMMYOFER",
+      "ship_name": "SAMMYOFER",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMBANGKOK",
+      "ship_name": "BANGKOK",
       "gross_tonnage": 118523,
       "LOA": 333
     },
@@ -3350,7 +3362,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTOLYMPUS",
+      "ship_name": "MOUNTOLYMPUS",
       "gross_tonnage": 152204,
       "LOA": 366
     },
@@ -3362,67 +3374,67 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMSANDIEGO",
+      "ship_name": "SANDIEGO",
       "gross_tonnage": 91158,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTBLANC",
+      "ship_name": "MOUNTBLANC",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMNORFOLK",
+      "ship_name": "NORFOLK",
       "gross_tonnage": 94416,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMNINGBO",
+      "ship_name": "NINGBO",
       "gross_tonnage": 91158,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTELBRUS",
+      "ship_name": "MOUNTELBRUS",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMNEWARK",
+      "ship_name": "NEWARK",
       "gross_tonnage": 107849,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMYANGTZE",
+      "ship_name": "YANGTZE",
       "gross_tonnage": 52228,
       "LOA": 255
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMHAWK",
+      "ship_name": "HAWK",
       "gross_tonnage": 49877,
       "LOA": 238
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTRAINIER",
+      "ship_name": "MOUNTRAINIER",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOUNTDENALI",
+      "ship_name": "MOUNTDENALI",
       "gross_tonnage": 152204,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMAMBER",
+      "ship_name": "AMBER",
       "gross_tonnage": 74693,
       "LOA": 272
     },
@@ -3434,43 +3446,43 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMWILMINGTON",
+      "ship_name": "WILMINGTON",
       "gross_tonnage": 94784,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMANTWERP",
+      "ship_name": "ANTWERP",
       "gross_tonnage": 114044,
       "LOA": 349
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMTAMPA",
+      "ship_name": "TAMPA",
       "gross_tonnage": 74661,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMPELICAN",
+      "ship_name": "PELICAN",
       "gross_tonnage": 49877,
       "LOA": 238
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMWILMINGTON",
+      "ship_name": "WILMINGTON",
       "gross_tonnage": 94784,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMRUBY",
+      "ship_name": "RUBY",
       "gross_tonnage": 74693,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMJADE",
+      "ship_name": "JADE",
       "gross_tonnage": 74693,
       "LOA": 272
     },
@@ -3494,7 +3506,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMJASPER",
+      "ship_name": "JASPER",
       "gross_tonnage": 74693,
       "LOA": 272
     },
@@ -3506,13 +3518,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMMOONSTONE",
+      "ship_name": "MOONSTONE",
       "gross_tonnage": 74693,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMALEXANDRITE",
+      "ship_name": "ALEXANDRITE",
       "gross_tonnage": 74693,
       "LOA": 272
     },
@@ -3524,7 +3536,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ZIMAQUAMARINE",
+      "ship_name": "AQUAMARINE",
       "gross_tonnage": 74693,
       "LOA": 272
     },
@@ -3558,7 +3570,7 @@
   "HMM": [
     {
       "call_sign": null,
-      "ship_name": "HMMBLESSING",
+      "ship_name": "BLESSING",
       "gross_tonnage": 114023,
       "LOA": 330
     },
@@ -3576,7 +3588,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDUBLIN",
+      "ship_name": "DUBLIN",
       "gross_tonnage": 228283,
       "LOA": 400
     },
@@ -3588,7 +3600,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHELSINKI",
+      "ship_name": "HELSINKI",
       "gross_tonnage": 228283,
       "LOA": 400
     },
@@ -3600,13 +3612,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMIR",
+      "ship_name": "MIR",
       "gross_tonnage": 152003,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHAMBURG",
+      "ship_name": "HAMBURG",
       "gross_tonnage": 228283,
       "LOA": 400
     },
@@ -3618,19 +3630,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMPROMISE",
+      "ship_name": "PROMISE",
       "gross_tonnage": 114023,
       "LOA": 330
     },
     {
       "call_sign": null,
-      "ship_name": "HMMSOUTHAMPTON",
+      "ship_name": "SOUTHAMPTON",
       "gross_tonnage": 232311,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMAQUAMARINE",
+      "ship_name": "AQUAMARINE",
       "gross_tonnage": 126995,
       "LOA": 335
     },
@@ -3642,13 +3654,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMSTOCKHOLM",
+      "ship_name": "STOCKHOLM",
       "gross_tonnage": 232311,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMNURI",
+      "ship_name": "NURI",
       "gross_tonnage": 152003,
       "LOA": 366
     },
@@ -3666,61 +3678,61 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMOSLO",
+      "ship_name": "OSLO",
       "gross_tonnage": 232311,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMSTPETERSBURG",
+      "ship_name": "STPETERSBURG",
       "gross_tonnage": 232311,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMCOPENHAGEN",
+      "ship_name": "COPENHAGEN",
       "gross_tonnage": 228283,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMPERIDOT",
+      "ship_name": "PERIDOT",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMROTTERDAM",
+      "ship_name": "ROTTERDAM",
       "gross_tonnage": 232311,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMALGECIRAS",
+      "ship_name": "ALGECIRAS",
       "gross_tonnage": 228283,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGARAM",
+      "ship_name": "GARAM",
       "gross_tonnage": 152003,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMEMERALD",
+      "ship_name": "EMERALD",
       "gross_tonnage": 126995,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHANBADA",
+      "ship_name": "HANBADA",
       "gross_tonnage": 152003,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGDANSK",
+      "ship_name": "GDANSK",
       "gross_tonnage": 228283,
       "LOA": 400
     },
@@ -3732,73 +3744,73 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMPEARL",
+      "ship_name": "PEARL",
       "gross_tonnage": 126995,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDIAMOND",
+      "ship_name": "DIAMOND",
       "gross_tonnage": 126995,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "HMMSAPPHIRE",
+      "ship_name": "SAPPHIRE",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMPRIDE",
+      "ship_name": "PRIDE",
       "gross_tonnage": 142620,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMRUBY",
+      "ship_name": "RUBY",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMTOPAZ",
+      "ship_name": "TOPAZ",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMTURQUOISE",
+      "ship_name": "TURQUOISE",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMRAON",
+      "ship_name": "RAON",
       "gross_tonnage": 152003,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMLEHAVRE",
+      "ship_name": "LEHAVRE",
       "gross_tonnage": 228283,
       "LOA": 400
     },
     {
       "call_sign": null,
-      "ship_name": "HMMVANCOUVER",
+      "ship_name": "VANCOUVER",
       "gross_tonnage": 72634,
       "LOA": 293
     },
     {
       "call_sign": null,
-      "ship_name": "HMMOPAL",
+      "ship_name": "OPAL",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDREAM",
+      "ship_name": "DREAM",
       "gross_tonnage": 142620,
       "LOA": 365
     },
@@ -3816,7 +3828,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHANUL",
+      "ship_name": "HANUL",
       "gross_tonnage": 152003,
       "LOA": 366
     },
@@ -3834,7 +3846,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMBANGKOK",
+      "ship_name": "BANGKOK",
       "gross_tonnage": 75308,
       "LOA": 303
     },
@@ -3864,13 +3876,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMAMETHYST",
+      "ship_name": "AMETHYST",
       "gross_tonnage": 126995,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGAON",
+      "ship_name": "GAON",
       "gross_tonnage": 152003,
       "LOA": 366
     },
@@ -3900,7 +3912,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDAON",
+      "ship_name": "DAON",
       "gross_tonnage": 152003,
       "LOA": 366
     },
@@ -3918,7 +3930,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMTACOMA",
+      "ship_name": "TACOMA",
       "gross_tonnage": 72597,
       "LOA": 293
     },
@@ -3948,7 +3960,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGARNET",
+      "ship_name": "GARNET",
       "gross_tonnage": 126995,
       "LOA": 335
     },
@@ -3966,7 +3978,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMIRACLE",
+      "ship_name": "MIRACLE",
       "gross_tonnage": 18812,
       "LOA": 172
     },
@@ -3978,7 +3990,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHARMONY",
+      "ship_name": "HARMONY",
       "gross_tonnage": 18812,
       "LOA": 172
     },
@@ -4002,31 +4014,31 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMVICTORY",
+      "ship_name": "VICTORY",
       "gross_tonnage": 142620,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDRIVE",
+      "ship_name": "DRIVE",
       "gross_tonnage": 142620,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMOAKLAND",
+      "ship_name": "OAKLAND",
       "gross_tonnage": 72597,
       "LOA": 293
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHOPE",
+      "ship_name": "HOPE",
       "gross_tonnage": 142620,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMASTER",
+      "ship_name": "MASTER",
       "gross_tonnage": 18812,
       "LOA": 172
     },
@@ -4038,31 +4050,31 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMCOLOMBO",
+      "ship_name": "COLOMBO",
       "gross_tonnage": 75308,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMANILA",
+      "ship_name": "MANILA",
       "gross_tonnage": 24181,
       "LOA": 195
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGREEN",
+      "ship_name": "GREEN",
       "gross_tonnage": 82335,
       "LOA": 274
     },
     {
       "call_sign": null,
-      "ship_name": "HMMJUNIPER",
+      "ship_name": "JUNIPER",
       "gross_tonnage": 82335,
       "LOA": 274
     },
     {
       "call_sign": null,
-      "ship_name": "HMMFOREST",
+      "ship_name": "FOREST",
       "gross_tonnage": 82335,
       "LOA": 274
     },
@@ -4074,73 +4086,73 @@
     },
     {
       "call_sign": null,
-      "ship_name": "HMMDAVAO",
+      "ship_name": "DAVAO",
       "gross_tonnage": 24181,
       "LOA": 195
     },
     {
       "call_sign": null,
-      "ship_name": "HMMFOREST",
+      "ship_name": "FOREST",
       "gross_tonnage": 82335,
       "LOA": 274
     },
     {
       "call_sign": null,
-      "ship_name": "HMMGARNET",
+      "ship_name": "GARNET",
       "gross_tonnage": 126995,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "HMMHARVEST",
+      "ship_name": "HARVEST",
       "gross_tonnage": 17277,
       "LOA": 172
     },
     {
       "call_sign": null,
-      "ship_name": "HMMJUNIPER",
+      "ship_name": "JUNIPER",
       "gross_tonnage": 82335,
       "LOA": 274
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMIR",
+      "ship_name": "MIR",
       "gross_tonnage": 152003,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "HMMMIRACLE",
+      "ship_name": "MIRACLE",
       "gross_tonnage": 18812,
       "LOA": 172
     },
     {
       "call_sign": null,
-      "ship_name": "HMMOCEAN",
+      "ship_name": "OCEAN",
       "gross_tonnage": 75861,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "HMMRUBY",
+      "ship_name": "RUBY",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMSAPPHIRE",
+      "ship_name": "SAPPHIRE",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMTURQUOISE",
+      "ship_name": "TURQUOISE",
       "gross_tonnage": 126943,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "HMMVICTORY",
+      "ship_name": "VICTORY",
       "gross_tonnage": 142620,
       "LOA": 366
     },
@@ -4167,6 +4179,12 @@
       "ship_name": "SEASPANBRILLIANCE",
       "gross_tonnage": 113042,
       "LOA": 337
+    },
+    {
+      "call_sign": null,
+      "ship_name": "IVY",
+      "gross_tonnage": 86290,
+      "LOA": 282
     }
   ],
   "SKR": [
@@ -4332,7 +4350,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "SMLONGBEACH",
+      "ship_name": "ONGBEACH",
       "gross_tonnage": 74962,
       "LOA": 304
     },
@@ -4382,13 +4400,13 @@
   "MAE": [
     {
       "call_sign": null,
-      "ship_name": "MAERSKMEMPHIS",
+      "ship_name": "RSKMEMPHIS",
       "gross_tonnage": 74642,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCHARLESTON",
+      "ship_name": "RSKCHARLESTON",
       "gross_tonnage": 155545,
       "LOA": 366
     },
@@ -4400,7 +4418,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKALFIRK",
+      "ship_name": "RSKALFIRK",
       "gross_tonnage": 109534,
       "LOA": 337
     },
@@ -4412,7 +4430,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKEDINBURGH",
+      "ship_name": "RSKEDINBURGH",
       "gross_tonnage": 141716,
       "LOA": 366
     },
@@ -4430,19 +4448,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCAMBRIDGE",
+      "ship_name": "RSKCAMBRIDGE",
       "gross_tonnage": 149944,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSARATOGA",
+      "ship_name": "RSKSARATOGA",
       "gross_tonnage": 24488,
       "LOA": 195
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKEMERALD",
+      "ship_name": "RSKEMERALD",
       "gross_tonnage": 142121,
       "LOA": 366
     },
@@ -4472,7 +4490,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSEVILLE",
+      "ship_name": "RSKSEVILLE",
       "gross_tonnage": 93511,
       "LOA": 335
     },
@@ -4496,13 +4514,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSINGAPORE",
+      "ship_name": "RSKSINGAPORE",
       "gross_tonnage": 93511,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKLABERINTO",
+      "ship_name": "RSKLABERINTO",
       "gross_tonnage": 89505,
       "LOA": 300
     },
@@ -4514,19 +4532,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSANTANA",
+      "ship_name": "RSKSANTANA",
       "gross_tonnage": 93511,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCLEVELAND",
+      "ship_name": "RSKCLEVELAND",
       "gross_tonnage": 155545,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKELBA",
+      "ship_name": "RSKELBA",
       "gross_tonnage": 141716,
       "LOA": 335
     },
@@ -4556,13 +4574,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKFORTALEZA",
+      "ship_name": "RSKFORTALEZA",
       "gross_tonnage": 57872,
       "LOA": 255
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKLONDRINA",
+      "ship_name": "RSKLONDRINA",
       "gross_tonnage": 90107,
       "LOA": 299
     },
@@ -4580,13 +4598,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKTAURUS",
+      "ship_name": "RSKTAURUS",
       "gross_tonnage": 94055,
       "LOA": 332
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKEVORA",
+      "ship_name": "RSKEVORA",
       "gross_tonnage": 141716,
       "LOA": 366
     },
@@ -4604,13 +4622,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKALGOL",
+      "ship_name": "RSKALGOL",
       "gross_tonnage": 109534,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHAVANA",
+      "ship_name": "RSKHAVANA",
       "gross_tonnage": 153773,
       "LOA": 353
     },
@@ -4634,7 +4652,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSARAT",
+      "ship_name": "RSKSARAT",
       "gross_tonnage": 93702,
       "LOA": 300
     },
@@ -4646,7 +4664,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKEUREKA",
+      "ship_name": "RSKEUREKA",
       "gross_tonnage": 142121,
       "LOA": 366
     },
@@ -4676,7 +4694,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCAMPTON",
+      "ship_name": "RSKCAMPTON",
       "gross_tonnage": 149944,
       "LOA": 366
     },
@@ -4688,7 +4706,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSHIVLING",
+      "ship_name": "RSKSHIVLING",
       "gross_tonnage": 96424,
       "LOA": 300
     },
@@ -4712,7 +4730,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHALIFAX",
+      "ship_name": "RSKHALIFAX",
       "gross_tonnage": 153744,
       "LOA": 368
     },
@@ -4736,7 +4754,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCANDOR",
+      "ship_name": "RSKCANDOR",
       "gross_tonnage": 149944,
       "LOA": 366
     },
@@ -4766,13 +4784,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKNEWDELHI",
+      "ship_name": "RSKNEWDELHI",
       "gross_tonnage": 26532,
       "LOA": 209
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKESMERALDAS",
+      "ship_name": "RSKESMERALDAS",
       "gross_tonnage": 141754,
       "LOA": 366
     },
@@ -4802,19 +4820,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHONGKONG",
+      "ship_name": "RSKHONGKONG",
       "gross_tonnage": 153774,
       "LOA": 353
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKYUKON",
+      "ship_name": "RSKYUKON",
       "gross_tonnage": 114044,
       "LOA": 349
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSALTORO",
+      "ship_name": "RSKSALTORO",
       "gross_tonnage": 95128,
       "LOA": 299
     },
@@ -4838,7 +4856,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSHAMS",
+      "ship_name": "RSKSHAMS",
       "gross_tonnage": 95205,
       "LOA": 299
     },
@@ -4850,7 +4868,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHIDALGO",
+      "ship_name": "RSKHIDALGO",
       "gross_tonnage": 153773,
       "LOA": 353
     },
@@ -4880,7 +4898,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKLIMA",
+      "ship_name": "RSKLIMA",
       "gross_tonnage": 89174,
       "LOA": 300
     },
@@ -4916,13 +4934,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKESSEX",
+      "ship_name": "RSKESSEX",
       "gross_tonnage": 141716,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKFRANKFURT",
+      "ship_name": "RSKFRANKFURT",
       "gross_tonnage": 57872,
       "LOA": 255
     },
@@ -4952,25 +4970,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCAMPBELL",
+      "ship_name": "RSKCAMPBELL",
       "gross_tonnage": 149944,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKBROOKLYN",
+      "ship_name": "RSKBROOKLYN",
       "gross_tonnage": 48788,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSKARSTIND",
+      "ship_name": "RSKSKARSTIND",
       "gross_tonnage": 93702,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCAMDEN",
+      "ship_name": "RSKCAMDEN",
       "gross_tonnage": 149944,
       "LOA": 366
     },
@@ -4994,7 +5012,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHUACHO",
+      "ship_name": "RSKHUACHO",
       "gross_tonnage": 153744,
       "LOA": 353
     },
@@ -5024,7 +5042,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCANYON",
+      "ship_name": "RSKCANYON",
       "gross_tonnage": 149944,
       "LOA": 366
     },
@@ -5054,19 +5072,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHANOI",
+      "ship_name": "RSKHANOI",
       "gross_tonnage": 153773,
       "LOA": 353
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKWALLIS",
+      "ship_name": "RSKWALLIS",
       "gross_tonnage": 40165,
       "LOA": 260
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKELBANCO",
+      "ship_name": "RSKELBANCO",
       "gross_tonnage": 127832,
       "LOA": 335
     },
@@ -5156,7 +5174,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSANCLEMENTE",
+      "ship_name": "RSKSANCLEMENTE",
       "gross_tonnage": 94930,
       "LOA": 300
     },
@@ -5174,7 +5192,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSIRAC",
+      "ship_name": "RSKSIRAC",
       "gross_tonnage": 95205,
       "LOA": 299
     },
@@ -5186,7 +5204,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKHANGZHOU",
+      "ship_name": "RSKHANGZHOU",
       "gross_tonnage": 153773,
       "LOA": 353
     },
@@ -5204,7 +5222,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKLETICIA",
+      "ship_name": "RSKLETICIA",
       "gross_tonnage": 89174,
       "LOA": 300
     },
@@ -5234,7 +5252,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKELALTO",
+      "ship_name": "RSKELALTO",
       "gross_tonnage": 127832,
       "LOA": 335
     },
@@ -5258,7 +5276,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSANCHRISTOBAL",
+      "ship_name": "RSKSANCHRISTOBAL",
       "gross_tonnage": 94930,
       "LOA": 300
     },
@@ -5270,7 +5288,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKYOSEMITE",
+      "ship_name": "RSKYOSEMITE",
       "gross_tonnage": 42799,
       "LOA": 200
     },
@@ -5300,7 +5318,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKNACALA",
+      "ship_name": "RSKNACALA",
       "gross_tonnage": 38388,
       "LOA": 239
     },
@@ -5312,19 +5330,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSTEPNICA",
+      "ship_name": "RSKSTEPNICA",
       "gross_tonnage": 92293,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKVIRGINIA",
+      "ship_name": "RSKVIRGINIA",
       "gross_tonnage": 50686,
       "LOA": 291
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKGAIRLOCH",
+      "ship_name": "RSKGAIRLOCH",
       "gross_tonnage": 50686,
       "LOA": 292
     },
@@ -5336,7 +5354,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKSANVICENTE",
+      "ship_name": "RSKSANVICENTE",
       "gross_tonnage": 94930,
       "LOA": 300
     },
@@ -5354,7 +5372,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKMONTEOLIVIA",
+      "ship_name": "RSKMONTEOLIVIA",
       "gross_tonnage": 69132,
       "LOA": 272
     },
@@ -5366,7 +5384,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKLAGUNA",
+      "ship_name": "RSKLAGUNA",
       "gross_tonnage": 89174,
       "LOA": 300
     },
@@ -5384,7 +5402,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKFREDERICIA",
+      "ship_name": "RSKFREDERICIA",
       "gross_tonnage": 57872,
       "LOA": 255
     },
@@ -5402,7 +5420,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKALTAIR",
+      "ship_name": "RSKALTAIR",
       "gross_tonnage": 109534,
       "LOA": 337
     },
@@ -5474,7 +5492,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKELPALOMAR",
+      "ship_name": "RSKELPALOMAR",
       "gross_tonnage": 127832,
       "LOA": 335
     },
@@ -5498,7 +5516,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKCAMEROUN",
+      "ship_name": "RSKCAMEROUN",
       "gross_tonnage": 50869,
       "LOA": 249
     },
@@ -5510,7 +5528,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MAERSKKINLOSS",
+      "ship_name": "RSKKINLOSS",
       "gross_tonnage": 74642,
       "LOA": 300
     }
@@ -5644,7 +5662,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "MCCSHENZHEN",
+      "ship_name": "SHENZHEN",
       "gross_tonnage": 17769,
       "LOA": 172
     },
@@ -5794,25 +5812,25 @@
   "ESL": [
     {
       "call_sign": null,
-      "ship_name": "ESLSANA",
+      "ship_name": "SANA",
       "gross_tonnage": 73934,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "ESLWAFA",
+      "ship_name": "WAFA",
       "gross_tonnage": 73934,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "ESLWASL",
+      "ship_name": "WASL",
       "gross_tonnage": 75752,
       "LOA": 306
     },
     {
       "call_sign": null,
-      "ship_name": "ESLDANA",
+      "ship_name": "DANA",
       "gross_tonnage": 73934,
       "LOA": 304
     },
@@ -5830,7 +5848,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ESLBUSAN",
+      "ship_name": "BUSAN",
       "gross_tonnage": 75752,
       "LOA": 306
     },
@@ -5842,7 +5860,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ESLNHAVASHEVA",
+      "ship_name": "NHAVASHEVA",
       "gross_tonnage": 59307,
       "LOA": 275
     },
@@ -5854,7 +5872,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ESLOMAN",
+      "ship_name": "OMAN",
       "gross_tonnage": 66280,
       "LOA": 275
     }
@@ -5892,7 +5910,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "ASCHRISTIANA",
+      "ship_name": "AS CHRISTIANA",
       "gross_tonnage": 28372,
       "LOA": 221
     },
@@ -5924,13 +5942,13 @@
   "GFS": [
     {
       "call_sign": null,
-      "ship_name": "GFSGALAXY",
+      "ship_name": "GALAXY",
       "gross_tonnage": 75604,
       "LOA": 304
     },
     {
       "call_sign": null,
-      "ship_name": "GFSGISELLE",
+      "ship_name": "GISELLE",
       "gross_tonnage": 44887,
       "LOA": 240
     },
@@ -5968,7 +5986,7 @@
   "COS": [
     {
       "call_sign": null,
-      "ship_name": "COSCOFELIXSTOWE",
+      "ship_name": "COFELIXSTOWE",
       "gross_tonnage": 65531,
       "LOA": 280
     },
@@ -5992,7 +6010,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGLOTUS",
+      "ship_name": "COSHIPPINGLOTUS",
       "gross_tonnage": 143179,
       "LOA": 366
     },
@@ -6004,13 +6022,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGROSE",
+      "ship_name": "COSHIPPINGROSE",
       "gross_tonnage": 143179,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOPRIDE",
+      "ship_name": "COPRIDE",
       "gross_tonnage": 141823,
       "LOA": 366
     },
@@ -6022,13 +6040,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOFAITH",
+      "ship_name": "COFAITH",
       "gross_tonnage": 141823,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGCAMELLIA",
+      "ship_name": "COSHIPPINGCAMELLIA",
       "gross_tonnage": 143179,
       "LOA": 366
     },
@@ -6040,43 +6058,43 @@
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOFORTUNE",
+      "ship_name": "COFORTUNE",
       "gross_tonnage": 141823,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOHELLAS",
+      "ship_name": "COHELLAS",
       "gross_tonnage": 109149,
       "LOA": 350
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOHARMONY",
+      "ship_name": "COHARMONY",
       "gross_tonnage": 141823,
       "LOA": 367
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGSAKURA",
+      "ship_name": "COSHIPPINGSAKURA",
       "gross_tonnage": 143179,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGJASMINE",
+      "ship_name": "COSHIPPINGJASMINE",
       "gross_tonnage": 143179,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGORCHID",
+      "ship_name": "COSHIPPINGORCHID",
       "gross_tonnage": 143179,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "COSCOSHIPPINGAZALEA",
+      "ship_name": "COSHIPPINGAZALEA",
       "gross_tonnage": 143179,
       "LOA": 366
     }
@@ -6615,6 +6633,12 @@
       "ship_name": "YMWONDERLAND",
       "gross_tonnage": 151451,
       "LOA": 366
+    },
+    {
+      "call_sign": null,
+      "ship_name": "YMTRAVEL",
+      "gross_tonnage": 118523,
+      "LOA": 333
     }
   ],
   "BEN": [
@@ -6678,7 +6702,7 @@
   "FES": [
     {
       "call_sign": null,
-      "ship_name": "FESCOYANINA",
+      "ship_name": "COYANINA",
       "gross_tonnage": 9522,
       "LOA": 142
     },
@@ -6696,13 +6720,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "FESCODIOMID",
+      "ship_name": "CODIOMID",
       "gross_tonnage": 35250,
       "LOA": 220
     },
     {
       "call_sign": null,
-      "ship_name": "FESCOSOFIA",
+      "ship_name": "COSOFIA",
       "gross_tonnage": 35840,
       "LOA": 221
     },
@@ -6714,7 +6738,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "FESCOTATARSTAN",
+      "ship_name": "COTATARSTAN",
       "gross_tonnage": 7560,
       "LOA": 129
     },
@@ -6762,7 +6786,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "FESCODALNEGORSK",
+      "ship_name": "CODALNEGORSK",
       "gross_tonnage": 35840,
       "LOA": 221
     },
@@ -6792,7 +6816,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "FESCODALNEGORSK",
+      "ship_name": "CODALNEGORSK",
       "gross_tonnage": 35840,
       "LOA": 221
     },
@@ -6807,6 +6831,12 @@
       "ship_name": "ZHONGCHUANHAIYUN",
       "gross_tonnage": 10290,
       "LOA": 144
+    },
+    {
+      "call_sign": null,
+      "ship_name": "MYDGUANGZHOU",
+      "gross_tonnage": 16801,
+      "LOA": 184
     }
   ],
   "RCL": [
@@ -6826,7 +6856,7 @@
   "APL": [
     {
       "call_sign": null,
-      "ship_name": "APLISLANDER",
+      "ship_name": "ISLANDER",
       "gross_tonnage": 17594,
       "LOA": 170
     },
@@ -6844,7 +6874,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "APLOCEANIA",
+      "ship_name": "OCEANIA",
       "gross_tonnage": 18485,
       "LOA": 177
     },
@@ -7040,49 +7070,49 @@
   "CMA": [
     {
       "call_sign": null,
-      "ship_name": "CMACGMARGENTINA",
+      "ship_name": "CGMARGENTINA",
       "gross_tonnage": 149314,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMAMERIGOVESPUCCI",
+      "ship_name": "CGMAMERIGOVESPUCCI",
       "gross_tonnage": 151446,
       "LOA": 365
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMIGUACU",
+      "ship_name": "CGMIGUACU",
       "gross_tonnage": 150844,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMORFEO",
+      "ship_name": "CGMORFEO",
       "gross_tonnage": 111249,
       "LOA": 350
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLEGACY",
+      "ship_name": "CGMLEGACY",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLIBERTY",
+      "ship_name": "CGMLIBERTY",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMHYDRA",
+      "ship_name": "CGMHYDRA",
       "gross_tonnage": 128600,
       "LOA": 347
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLASCALA",
+      "ship_name": "CGMLASCALA",
       "gross_tonnage": 90931,
       "LOA": 334
     },
@@ -7094,7 +7124,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMZHENGHE",
+      "ship_name": "CGMZHENGHE",
       "gross_tonnage": 179922,
       "LOA": 399
     },
@@ -7106,19 +7136,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMARCTIC",
+      "ship_name": "CGMARCTIC",
       "gross_tonnage": 150844,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMRODOLPHE",
+      "ship_name": "CGMRODOLPHE",
       "gross_tonnage": 96223,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSWORDFISH",
+      "ship_name": "CGMSWORDFISH",
       "gross_tonnage": 54309,
       "LOA": 295
     },
@@ -7130,19 +7160,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTIGRIS",
+      "ship_name": "CGMTIGRIS",
       "gross_tonnage": 96704,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMALMAVIVA",
+      "ship_name": "CGMALMAVIVA",
       "gross_tonnage": 89787,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMALEXANDERVONHUMBOLDT",
+      "ship_name": "CGMALEXANDERVONHUMBOLDT",
       "gross_tonnage": 176546,
       "LOA": 396
     },
@@ -7154,13 +7184,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLYRA",
+      "ship_name": "CGMLYRA",
       "gross_tonnage": 131332,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMGEORGIA",
+      "ship_name": "CGMGEORGIA",
       "gross_tonnage": 54309,
       "LOA": 294
     },
@@ -7172,85 +7202,85 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMEVERGLADE",
+      "ship_name": "CGMEVERGLADE",
       "gross_tonnage": 153907,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCOCHIN",
+      "ship_name": "CGMCOCHIN",
       "gross_tonnage": 113509,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMKIMBERLEY",
+      "ship_name": "CGMKIMBERLEY",
       "gross_tonnage": 153907,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMELBE",
+      "ship_name": "CGMELBE",
       "gross_tonnage": 96253,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMOHIO",
+      "ship_name": "CGMOHIO",
       "gross_tonnage": 95680,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMVOLGA",
+      "ship_name": "CGMVOLGA",
       "gross_tonnage": 96704,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCENDRILLON",
+      "ship_name": "CGMCENDRILLON",
       "gross_tonnage": 90931,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMUNDRA",
+      "ship_name": "CGMMUNDRA",
       "gross_tonnage": 113509,
       "LOA": 337
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTOSCA",
+      "ship_name": "CGMTOSCA",
       "gross_tonnage": 91410,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBALI",
+      "ship_name": "CGMBALI",
       "gross_tonnage": 150844,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNEWJERSEY",
+      "ship_name": "CGMNEWJERSEY",
       "gross_tonnage": 54309,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTENERE",
+      "ship_name": "CGMTENERE",
       "gross_tonnage": 150844,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNIAGARA",
+      "ship_name": "CGMNIAGARA",
       "gross_tonnage": 95680,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMURAL",
+      "ship_name": "CGMURAL",
       "gross_tonnage": 96704,
       "LOA": 300
     },
@@ -7262,7 +7292,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBOLDNESS",
+      "ship_name": "CGMBOLDNESS",
       "gross_tonnage": 73133,
       "LOA": 272
     },
@@ -7274,7 +7304,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMJEANGABRIEL",
+      "ship_name": "CGMJEANGABRIEL",
       "gross_tonnage": 96223,
       "LOA": 300
     },
@@ -7286,7 +7316,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMINTEGRITY",
+      "ship_name": "CGMINTEGRITY",
       "gross_tonnage": 150783,
       "LOA": 366
     },
@@ -7298,7 +7328,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMARCOPOLO",
+      "ship_name": "CGMMARCOPOLO",
       "gross_tonnage": 176546,
       "LOA": 396
     },
@@ -7316,19 +7346,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMANDROMEDA",
+      "ship_name": "CGMANDROMEDA",
       "gross_tonnage": 131332,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMINNOVATION",
+      "ship_name": "CGMINNOVATION",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMAQUILA",
+      "ship_name": "CGMAQUILA",
       "gross_tonnage": 131332,
       "LOA": 363
     },
@@ -7340,25 +7370,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMDIGNITY",
+      "ship_name": "CGMDIGNITY",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTARPON",
+      "ship_name": "CGMTARPON",
       "gross_tonnage": 54309,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMEDEA",
+      "ship_name": "CGMMEDEA",
       "gross_tonnage": 107711,
       "LOA": 348
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMUSCA",
+      "ship_name": "CGMMUSCA",
       "gross_tonnage": 128600,
       "LOA": 348
     },
@@ -7370,7 +7400,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMALASKA",
+      "ship_name": "CGMALASKA",
       "gross_tonnage": 140259,
       "LOA": 366
     },
@@ -7382,7 +7412,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMVELA",
+      "ship_name": "CGMVELA",
       "gross_tonnage": 128600,
       "LOA": 347
     },
@@ -7394,37 +7424,37 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMHOPE",
+      "ship_name": "CGMHOPE",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMAMBITION",
+      "ship_name": "CGMAMBITION",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMPRIDE",
+      "ship_name": "CGMPRIDE",
       "gross_tonnage": 150783,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCALLISTO",
+      "ship_name": "CGMCALLISTO",
       "gross_tonnage": 131332,
       "LOA": 363
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTUTICORIN",
+      "ship_name": "CGMTUTICORIN",
       "gross_tonnage": 113509,
       "LOA": 336
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLIBRA",
+      "ship_name": "CGMLIBRA",
       "gross_tonnage": 131332,
       "LOA": 364
     },
@@ -7448,7 +7478,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMRUNDALE",
+      "ship_name": "CGMRUNDALE",
       "gross_tonnage": 32245,
       "LOA": 205
     },
@@ -7466,37 +7496,37 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNORMA",
+      "ship_name": "CGMNORMA",
       "gross_tonnage": 107711,
       "LOA": 350
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNERVAL",
+      "ship_name": "CGMNERVAL",
       "gross_tonnage": 72884,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCENTAURUS",
+      "ship_name": "CGMCENTAURUS",
       "gross_tonnage": 131332,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMFLORIDA",
+      "ship_name": "CGMFLORIDA",
       "gross_tonnage": 54309,
       "LOA": 295
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMENDURANCE",
+      "ship_name": "CGMENDURANCE",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMRHONE",
+      "ship_name": "CGMRHONE",
       "gross_tonnage": 96253,
       "LOA": 300
     },
@@ -7508,7 +7538,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSAMSON",
+      "ship_name": "CGMSAMSON",
       "gross_tonnage": 91498,
       "LOA": 335
     },
@@ -7520,19 +7550,19 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLITANI",
+      "ship_name": "CGMLITANI",
       "gross_tonnage": 96704,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBUTTERFLY",
+      "ship_name": "CGMBUTTERFLY",
       "gross_tonnage": 111249,
       "LOA": 350
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMADONIS",
+      "ship_name": "CGMADONIS",
       "gross_tonnage": 154839,
       "LOA": 366
     },
@@ -7544,13 +7574,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSCANDOLA",
+      "ship_name": "CGMSCANDOLA",
       "gross_tonnage": 150844,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTHAMES",
+      "ship_name": "CGMTHAMES",
       "gross_tonnage": 96253,
       "LOA": 300
     },
@@ -7562,7 +7592,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMGREENLAND",
+      "ship_name": "CGMGREENLAND",
       "gross_tonnage": 153907,
       "LOA": 366
     },
@@ -7574,25 +7604,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLISAMARIE",
+      "ship_name": "CGMLISAMARIE",
       "gross_tonnage": 96223,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNANSHA",
+      "ship_name": "CGMNANSHA",
       "gross_tonnage": 75015,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMALMAVIVA",
+      "ship_name": "CGMALMAVIVA",
       "gross_tonnage": 89787,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMWHITESHARK",
+      "ship_name": "CGMWHITESHARK",
       "gross_tonnage": 54309,
       "LOA": 294
     },
@@ -7604,7 +7634,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMUMBAI",
+      "ship_name": "CGMMUMBAI",
       "gross_tonnage": 113509,
       "LOA": 336
     },
@@ -7616,13 +7646,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMAPOLLON",
+      "ship_name": "CGMAPOLLON",
       "gross_tonnage": 154995,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMARKANSAS",
+      "ship_name": "CGMARKANSAS",
       "gross_tonnage": 95680,
       "LOA": 300
     },
@@ -7634,31 +7664,31 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSANFRANCISCO",
+      "ship_name": "CGMSANFRANCISCO",
       "gross_tonnage": 75590,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMHARMONY",
+      "ship_name": "CGMHARMONY",
       "gross_tonnage": 73133,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMAUI",
+      "ship_name": "CGMMAUI",
       "gross_tonnage": 154598,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMGANGES",
+      "ship_name": "CGMGANGES",
       "gross_tonnage": 94730,
       "LOA": 299
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMNABUCCO",
+      "ship_name": "CGMNABUCCO",
       "gross_tonnage": 91410,
       "LOA": 334
     },
@@ -7688,13 +7718,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMVIRGINIA",
+      "ship_name": "CGMVIRGINIA",
       "gross_tonnage": 54309,
       "LOA": 294
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMXIAMEN",
+      "ship_name": "CGMXIAMEN",
       "gross_tonnage": 75752,
       "LOA": 306
     },
@@ -7706,37 +7736,37 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMISSISSIPPI",
+      "ship_name": "CGMMISSISSIPPI",
       "gross_tonnage": 102931,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMFORTJAMES",
+      "ship_name": "CGMFORTJAMES",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBIGSUR",
+      "ship_name": "CGMBIGSUR",
       "gross_tonnage": 154598,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCASSIOPEIA",
+      "ship_name": "CGMCASSIOPEIA",
       "gross_tonnage": 131332,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMRIMBAUD",
+      "ship_name": "CGMRIMBAUD",
       "gross_tonnage": 71112,
       "LOA": 270
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMUNITY",
+      "ship_name": "CGMUNITY",
       "gross_tonnage": 150783,
       "LOA": 366
     },
@@ -7748,25 +7778,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMJULESVERNE",
+      "ship_name": "CGMJULESVERNE",
       "gross_tonnage": 176435,
       "LOA": 396
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMLOIRE",
+      "ship_name": "CGMLOIRE",
       "gross_tonnage": 96253,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMMELISANDE",
+      "ship_name": "CGMMELISANDE",
       "gross_tonnage": 91498,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMFIDELIO",
+      "ship_name": "CGMFIDELIO",
       "gross_tonnage": 107898,
       "LOA": 349
     },
@@ -7784,7 +7814,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMALEXANDRIA",
+      "ship_name": "CGMALEXANDRIA",
       "gross_tonnage": 25406,
       "LOA": 208
     },
@@ -7796,7 +7826,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSINTRA",
+      "ship_name": "CGMSINTRA",
       "gross_tonnage": 32245,
       "LOA": 205
     },
@@ -7808,25 +7838,25 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCEDRUS",
+      "ship_name": "CGMCEDRUS",
       "gross_tonnage": 154598,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCAPECOD",
+      "ship_name": "CGMCAPECOD",
       "gross_tonnage": 154598,
       "LOA": 366
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMATTILA",
+      "ship_name": "CGMATTILA",
       "gross_tonnage": 91498,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMPOINTEDUPITON",
+      "ship_name": "CGMPOINTEDUPITON",
       "gross_tonnage": 74721,
       "LOA": 272
     },
@@ -7844,7 +7874,7 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBIANCA",
+      "ship_name": "CGMBIANCA",
       "gross_tonnage": 91498,
       "LOA": 335
     },
@@ -7868,13 +7898,13 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMIVANHOE",
+      "ship_name": "CGMIVANHOE",
       "gross_tonnage": 111249,
       "LOA": 350
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMGRACEBAY",
+      "ship_name": "CGMGRACEBAY",
       "gross_tonnage": 154598,
       "LOA": 366
     },
@@ -7886,37 +7916,37 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMADVENTURE",
+      "ship_name": "CGMADVENTURE",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMPETRA",
+      "ship_name": "CGMPETRA",
       "gross_tonnage": 74642,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMBENJAMINFRANKLIN",
+      "ship_name": "CGMBENJAMINFRANKLIN",
       "gross_tonnage": 179922,
       "LOA": 399
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMWISDOM",
+      "ship_name": "CGMWISDOM",
       "gross_tonnage": 73133,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMSAINTEANNE",
+      "ship_name": "CGMSAINTEANNE",
       "gross_tonnage": 73133,
       "LOA": 268
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMGEORGFORSTER",
+      "ship_name": "CGMGEORGFORSTER",
       "gross_tonnage": 177381,
       "LOA": 398
     },
@@ -7928,43 +7958,43 @@
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTITAN",
+      "ship_name": "CGMTITAN",
       "gross_tonnage": 131332,
       "LOA": 364
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMPOINTEPERCEE",
+      "ship_name": "CGMPOINTEPERCEE",
       "gross_tonnage": 74721,
       "LOA": 272
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMIRON",
+      "ship_name": "CGMIRON",
       "gross_tonnage": 128060,
       "LOA": 335
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMDALILA",
+      "ship_name": "CGMDALILA",
       "gross_tonnage": 90931,
       "LOA": 334
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMTANYA",
+      "ship_name": "CGMTANYA",
       "gross_tonnage": 95680,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCONGO",
+      "ship_name": "CGMCONGO",
       "gross_tonnage": 102931,
       "LOA": 300
     },
     {
       "call_sign": null,
-      "ship_name": "CMACGMCOBALT",
+      "ship_name": "CGMCOBALT",
       "gross_tonnage": 128060,
       "LOA": 335
     }
@@ -8052,13 +8082,13 @@
   "EAS": [
     {
       "call_sign": null,
-      "ship_name": "EASLINEYANTAI",
+      "ship_name": "LINEYANTAI",
       "gross_tonnage": 14089,
       "LOA": 164
     },
     {
       "call_sign": null,
-      "ship_name": "EASLINEYANTAI",
+      "ship_name": "LINEYANTAI",
       "gross_tonnage": 14089,
       "LOA": 164
     }

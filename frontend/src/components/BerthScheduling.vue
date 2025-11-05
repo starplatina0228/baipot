@@ -35,6 +35,7 @@
         </div>
 
         <!-- Action Buttons -->
+        <!--
         <div v-if="!loading && viewMode === 'list'" class="buttons">
           <button @click="optimizeAll" :disabled="loading">
             <span v-if="loading" class="spinner"></span>
@@ -45,6 +46,7 @@
             선택 최적화
           </button>
         </div>
+        -->
 
         <!-- Cancel Button -->
         <div v-if="loading" class="buttons">
@@ -81,7 +83,8 @@
               }"
             >
               <td v-for="key in visibleKeys" :key="key">
-                {{ formatValue(row[key]) }}
+                <span v-if="key === 'Ship'">{{ formatShipName(row[key]) }}</span>
+                <span v-else>{{ formatValue(row[key]) }}</span>
               </td>
             </tr>
           </tbody>
@@ -113,8 +116,6 @@ const {
   error,
   viewMode,
   prepareSchedule,
-  optimizeAll,
-  optimizeSelected,
   toggleSelection,
   showListView,
   cancelRequest,
@@ -157,6 +158,14 @@ const formatValue = (value) => {
   }
   return value;
 };
+
+const formatShipName = (shipName) => {
+  if (shipName && shipName.includes('+')) {
+    return shipName.split('+')[1];
+  }
+  return shipName;
+};
+
 </script>
 
 <style scoped>
